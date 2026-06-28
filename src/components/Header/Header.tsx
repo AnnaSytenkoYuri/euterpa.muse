@@ -14,14 +14,7 @@ export default function Header() {
       <div className="container">
         <div className={css.headerContainer}>
           <Link href="/" className={css.logo}>
-            <svg
-              width="218"
-              height="28"
-              viewBox="0 0 346 32"
-              aria-hidden="true"
-            >
-              <use href="/sprite.svg#logo" />
-            </svg>
+          <p className={css.logoText}>euterpa.muse</p>
           </Link>
 
           {/* Desktop nav */}
@@ -70,8 +63,8 @@ export default function Header() {
           {/* Burger */}
           <button className={css.burgerBtn} onClick={toggleMenu}>
             <svg
-              width="218"
-              height="28"
+              width="16"
+              height="11"
               viewBox="0 0 346 32"
               aria-hidden="true"
             >
@@ -85,8 +78,8 @@ export default function Header() {
             <div className={css.mobileMenu}>
               <button className={css.closeBtn} onClick={toggleMenu}>
                 <svg
-                  width="218"
-                  height="28"
+                  width="16"
+                  height="11"
                   viewBox="0 0 346 32"
                   aria-hidden="true"
                 >

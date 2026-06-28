@@ -1,19 +1,22 @@
 .header {
-  position: absolute;
+  position: relative;
   width: 100%;
   top: 0;
   left: 0;
   z-index: 100;
+  background-color: #121417;
 }
 .headerContainer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 24px 0px;
 }
-/* .logo {
+.logoText{ 
+  font-weight: 600;
+  font-size: 24px;
   color: white;
-  font-size: 20px;
-} */
+}
 
 .desktopNav {
   display: none;
@@ -90,8 +93,7 @@
 .divider {
   width: 39px;
   height: 1px;
-  stroke-width: 0.5px;
-  stroke: rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255, 0.8);
   margin-top: 31px;
 }
 
@@ -102,10 +104,10 @@
     font-size: 14px;
     text-transform: uppercase;
     color: #1b1d20;
-    padding: 50px, 14px;
+    text-align: center;
+    /* padding: 14px 50px; */
     border-radius: 15px;
     background-color: #fdfdfd;
-    margin-bottom: 57px;
 }
 
 .bookBtn:hover,
@@ -119,7 +121,6 @@
   display: flex;
   gap: 12px;
   color: white;
-  margin-bottom: 56px;
 }
 
 
@@ -129,7 +130,7 @@
   }
   .navLink:hover,
   .navLink:focus {
-    font-weight: 600;
+    font-weight: 600px;
     font-size: 14px;
     color: #fff;
   }
