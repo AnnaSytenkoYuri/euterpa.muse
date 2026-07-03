@@ -18,7 +18,11 @@
   color: white;
 }
 
-.desktopNav {
+/* .desktopNav {
+  display: none;
+} */
+
+.rightSide {
   display: none;
 }
 
@@ -143,6 +147,12 @@
 }
 
 @media (min-width: 1440px) {
+
+  .rightSide {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+  }
   .burgerBtn {
     display: none;
   }
@@ -150,13 +160,5 @@
   .desktopNav {
     display: block;
   }
-  .nav {
-    flex-direction: row;
-  }
-  /* 
-  .navList {
-    display: flex;
-    gap: 32px;
-    color: white;
-  } */
+
 }

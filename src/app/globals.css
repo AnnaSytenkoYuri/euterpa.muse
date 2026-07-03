@@ -68,12 +68,20 @@ h6 {
   }
 }
 
-.container {
+/* .container {
   width: 100%;
   max-width: 100%;
   margin: 0 auto;
   padding: 0 20px;
+} */
+
+.container {
+  min-width: 320px;
+  max-width: 375px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
+
 
 /* Styles for Tablet devices */
 @media screen and (min-width: 768px) {

@@ -1,10 +1,23 @@
 "use client";
 import Link from "next/link";
 import css from "./Header.module.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
+
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [isOpen]);
+
   const toggleMenu = () => {
     setIsOpen((prev) => !prev);
   };
@@ -14,60 +27,64 @@ export default function Header() {
       <div className="container">
         <div className={css.headerContainer}>
           <Link href="/" className={css.logo}>
-          <p className={css.logoText}>euterpa.muse</p>
+            <p className={css.logoText}>euterpa.muse</p>
           </Link>
 
           {/* Desktop nav */}
-
-          <nav className={css.desktopNav}>
-            <ul className={css.navList}>
-              <li className={css.navItem}>
-                <Link href="/" className={css.navLink} prefetch={false}>
-                  home
-                </Link>
-              </li>
-              <li className={css.navItem}>
-                <Link href="/about" className={css.navLink} prefetch={false}>
-                  About Me
-                </Link>
-              </li>
-              <li className={css.navItem}>
-                <Link href="/projects" className={css.navLink} prefetch={false}>
-                  Projects
-                </Link>
-              </li>
-              <li className={css.navItem}>
-                <Link href="/vocal" className={css.navLink} prefetch={false}>
-                  Vocal
-                </Link>
-              </li>
-              <li className={css.navItem}>
-                <Link href="/events" className={css.navLink} prefetch={false}>
-                  Events
-                </Link>
-              </li>
-              <li className={css.navItem}>
-                <Link href="/contacts" className={css.navLink} prefetch={false}>
-                  Contacts
-                </Link>
-              </li>
-            </ul>
-          </nav>
-          <button className={css.bookBtn}>book lesson</button>
-          <div className={css.languages}>
-            <span>EN</span>
-            <span>|</span>
-            <span>DE</span>
+          <div className={css.rightSide}>
+            <nav className={css.desktopNav}>
+              <ul className={css.navList}>
+                <li className={css.navItem}>
+                  <Link href="/" className={css.navLink} prefetch={false}>
+                    home
+                  </Link>
+                </li>
+                <li className={css.navItem}>
+                  <Link href="/about" className={css.navLink} prefetch={false}>
+                    About Me
+                  </Link>
+                </li>
+                <li className={css.navItem}>
+                  <Link
+                    href="/projects"
+                    className={css.navLink}
+                    prefetch={false}
+                  >
+                    Projects
+                  </Link>
+                </li>
+                <li className={css.navItem}>
+                  <Link href="/vocal" className={css.navLink} prefetch={false}>
+                    Vocal
+                  </Link>
+                </li>
+                <li className={css.navItem}>
+                  <Link href="/events" className={css.navLink} prefetch={false}>
+                    Events
+                  </Link>
+                </li>
+                <li className={css.navItem}>
+                  <Link
+                    href="/contacts"
+                    className={css.navLink}
+                    prefetch={false}
+                  >
+                    Contacts
+                  </Link>
+                </li>
+              </ul>
+            </nav>
+            <button className={css.bookBtn}>book lesson</button>
+            <div className={css.languages}>
+              <span>EN</span>
+              <span>|</span>
+              <span>DE</span>
+            </div>
           </div>
 
           {/* Burger */}
           <button className={css.burgerBtn} onClick={toggleMenu}>
-            <svg
-              width="16"
-              height="11"
-              viewBox="0 0 346 32"
-              aria-hidden="true"
-            >
+            <svg width="16" height="11" viewBox="0 0 346 32" aria-hidden="true">
               <use href="/sprite.svg#burgerBtn" />
             </svg>
           </button>
@@ -93,7 +110,12 @@ export default function Header() {
               <nav>
                 <ul className={css.mobileNavList}>
                   <li className={css.navItem}>
-                    <Link href="/" className={css.navLink} prefetch={false}>
+                    <Link
+                      href="/"
+                      className={css.navLink}
+                      onClick={toggleMenu}
+                      prefetch={false}
+                    >
                       home
                     </Link>
                     <span className={css.divider} aria-hidden="true" />
@@ -102,6 +124,7 @@ export default function Header() {
                     <Link
                       href="/about"
                       className={css.navLink}
+                      onClick={toggleMenu}
                       prefetch={false}
                     >
                       About Me
@@ -112,6 +135,7 @@ export default function Header() {
                     <Link
                       href="/projects"
                       className={css.navLink}
+                      onClick={toggleMenu}
                       prefetch={false}
                     >
                       Projects
@@ -122,6 +146,7 @@ export default function Header() {
                     <Link
                       href="/vocal"
                       className={css.navLink}
+                      onClick={toggleMenu}
                       prefetch={false}
                     >
                       Vocal
@@ -132,6 +157,7 @@ export default function Header() {
                     <Link
                       href="/events"
                       className={css.navLink}
+                      onClick={toggleMenu}
                       prefetch={false}
                     >
                       Events
@@ -142,6 +168,7 @@ export default function Header() {
                     <Link
                       href="/contacts"
                       className={css.navLink}
+                      onClick={toggleMenu}
                       prefetch={false}
                     >
                       Contacts
