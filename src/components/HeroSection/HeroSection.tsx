@@ -1,4 +1,4 @@
-import Image from "next/image";
+// import Image from "next/image";
 import css from "./HeroSection.module.css";
 
 export default function HeroSection() {
@@ -21,9 +21,9 @@ export default function HeroSection() {
             <button className={css.heroBtnSec}>learn more</button>
           </div>
           </div>
-          <div className={css.heroImageWrapper}>
+          {/* <div className={css.heroImageWrapper}>
             <Image src="/images/hero-image.png" alt="Hero Image" width={572} height={622} className={css.heroImage} />
-          </div>
+          </div> */}
         </div>
       </div>
     </section>
