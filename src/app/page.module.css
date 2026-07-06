@@ -140,3 +140,19 @@ a.secondary {
     --button-secondary-border: #1a1a1a;
   }
 } */
+
+.heroWrapper{
+  background-image: url("/images/hero-mob-image 2.png");
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 1440px){
+  .heroWrapper{
+    background-image: url("/images/hero-image 1.png");
+  }
+}

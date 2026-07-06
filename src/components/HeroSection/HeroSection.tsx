@@ -21,9 +21,6 @@ export default function HeroSection() {
             <button className={css.heroBtnSec}>learn more</button>
           </div>
           </div>
-          {/* <div className={css.heroImageWrapper}>
-            <Image src="/images/hero-image.png" alt="Hero Image" width={572} height={622} className={css.heroImage} />
-          </div> */}
         </div>
       </div>
     </section>

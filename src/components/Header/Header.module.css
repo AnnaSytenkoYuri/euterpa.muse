@@ -4,7 +4,6 @@
   top: 0;
   left: 0;
   z-index: 100;
-  background-color: #121417;
 }
 .headerContainer {
   display: flex;
@@ -12,15 +11,11 @@
   align-items: center;
   padding: 24px 0px;
 }
-.logoText{ 
+.logoText {
   font-weight: 600;
   font-size: 24px;
   color: white;
 }
-
-/* .desktopNav {
-  display: none;
-} */
 
 .rightSide {
   display: none;
@@ -64,12 +59,22 @@
   position: absolute;
   top: 24px;
   right: 24px;
-
   background: transparent;
   border: none;
   color: white;
   font-size: 28px;
 }
+
+/* .menuHeader{
+  height:120px;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+  border-top:1px solid rgba(255,255,255,.15);
+  border-bottom:1px solid rgba(255,255,255,.15);
+} */
 
 .menuTitle {
   margin-bottom: 58px;
@@ -82,36 +87,33 @@
 .mobileNavList {
   display: flex;
   flex-direction: column;
-  gap: 63px;
+  gap: 30px;
   text-align: center;
   color: white;
+  margin-bottom: 50px;
+  /* border-top: 1px solid rgba(255,255,255,.15); */
 }
 
 .navItem {
-    font-weight: 400;
-    font-size: 14px;
-    text-transform: uppercase;
-    color: rgba(255, 255, 255, 0.8);
-    /* margin-bottom: 31px; */
-}
-.divider {
-  width: 39px;
-  height: 1px;
-  background-color: rgba(255, 255, 255, 0.8);
-  margin-top: 31px;
+  height: 30px;
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.8);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
 }
 
 .bookBtn {
-    width: 200px;
-    height: 45px;
-    font-weight: 600;
-    font-size: 14px;
-    text-transform: uppercase;
-    color: #1b1d20;
-    text-align: center;
-    /* padding: 14px 50px; */
-    border-radius: 15px;
-    background-color: #fdfdfd;
+  width: 200px;
+  height: 45px;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #1b1d20;
+  text-align: center;
+  border-radius: 15px;
+  background-color: #fdfdfd;
+  margin-bottom: 57px;
 }
 
 .bookBtn:hover,
@@ -127,18 +129,16 @@
   color: white;
 }
 
-
 .navLink {
-    text-decoration: none;
-    transition: 0.3s ease;
-  }
-  .navLink:hover,
-  .navLink:focus {
-    font-weight: 600px;
-    font-size: 14px;
-    color: #fff;
-  }
-  
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+.navLink:hover,
+.navLink:focus {
+  font-weight: 600px;
+  font-size: 14px;
+  color: #fff;
+}
 
 @media (min-width: 768px) {
   .mobileNavList {
@@ -147,7 +147,6 @@
 }
 
 @media (min-width: 1440px) {
-
   .rightSide {
     display: flex;
     align-items: center;
@@ -161,4 +160,12 @@
     display: block;
   }
 
+  .navItem{
+    height: auto;
+    border-bottom: none;
+  }
+
+  .bookBtn {
+    margin-bottom: 0px;
+  }
 }

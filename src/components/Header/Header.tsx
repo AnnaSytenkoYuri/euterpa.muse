@@ -84,8 +84,31 @@ export default function Header() {
 
           {/* Burger */}
           <button className={css.burgerBtn} onClick={toggleMenu}>
-            <svg width="16" height="11" viewBox="0 0 346 32" aria-hidden="true">
-              <use href="/sprite.svg#burgerBtn" />
+            <svg
+              width="18"
+              height="13"
+              viewBox="0 0 18 13"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0.916748 0.916687H16.5001"
+                stroke="white"
+                stroke-width="1.83333"
+                stroke-linecap="round"
+              />
+              <path
+                d="M0.916748 6.41669H16.5001"
+                stroke="white"
+                stroke-width="1.83333"
+                stroke-linecap="round"
+              />
+              <path
+                d="M1.2085 11.9167H16.7918"
+                stroke="white"
+                stroke-width="1.83333"
+                stroke-linecap="round"
+              />
             </svg>
           </button>
 
@@ -95,17 +118,30 @@ export default function Header() {
             <div className={css.mobileMenu}>
               <button className={css.closeBtn} onClick={toggleMenu}>
                 <svg
-                  width="16"
-                  height="11"
-                  viewBox="0 0 346 32"
-                  aria-hidden="true"
+                  width="14"
+                  height="14"
+                  viewBox="0 0 14 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
                 >
-                  <use href="/sprite.svg#close-btn" />
+                  <path
+                    d="M0.916748 0.916687L11.9358 11.9358"
+                    stroke="white"
+                    stroke-width="1.83333"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M1.12451 12.1442L12.1436 1.12515"
+                    stroke="white"
+                    stroke-width="1.83333"
+                    stroke-linecap="round"
+                  />
                 </svg>
               </button>
-              <span className={css.divider} />
-              <h2 className={css.menuTitle}>Menu</h2>
-              <span className={css.divider} aria-hidden="true" />
+
+              <div className={css.menuHeader}>
+                <h2 className={css.menuTitle}>Menu</h2>
+              </div>
 
               <nav>
                 <ul className={css.mobileNavList}>
@@ -118,7 +154,6 @@ export default function Header() {
                     >
                       home
                     </Link>
-                    <span className={css.divider} aria-hidden="true" />
                   </li>
                   <li className={css.navItem}>
                     <Link
@@ -129,7 +164,6 @@ export default function Header() {
                     >
                       About Me
                     </Link>
-                    <span className={css.divider} aria-hidden="true" />
                   </li>
                   <li className={css.navItem}>
                     <Link
@@ -140,7 +174,6 @@ export default function Header() {
                     >
                       Projects
                     </Link>
-                    <span className={css.divider} aria-hidden="true" />
                   </li>
                   <li className={css.navItem}>
                     <Link
@@ -151,7 +184,6 @@ export default function Header() {
                     >
                       Vocal
                     </Link>
-                    <span className={css.divider} aria-hidden="true" />
                   </li>
                   <li className={css.navItem}>
                     <Link
@@ -162,7 +194,6 @@ export default function Header() {
                     >
                       Events
                     </Link>
-                    <span className={css.divider} aria-hidden="true" />
                   </li>
                   <li className={css.navItem}>
                     <Link
@@ -173,7 +204,6 @@ export default function Header() {
                     >
                       Contacts
                     </Link>
-                    <span className={css.divider} aria-hidden="true" />
                   </li>
                 </ul>
               </nav>

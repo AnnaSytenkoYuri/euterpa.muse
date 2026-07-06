@@ -1,22 +1,10 @@
 .heroSection {
   padding-top: 80px;
   padding-bottom: 77px;
-  background-image: 
-  linear-gradient(
-    180deg,
-    rgba(18, 20, 23, 1) 0%,
-    rgba(18, 20, 23, 0.75) 35%,
-    rgba(63, 64, 66, 0.3) 100%
-  ),
-  url("/images/hero-mob-image 2.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 .heroContent {
   margin: 0 auto;
 }
-
 .heroTitle {
   font-weight: 400;
   font-size: 28px;
@@ -47,13 +35,13 @@
   font-size: 12px;
   text-align: center;
   color: rgba(255, 255, 255, 0.8);
-  margin-bottom: 25px;
+  margin-bottom: 150px;
 }
 .heroButtons {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 224px;
+  gap: 25px;
 }
 .heroBtnFrst {
   border-radius: 15px;
@@ -92,13 +80,6 @@
   border: none;
 }
 
-/* .heroImage {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center top;
-} */
-
 @media (min-width: 768px) {
 }
 
@@ -106,20 +87,11 @@
   .heroSection {
     padding-top: 120px;
     padding-bottom: 89px;
-    background-image: 
-    linear-gradient(
-      180deg,
-      rgba(18, 20, 23, 1) 0%,
-      rgba(18, 20, 23, 0.75) 35%,
-      rgba(63, 64, 66, 0.3) 100%
-    ),
-    url("/images/hero-image 1.png");
   }
 
   .heroContent {
     display: flex;
     flex-direction: row;
-    /* gap: 121px; */
     justify-content: space-between;
   }
 
@@ -196,11 +168,4 @@
     transition: 0.3s ease;
     border: none;
   }
-
-  /* .heroImage {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center top;
-  } */
 }

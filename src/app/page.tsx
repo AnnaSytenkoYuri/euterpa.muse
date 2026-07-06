@@ -4,17 +4,18 @@ import Header from "@/components/Header/Header";
 import HeroSection from "@/components/HeroSection/HeroSection";
 import LessonsSection from "@/components/LessonsSection/LeassonsSection";
 import ProjectsSection from "@/components/ProjectsSection/ProjectsSection";
+import css from "./page.module.css";
 
 export default function Home() {
   return (
     <>
+    <div className={css.heroWrapper}>
       <Header />
-      <main>
-        <HeroSection />
-        <LessonsSection />
-        <ProjectsSection />
-        <EventsSection />
-      </main>
+      <HeroSection />
+    </div>
+      <LessonsSection />
+      <ProjectsSection />
+      <EventsSection />
       <Footer />
     </>
   );
