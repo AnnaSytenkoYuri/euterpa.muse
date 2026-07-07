@@ -3,11 +3,11 @@
   padding-bottom: 77px;
 }
 .heroContent {
-  margin: 0 auto;
+  max-width: 520px;
 }
 .heroTitle {
   font-weight: 400;
-  font-size: 28px;
+  font-size:clamp(28px,5vw,82px);
   text-align: center;
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.7);
@@ -15,7 +15,7 @@
 }
 .titleSpan {
   font-weight: 500;
-  font-size: 74px;
+  font-size: clamp(74px, 10vw, 119px);
   text-align: center;
   text-transform: uppercase;
   color: #fff;
@@ -24,7 +24,7 @@
 
 .heroSubTitle {
   font-weight: 500;
-  font-size: 14px;
+  font-size:clamp(14px,2vw,24px);
   text-align: center;
   text-transform: capitalize;
   color: rgba(255, 255, 255, 0.9);
@@ -32,7 +32,7 @@
 }
 .heroText {
   font-weight: 500;
-  font-size: 12px;
+  font-size:clamp(12px,1.4vw,16px);
   text-align: center;
   color: rgba(255, 255, 255, 0.8);
   margin-bottom: 150px;
@@ -44,6 +44,10 @@
   gap: 25px;
 }
 .heroBtnFrst {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
   border-radius: 15px;
   fill: #fdfdfd;
   width: 207px;
@@ -53,6 +57,12 @@
   text-transform: uppercase;
   color: #1b1d20;
 }
+
+.heroBtnSec:hover svg {
+  color: #fdfdfd;
+  transform: translateX(4px);
+}
+
 .heroBtnSec {
   width: 200px;
   height: 45px;
@@ -81,48 +91,61 @@
 }
 
 @media (min-width: 768px) {
+  .heroSection {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  .heroContent{
+    max-width:700px;
+}
+  .heroText {
+    margin-bottom: 90px;
+  }
+
+  .heroButtons {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .heroBtnFrst {
+    width: 247px;
+    height: 54px;
+  }
+  .heroBtnSec {
+    width: 240px;
+    height: 54px;
+  }
+
 }
 
 @media (min-width: 1440px) {
   .heroSection {
     padding-top: 120px;
-    padding-bottom: 89px;
+    padding-bottom: 90px;
   }
 
   .heroContent {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
   }
 
+  .heroContent > div:first-child{
+    max-width:560px;
+}
+
   .heroTitle {
-    font-weight: 400;
-    font-size: 82px;
-    text-transform: uppercase;
-    color: rgba(255, 255, 255, 0.7);
     margin-bottom: 10px;
     text-align: left;
   }
   .titleSpan {
-    font-weight: 500;
-    font-size: 119px;
-    text-transform: uppercase;
-    color: #fff;
     text-align: left;
   }
 
   .heroSubTitle {
-    font-weight: 500;
-    font-size: 24px;
-    text-transform: capitalize;
-    color: rgba(255, 255, 255, 0.9);
     margin-bottom: 25px;
     text-align: left;
   }
   .heroText {
-    font-weight: 500;
-    font-size: 16px;
-    color: rgba(255, 255, 255, 0.8);
     margin-bottom: 25px;
     text-align: left;
   }
@@ -131,41 +154,5 @@
     flex-direction: row;
     gap: 57px;
     justify-content: flex-start;
-  }
-  .heroBtnFrst {
-    border-radius: 15px;
-    fill: #fdfdfd;
-    width: 207px;
-    height: 45px;
-    font-weight: 600;
-    font-size: 14px;
-    text-transform: uppercase;
-    color: #1b1d20;
-  }
-  .heroBtnSec {
-    width: 200px;
-    height: 45px;
-    border-radius: 15px;
-    border: 0.5px solid rgba(253, 253, 253, 0.7);
-    background: transparent;
-    font-weight: 600;
-    font-size: 14px;
-    text-transform: uppercase;
-    color: rgba(255, 255, 255, 0.8);
-  }
-
-  .heroBtnFrst:hover,
-  .heroBtnFrst:focus {
-    color: #fff;
-    background-color: #1b1d20;
-    transition: 0.3s ease;
-  }
-
-  .heroBtnSec:hover,
-  .heroBtnSec:focus {
-    color: #fff;
-    background-color: #1b1d20;
-    transition: 0.3s ease;
-    border: none;
   }
 }

@@ -1,0 +1,159 @@
+.lessonsSection {
+  padding-top: 80px;
+  padding-bottom: 77px;
+}
+
+.lesTextTitle {
+  font-weight: 500;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #000;
+  text-align: center;
+  margin-bottom: 17px;
+}
+
+.lesTitle {
+  font-weight: 500;
+  font-size: 32px;
+  color: #000;
+  text-align: center;
+  margin-bottom: 17px;
+}
+.lessonsImage {
+  border-radius: 15px;
+  width: 100%;
+  max-width: 434px;
+  height: auto;
+  display: block;
+  margin: 0 auto 30px;
+}
+.lesOptContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.lesItemContainer {
+  border: 0.5px solid rgba(94, 94, 94, 0.6);
+  border-radius: 15px;
+  height: auto;
+  padding: 40px;
+  text-align: center;
+}
+.lesTitlAndIconContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 9px;
+}
+.lesSubTitle {
+  font-weight: 500;
+  font-size: 18px;
+  text-transform: capitalize;
+  text-align: center;
+  color: #000;
+}
+.lesText {
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  color: #000;
+  margin-bottom: 20px;
+}
+.lesList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 40px;
+}
+.lesItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  color: #000;
+}
+.lesBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 15px;
+  width: 155px;
+  height: 46px;
+  background: #18191b;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.lesBtn:hover,
+.lesBtn:focus {
+  color: #fff;
+  background-color: #1b1d20;
+  transition: 0.3s ease;
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 1440px) {
+  .lessonsSection {
+    padding-top: 120px;
+    padding-bottom: 90px;
+  }
+
+  .lesTextTitle {
+    text-align: left;
+  }
+  .lesTitle {
+    text-align: left;
+    max-width: 288px;
+  }
+
+  .lesContentContainer {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .lessonsImage {
+    width: 434px;
+    height: 229px;
+    margin: 0;
+  }
+  .lesOptContainer {
+    flex-direction: row;
+    gap: 40px;
+  }
+  .lesItemContainer {
+    min-width: 375px;
+    padding: 30px 34px;
+    text-align: left;
+  }
+  .lesTitlAndIconContainer {
+    flex-direction: row;
+    margin-bottom: 12px;
+  }
+  .lesSubTitle {
+    text-align: left;
+  }
+  .lesText {
+    text-align: left;
+    margin-bottom: 17px;
+    width: 210px;
+  }
+  .lesList {
+    margin-bottom: 26px;
+  }
+  .lesItem {
+    flex-direction: row;
+    text-align: left;
+  }
+  /* .lesBtn {
+    
+  } */
+}
