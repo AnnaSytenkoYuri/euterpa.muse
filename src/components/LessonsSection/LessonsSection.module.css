@@ -1,6 +1,5 @@
 .lessonsSection {
   padding-top: 80px;
-  padding-bottom: 77px;
 }
 
 .lesTextTitle {
@@ -94,17 +93,30 @@
 .lesBtn:hover,
 .lesBtn:focus {
   color: #fff;
-  background-color: #1b1d20;
+  background-color: #0142a4;
   transition: 0.3s ease;
 }
 
 @media (min-width: 768px) {
+  .lessonsImage {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto 40px;
+  }
+
+  .lesOptContainer {
+    display: flex;
+    gap: 24px;
+  }
+
+  .lesItemContainer {
+    flex: 1;
+  }
 }
 
 @media (min-width: 1440px) {
   .lessonsSection {
     padding-top: 120px;
-    padding-bottom: 90px;
   }
 
   .lesTextTitle {

@@ -1,0 +1,86 @@
+.projectsSection {
+  padding-top: 80px;
+}
+/* .projectsSectionContent {
+} */
+.projectUpTitle {
+  font-weight: 500;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #000;
+  text-align: center;
+  margin-bottom: 17px;
+}
+.projectTitle {
+  font-weight: 500;
+  font-size: 32px;
+  color: #000;
+  text-align: center;
+  margin-bottom: 17px;
+}
+/* .projectsCardsContainer {
+} */
+.projectCard {
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+}
+.projectImage {
+  display: block;
+  width: 100%;
+  height: auto;
+  /* max-width: 477px;
+  max-width: 281px; */
+}
+.overlay {
+  position: absolute;
+  inset: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+
+  padding: 30px;
+
+  color: white;
+
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.65) 0%,
+    rgba(0, 0, 0, 0.35) 35%,
+    transparent 70%
+  );
+}
+.cardTitle {
+  font-weight: 400;
+  font-size: 35px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 10px;
+}
+.cardCategory {
+  font-weight: 500;
+  font-size: 18px;
+  text-transform: capitalize;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 27px;
+}
+.learnBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+
+  background: transparent;
+  border: none;
+
+  color: white;
+  cursor: pointer;
+
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.8);
+}
