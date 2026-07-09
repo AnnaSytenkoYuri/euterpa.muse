@@ -7,7 +7,7 @@
 }
 .heroTitle {
   font-weight: 400;
-  font-size:clamp(28px,5vw,82px);
+  font-size: clamp(28px, 5vw, 82px);
   text-align: center;
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.7);
@@ -24,7 +24,7 @@
 
 .heroSubTitle {
   font-weight: 500;
-  font-size:clamp(14px,2vw,24px);
+  font-size: clamp(14px, 2vw, 24px);
   text-align: center;
   text-transform: capitalize;
   color: rgba(255, 255, 255, 0.9);
@@ -32,7 +32,7 @@
 }
 .heroText {
   font-weight: 500;
-  font-size:clamp(12px,1.4vw,16px);
+  font-size: clamp(12px, 1.4vw, 16px);
   text-align: center;
   color: rgba(255, 255, 255, 0.8);
   margin-bottom: 150px;
@@ -94,12 +94,13 @@
   .heroSection {
     padding-top: 120px;
     padding-bottom: 120px;
+    min-height: 100vh;
   }
-  .heroContent{
-    max-width:700px;
-}
-  .heroText {
-    margin-bottom: 90px;
+  .heroContent {
+    min-width: 700px;
+  }
+  .heroSubTitle {
+    margin-bottom: 70px;
   }
 
   .heroButtons {
@@ -114,7 +115,6 @@
     width: 240px;
     height: 54px;
   }
-
 }
 
 @media (min-width: 1440px) {
@@ -124,14 +124,14 @@
   }
 
   .heroContent {
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
-  .heroContent > div:first-child{
-    max-width:560px;
-}
+  .heroContent > div:first-child {
+    max-width: 560px;
+  }
 
   .heroTitle {
     margin-bottom: 10px;

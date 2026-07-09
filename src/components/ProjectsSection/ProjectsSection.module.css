@@ -18,20 +18,26 @@
   text-align: center;
   margin-bottom: 17px;
 }
-/* .projectsCardsContainer {
-} */
+
+.projectsCardsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
 .projectCard {
   position: relative;
   overflow: hidden;
-  border-radius: 20px;
+  border-radius: 15px;
 }
 .projectImage {
   display: block;
   width: 100%;
   height: auto;
-  /* max-width: 477px;
-  max-width: 281px; */
+
+  transition:transform .6s ease;
 }
+
 .overlay {
   position: absolute;
   inset: 0;
@@ -51,27 +57,33 @@
     rgba(0, 0, 0, 0.35) 35%,
     transparent 70%
   );
+
+  transition:background .35s ease;
 }
 .cardTitle {
+  max-width: 269px;
   font-weight: 400;
-  font-size: 35px;
-  text-transform: uppercase;
+  font-size: 25px;
   text-align: center;
   color: #fff;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 .cardCategory {
+  max-width: 225px;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 16px;
   text-transform: capitalize;
   text-align: center;
   color: rgba(255, 255, 255, 0.7);
   margin-bottom: 27px;
 }
+
 .learnBtn {
+  max-width: 134px;
+  max-height: 17px;
   display: inline-flex;
   align-items: center;
-  gap: 12px;
+  gap: 10px;
 
   background: transparent;
   border: none;
@@ -83,4 +95,92 @@
   font-size: 14px;
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.8);
+}
+
+.learnBtn:hover,
+.learnBtn:focus
+{
+  color: rgba(255, 255, 255, 1);
+}
+
+.learnBtn svg{
+  transition:transform .35s ease;
+}
+
+@media (hover: hover){
+
+  .projectCard:hover .projectImage{
+    transform:scale(1.05);
+  }
+  
+  .projectCard:hover .overlay{
+  
+    background:linear-gradient(
+        to top,
+        rgba(0,0,0,.82),
+        rgba(0,0,0,.45),
+        transparent
+    );
+  
+  }
+  
+  .projectCard:hover .learnBtn svg{
+    transform:translateX(6px);
+  }
+}
+
+
+
+@media (min-width: 768px){
+
+  .projectsCardsContainer {
+    display: flex;
+    flex-direction: row;
+  
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+  }
+  
+  .projectCard {
+    flex: 0 0 420px;
+    scroll-snap-align: start;
+  }
+
+  .projectUpTitle,
+  .projectTitle,
+  .cardTitle,
+  .cardCategory,
+  .learnBtn
+   {
+    text-align: left; 
+  }
+
+  .overlay {
+    align-items: flex-start;
+  }
+
+}
+
+@media (min-width: 1440px){
+  .projectsSection {
+    padding-top: 120px;
+  }
+  .projectUpTitle,
+  .projectTitle,
+  .cardTitle,
+  .cardCategory,
+  .learnBtn
+   {
+    text-align: left; 
+  }
+  .projectsCardsContainer {
+    flex-direction: row;
+    gap: 5px;
+  }
+  .projectCard {
+    flex: 1;
+  }
+  .overlay {
+    align-items: flex-start;
+  }
 }
