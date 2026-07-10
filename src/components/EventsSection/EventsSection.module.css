@@ -11,7 +11,7 @@
   margin-bottom: 17px;
 }
 .eventTitle {
-  font-weight: 500;
+  font-weight: 600;
   font-size: 32px;
   text-align: center;
   color: #000;
@@ -29,8 +29,9 @@
   align-items: center;
 
   padding: 36px 0;
+  border-top:1px solid rgba(0,0,0,.08);
 
-  border-top: 1px solid #d8d8d8;
+  /* border-top: 1px solid #d8d8d8; */
 }
 
 .cardTitle {
@@ -105,7 +106,7 @@
   margin-top: 15px;
 }
 
-.ticketBtn:hover,
+/* .ticketBtn:hover,
 .ticketBtn:focus {
   color: #fff;
   background-color: #0142a4;
@@ -117,4 +118,99 @@
   color: #fff;
   background-color: #1b1d20;
   transition: 0.3s ease;
+} */
+
+.ticketsBtn{
+  transition:.3s;
+}
+
+.ticketsBtn:hover{
+  background:#000;
+  color:#fff;
+  transform:translateY(-2px);
+}
+
+
+.eventItem{
+  transition:.3s;
+}
+
+.eventItem:hover{
+  background:#fafafa;
+}
+
+@media (min-width: 768px) {
+  .eventItem {
+    display: grid;
+
+    grid-template-columns:
+      80px
+      1fr
+      130px;
+
+    align-items: flex-end;
+  }
+
+  .subTextEvent,
+  .eventTitle {
+    text-align: left;
+  }
+
+.cardTitle {
+  text-align: left;
+}
+.cardText {
+  text-align: left;
+}
+.cardDetails {
+  text-align: left;
+}
+
+.cardDetails,
+.eventDate,
+.eventDay,
+.eventMonth {
+ margin-bottom: 0;
+}
+
+.checkBtn {
+  margin: 0;
+  margin-left: auto;
+}
+}
+
+@media (min-width: 1440px){
+  .eventSection{
+    padding-top: 120px;
+  }
+
+  .eventItem {
+    grid-template-columns:
+    90px
+    2fr
+    180px
+    120px;
+  }
+
+ .eventInfo{
+  display:grid;
+    grid-template-columns:
+        1.3fr
+        1fr
+        auto;
+
+    align-items: baseline;
+    margin-right: 60px;
+ }
+
+ .cardTitle,
+.cardText,
+.cardDetails{
+  margin-bottom: 0;
+}
+
+.ticketBtn{
+  width: 133px;
+height: 38px;
+}
 }
