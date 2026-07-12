@@ -2,6 +2,14 @@
   padding-top: 80px;
 }
 
+.header {
+  display: block;
+}
+
+.checkBtn {
+  display: none;
+}
+
 .subTextEvent {
   font-weight: 500;
   font-size: 14px;
@@ -29,7 +37,7 @@
   align-items: center;
 
   padding: 36px 0;
-  border-top:1px solid rgba(0,0,0,.08);
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
 
   /* border-top: 1px solid #d8d8d8; */
 }
@@ -85,12 +93,12 @@
   background: #18191b;
 
   font-weight: 600;
-  font-size: 8px;
+  font-size: 14px;
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.8);
 }
 
-.checkBtn {
+.checkBtnMobile {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -106,37 +114,36 @@
   margin-top: 15px;
 }
 
-/* .ticketBtn:hover,
+.ticketBtn:hover,
 .ticketBtn:focus {
   color: #fff;
-  background-color: #0142a4;
+  background-color: #82776d;
   transition: 0.3s ease;
 }
 
 .checkBtn:hover,
 .checkBtn:focus {
   color: #fff;
-  background-color: #1b1d20;
+  background-color: #82776d;
   transition: 0.3s ease;
-} */
-
-.ticketsBtn{
-  transition:.3s;
 }
 
-.ticketsBtn:hover{
-  background:#000;
-  color:#fff;
-  transform:translateY(-2px);
+.ticketsBtn {
+  transition: 0.3s;
 }
 
-
-.eventItem{
-  transition:.3s;
+.ticketsBtn:hover {
+  background: #000;
+  color: #fff;
+  transform: translateY(-2px);
 }
 
-.eventItem:hover{
-  background:#fafafa;
+.eventItem {
+  transition: 0.3s;
+}
+
+.eventItem:hover {
+  background: #fafafa;
 }
 
 @media (min-width: 768px) {
@@ -155,62 +162,123 @@
   .eventTitle {
     text-align: left;
   }
+  .eventTitle {
+    margin-bottom: 0;
+  }
 
-.cardTitle {
-  text-align: left;
-}
-.cardText {
-  text-align: left;
-}
-.cardDetails {
-  text-align: left;
+  .cardTitle {
+    text-align: left;
+  }
+  .cardText {
+    text-align: left;
+  }
+  .cardDetails {
+    text-align: left;
+  }
+
+  .cardDetails,
+  .eventDate,
+  .eventDay,
+  .eventMonth {
+    margin-bottom: 0;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    margin-bottom: 40px;
+  }
+
+  .checkBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    width: 170px;
+    height: 36px;
+    border-radius: 10px;
+    fill: #e7e7e7;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #000;
+    margin-top: 0px;
+  }
+
+  .ticketBtn {
+    width: 133px;
+    height: 38px;
+    justify-self: end;
+  }
+
+  .eventDate {
+    justify-self: start;
+  }
+
+  .checkBtnMobile {
+    display: none;
+  }
 }
 
-.cardDetails,
-.eventDate,
-.eventDay,
-.eventMonth {
- margin-bottom: 0;
-}
-
-.checkBtn {
-  margin: 0;
-  margin-left: auto;
-}
-}
-
-@media (min-width: 1440px){
-  .eventSection{
+@media (min-width: 1440px) {
+  .eventSection {
     padding-top: 120px;
   }
 
   .eventItem {
     grid-template-columns:
-    90px
-    2fr
-    180px
-    120px;
+      80px /* дата */
+      1.3fr /* назва */
+      170px; /* кнопка */
+
+    align-items: center;
+
+    gap: 100px;
+
+    padding: 36px 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
   }
 
- .eventInfo{
-  display:grid;
+  .eventInfo {
+    display: grid;
     grid-template-columns:
-        1.3fr
-        1fr
-        auto;
+      1.3fr
+      1fr
+      auto;
 
-    align-items: baseline;
-    margin-right: 60px;
- }
+    align-items: center;
+  }
 
- .cardTitle,
-.cardText,
-.cardDetails{
-  margin-bottom: 0;
-}
+  .cardTitle,
+  .cardText,
+  .cardDetails {
+    margin-bottom: 0;
+  }
 
-.ticketBtn{
-  width: 133px;
-height: 38px;
-}
+  .ticketBtn {
+    width: 133px;
+    height: 38px;
+    justify-self: end;
+  }
+
+  .eventDate {
+    justify-self: start;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    margin-bottom: 40px;
+  }
+
+  .checkBtn {
+    display: flex;
+  }
+  .checkBtnMobile {
+    display: none;
+  }
 }

@@ -1,0 +1,184 @@
+.footer {
+  padding-top: 80px;
+}
+.footerBackground {
+  background: #161619;
+}
+
+.footerContentWrapper {
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+.logoText {
+  font-weight: 400;
+  font-size: 13px;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 25px;
+}
+.footerText {
+  font-weight: 400;
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+  margin-bottom: 40px;
+}
+.mobContsctsTitle {
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.mobContactsList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 400;
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.7);
+  gap: 8px;
+  padding: 0;
+  margin: 0 0 33px 0;
+}
+
+/* .contactItem {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  } */
+
+.mobSocialList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 17px;
+  margin: 0 0 45px 0;
+  padding: 0;
+  color: #fff;
+}
+/*   
+  .socialList a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    width: 48px;
+    height: 48px;
+  
+    color: #fff;
+  
+    transition: transform .3s ease,
+                color .3s ease,
+                opacity .3s ease;
+  }
+  
+  .socialList a:hover,
+  .socialList a:focus-visible {
+    transform: translateY(-3px);
+    opacity: .8;
+  } */
+
+.policyText {
+  font-weight: 400;
+  font-size: 8px;
+  color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.rightsText {
+  font-weight: 400;
+  font-size: 10px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+}
+
+.desckFooter {
+  display: none;
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 1440px) {
+  .footer {
+    padding-top: 120px;
+  }
+
+  .footerTop{
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: flex-start;
+    gap: 300px;
+  }
+
+  .footerContentWrapper {
+    padding-top: 35px;
+    padding-bottom: 30px;
+  }
+  .logoText {
+    text-align: left;
+    width: fit-content;
+  }
+  .footerText {
+    text-align: left;
+    width: fit-content;
+  }
+
+  .mobileFooter {
+    display: none;
+  }
+
+  .deskSocialList {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 17px;
+    margin: 0 0 45px 0;
+    padding: 0;
+    color: #fff;
+    width: fit-content;
+  }
+
+  .desckFooter {
+    display: block;
+  }
+
+  .contentDeskWraper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 80px;
+  }
+
+  .menuList {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-weight: 400;
+    font-size: 11px;
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 400;
+    font-size: 11px;
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  .deskContsctsTitle {
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 10px;
+  }
+.footerBottom{
+    display: flex;
+    justify-content: space-between;
+    padding: 36px 0 0 0;
+    border-top: 1px solid rgba(226, 226, 226, 0.21);
+}
+
+}

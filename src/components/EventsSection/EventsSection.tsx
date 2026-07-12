@@ -4,8 +4,13 @@ export default function EventsSection() {
   return (
     <section className={css.eventSection}>
       <div className="container">
-        <p className={css.subTextEvent}>concerts</p>
-        <h2 className={css.eventTitle}>Upcoming events</h2>
+        <div className={css.header}>
+          <div>
+            <p className={css.subTextEvent}>concerts</p>
+            <h2 className={css.eventTitle}>Upcoming events</h2>
+          </div>
+          <button className={css.checkBtn}>Check all</button>
+        </div>
         <ul className={css.eventsList}>
           <li className={css.eventItem}>
             <div className={css.eventDate}>
@@ -56,7 +61,7 @@ export default function EventsSection() {
             <button className={css.ticketBtn}>Tickets</button>
           </li>
         </ul>
-        <button className={css.checkBtn}>Check all</button>
+        <button className={css.checkBtnMobile}>Check all</button>
       </div>
     </section>
   );
