@@ -26,6 +26,14 @@
   overflow-y: auto;
 
   max-height: 90vh;
+  transition:
+    opacity .3s ease,
+    transform .3s ease;
+}
+
+.closing {
+  opacity: 0;
+  transform: translateY(30px);
 }
 
 .closeBtn {

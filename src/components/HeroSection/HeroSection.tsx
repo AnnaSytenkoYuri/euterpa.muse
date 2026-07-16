@@ -3,6 +3,7 @@
 import { useState } from "react";
 import css from "./HeroSection.module.css";
 import Modal from "../Modal/Modal";
+import BookingForm from "../BookingForm/BookingForm";
 
 export default function HeroSection() {
   const [isOpen, setIsOpen] = useState(false);
@@ -52,9 +53,11 @@ export default function HeroSection() {
           </div>
         </div>
       </section>
-      <Modal isOpen={isOpen} onClose={() => setIsOpen(false)}>
-        <h2>Hello!</h2>
-      </Modal>
+      {isOpen && (
+        <Modal onClose={() => setIsOpen(false)}>
+          <BookingForm />
+        </Modal>
+      )}
     </>
   );
 }
