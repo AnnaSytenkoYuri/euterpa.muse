@@ -10,7 +10,7 @@ export const bookingSchema = z.object({
 
   vocalLevel: z.string().min(1, "Please select your vocal level"),
 
-  date: z.string().min(1, "Please select a date"),
+  date: z.string().optional(),
 
   message: z.string().optional(),
 });

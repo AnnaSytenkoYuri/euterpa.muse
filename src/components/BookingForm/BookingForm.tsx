@@ -2,12 +2,11 @@
 import css from "./BookingForm.module.css";
 import FormSelect from "../FormSelect/FormSelect";
 
-import { useForm } from "react-hook-form";
+import { Controller, useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 
 import { bookingSchema, type BookingFormValues } from "./validation";
 import { useEffect } from "react";
-import { error } from "console";
 
 const lessonOptions = [
   {
@@ -39,12 +38,13 @@ export default function BookingForm() {
   const {
     register,
     setFocus,
+    control,
     handleSubmit,
     formState: { errors },
   } = useForm<BookingFormValues>({
     resolver: zodResolver(bookingSchema),
     shouldFocusError: true,
-
+   
     defaultValues: {
       name: "",
       email: "",
@@ -54,9 +54,10 @@ export default function BookingForm() {
       date: "",
       message: "",
     },
+
   });
 
-  const onSubmmit = (data: BookingFormValues) => {
+  const onSubmit = (data: BookingFormValues) => {
     console.log(data);
   };
 
@@ -75,7 +76,7 @@ export default function BookingForm() {
         </p>
       </header>
 
-      <form className={css.form} onSubmit={handleSubmit(onSubmmit)}>
+      <form className={css.form} onSubmit={handleSubmit(onSubmit)}>
         <div className={css.inputGroup}>
           {/* <label htmlFor="name"></label> */}
           <input
@@ -105,12 +106,18 @@ export default function BookingForm() {
           />
           {errors.phone && <p className={css.error}>{errors.phone.message}</p>}
         </div>
-
-        <FormSelect
-          id="lessonFormat"
-          label="Lesson format"
-          placeholder="Select a format"
-          options={lessonOptions}
+        <Controller
+          name="lessonFormat"
+          control={control}
+          render={({ field }) => (
+            <FormSelect
+              field={field}
+              id="lessonFormat"
+              label="Lesson format"
+              placeholder="Select a format"
+              options={lessonOptions}
+            />
+          )}
         />
 
         <div className={css.field}>
@@ -118,6 +125,7 @@ export default function BookingForm() {
             Date and Time
           </label>
           <input
+          {...register("date")}
             id="date"
             type="text"
             placeholder="Select a date and time"
@@ -125,12 +133,18 @@ export default function BookingForm() {
             readOnly
           />
         </div>
-
-        <FormSelect
-          id="level"
-          label="Your vocal level"
-          placeholder="Select a level"
-          options={levelOptions}
+        <Controller
+          name="vocalLevel"
+          control={control}
+          render={({ field }) => (
+            <FormSelect
+              field={field}
+              id="level"
+              label="Your vocal level"
+              placeholder="Select a level"
+              options={levelOptions}
+            />
+          )}
         />
 
         <div className={css.field}>

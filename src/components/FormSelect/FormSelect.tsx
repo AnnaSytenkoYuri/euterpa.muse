@@ -1,6 +1,8 @@
 "use client";
 import Select from "react-select";
 import css from "./FormSelect.module.css";
+import type { ControllerRenderProps } from "react-hook-form";
+import type { BookingFormValues } from "../BookingForm/validation";
 
 interface Option {
   value: string;
@@ -12,6 +14,11 @@ interface formSelectProps {
   label: string;
   options: Option[];
   placeholder: string;
+
+  field: ControllerRenderProps<
+    BookingFormValues,
+    "lessonFormat" | "vocalLevel"
+  >;
 }
 
 export default function FormSelect({
@@ -19,6 +26,7 @@ export default function FormSelect({
   label,
   options,
   placeholder,
+  field,
 }: formSelectProps) {
   return (
     <div className={css.field}>
@@ -26,8 +34,14 @@ export default function FormSelect({
         {label}
       </label>
       <Select
+      value={options.find(option => option.value === field.value)}
+      onChange={(selectedOption) =>
+        field.onChange(selectedOption?.value ?? "")
+      }
+      onBlur={field.onBlur}
         inputId={id}
         options={options}
+        name={field.name}
         placeholder={placeholder}
         isSearchable={false}
         unstyled
