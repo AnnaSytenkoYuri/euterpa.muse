@@ -1,7 +1,13 @@
 "use client";
 import css from "./BookingForm.module.css";
-import { useEffect, useRef } from "react";
 import FormSelect from "../FormSelect/FormSelect";
+
+import { useForm } from "react-hook-form";
+import { zodResolver } from "@hookform/resolvers/zod";
+
+import { bookingSchema, type BookingFormValues } from "./validation";
+import { useEffect } from "react";
+import { error } from "console";
 
 const lessonOptions = [
   {
@@ -30,11 +36,33 @@ const levelOptions = [
 ];
 
 export default function BookingForm() {
-  const nameInputRef = useRef<HTMLInputElement>(null);
+  const {
+    register,
+    setFocus,
+    handleSubmit,
+    formState: { errors },
+  } = useForm<BookingFormValues>({
+    resolver: zodResolver(bookingSchema),
+    shouldFocusError: true,
+
+    defaultValues: {
+      name: "",
+      email: "",
+      phone: "",
+      lessonFormat: "",
+      vocalLevel: "",
+      date: "",
+      message: "",
+    },
+  });
+
+  const onSubmmit = (data: BookingFormValues) => {
+    console.log(data);
+  };
 
   useEffect(() => {
-    nameInputRef.current?.focus();
-  }, []);
+    setFocus("name");
+  }, [setFocus]);
 
   return (
     <div className={css.bookingForm}>
@@ -47,39 +75,43 @@ export default function BookingForm() {
         </p>
       </header>
 
-      <form className={css.form}>
+      <form className={css.form} onSubmit={handleSubmit(onSubmmit)}>
         <div className={css.inputGroup}>
           {/* <label htmlFor="name"></label> */}
           <input
             // id="name"
+            {...register("name")}
             type="text"
-            ref={nameInputRef}
             placeholder="Your name"
-            className={css.input}
+            className={`${css.input} ${errors.name ? css.inputError : ""}`}
           />
+          {errors.name && <p className={css.error}>{errors.name.message}</p>}
           {/* <label htmlFor="email"></label> */}
           <input
             // id="email"
+            {...register("email")}
             type="email"
             placeholder="Email"
-            className={css.input}
+            className={`${css.input} ${errors.email ? css.inputError : ""}`}
           />
+          {errors.email && <p className={css.error}>{errors.email.message}</p>}
           {/* <label htmlFor="tel"></label> */}
           <input
             // id="tel"
+            {...register("phone")}
             type="tel"
             placeholder="Phone"
-            className={css.input}
+            className={`${css.input} ${errors.phone ? css.inputError : ""}`}
           />
+          {errors.phone && <p className={css.error}>{errors.phone.message}</p>}
         </div>
 
-        <div className={css.field}>
-          <FormSelect
-            label="Lesson format"
-            placeholder="Select a format"
-            options={lessonOptions}
-          />
-        </div>
+        <FormSelect
+          id="lessonFormat"
+          label="Lesson format"
+          placeholder="Select a format"
+          options={lessonOptions}
+        />
 
         <div className={css.field}>
           <label className={css.label} htmlFor="date">
@@ -94,19 +126,19 @@ export default function BookingForm() {
           />
         </div>
 
-        <div className={css.field}>
-          <FormSelect
-            label="Your vocal level"
-            placeholder="Select a level"
-            options={levelOptions}
-          />
-        </div>
+        <FormSelect
+          id="level"
+          label="Your vocal level"
+          placeholder="Select a level"
+          options={levelOptions}
+        />
 
         <div className={css.field}>
           <label className={css.label} htmlFor="message">
             Leave your message <span className={css.optional}>(optional)</span>
           </label>
           <textarea
+            {...register("message")}
             id="message"
             className={css.textarea}
             placeholder="You can write a message or share your wishes, if you'd like."

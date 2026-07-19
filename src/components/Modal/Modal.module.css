@@ -13,6 +13,7 @@
 
 .modal {
   position: relative;
+  padding: 48px 64px;
 
   width: 717px;
 
@@ -20,7 +21,7 @@
 
   border-radius: 15px;
 
-  padding: 53px 104px 40px;
+  /* padding: 53px 104px 40px; */
 
   overflow-y: auto;
 
