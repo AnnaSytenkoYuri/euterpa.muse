@@ -44,7 +44,7 @@ export default function BookingForm() {
   } = useForm<BookingFormValues>({
     resolver: zodResolver(bookingSchema),
     shouldFocusError: true,
-   
+
     defaultValues: {
       name: "",
       email: "",
@@ -54,7 +54,6 @@ export default function BookingForm() {
       date: "",
       message: "",
     },
-
   });
 
   const onSubmit = (data: BookingFormValues) => {
@@ -119,13 +118,16 @@ export default function BookingForm() {
             />
           )}
         />
+        {errors.lessonFormat && (
+          <p className={css.error}>{errors.lessonFormat.message}</p>
+        )}
 
         <div className={css.field}>
           <label className={css.label} htmlFor="date">
             Date and Time
           </label>
           <input
-          {...register("date")}
+            {...register("date")}
             id="date"
             type="text"
             placeholder="Select a date and time"
@@ -146,6 +148,9 @@ export default function BookingForm() {
             />
           )}
         />
+        {errors.vocalLevel && (
+          <p className={css.error}>{errors.vocalLevel.message}</p>
+        )}
 
         <div className={css.field}>
           <label className={css.label} htmlFor="message">

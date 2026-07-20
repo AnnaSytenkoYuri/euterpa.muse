@@ -34,11 +34,11 @@ export default function FormSelect({
         {label}
       </label>
       <Select
-      value={options.find(option => option.value === field.value)}
-      onChange={(selectedOption) =>
-        field.onChange(selectedOption?.value ?? "")
-      }
-      onBlur={field.onBlur}
+        value={options.find((option) => option.value === field.value)}
+        onChange={(selectedOption) =>
+          field.onChange(selectedOption?.value ?? "")
+        }
+        onBlur={field.onBlur}
         inputId={id}
         options={options}
         name={field.name}
