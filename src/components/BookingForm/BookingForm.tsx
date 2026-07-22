@@ -7,6 +7,8 @@ import { zodResolver } from "@hookform/resolvers/zod";
 
 import { bookingSchema, type BookingFormValues } from "./validation";
 import { useEffect } from "react";
+import DatePicker from "../DatePicker/DatePicker";
+
 
 const lessonOptions = [
   {
@@ -115,26 +117,23 @@ export default function BookingForm() {
               label="Lesson format"
               placeholder="Select a format"
               options={lessonOptions}
+              error={errors.lessonFormat?.message}
             />
           )}
         />
-        {errors.lessonFormat && (
-          <p className={css.error}>{errors.lessonFormat.message}</p>
-        )}
 
-        <div className={css.field}>
-          <label className={css.label} htmlFor="date">
-            Date and Time
-          </label>
-          <input
-            {...register("date")}
-            id="date"
-            type="text"
-            placeholder="Select a date and time"
-            className={css.input}
-            readOnly
-          />
-        </div>
+        <Controller
+          name="date"
+          control={control}
+          render={({ field }) => (
+            <DatePicker
+              field={field}
+              label="Date and time"
+              error={errors.date?.message}
+            />
+          )}
+        />
+
         <Controller
           name="vocalLevel"
           control={control}
@@ -145,12 +144,10 @@ export default function BookingForm() {
               label="Your vocal level"
               placeholder="Select a level"
               options={levelOptions}
+              error={errors.lessonFormat?.message}
             />
           )}
         />
-        {errors.vocalLevel && (
-          <p className={css.error}>{errors.vocalLevel.message}</p>
-        )}
 
         <div className={css.field}>
           <label className={css.label} htmlFor="message">

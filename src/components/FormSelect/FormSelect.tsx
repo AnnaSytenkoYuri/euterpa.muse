@@ -14,6 +14,7 @@ interface formSelectProps {
   label: string;
   options: Option[];
   placeholder: string;
+  error: string | undefined;
 
   field: ControllerRenderProps<
     BookingFormValues,
@@ -27,6 +28,7 @@ export default function FormSelect({
   options,
   placeholder,
   field,
+  error,
 }: formSelectProps) {
   return (
     <div className={css.field}>
@@ -46,7 +48,7 @@ export default function FormSelect({
         isSearchable={false}
         unstyled
         classNames={{
-          control: () => css.control,
+          control: () => `${css.control} ${error ? css.inputError : "" }`,
           valueContainer: () => css.valueContainer,
           placeholder: () => css.placeholder,
           singleValue: () => css.singleValue,
@@ -59,6 +61,7 @@ export default function FormSelect({
           dropdownIndicator: () => css.dropdownIndicator,
         }}
       />
+      {error && <p className={css.error}>{error}</p>}
     </div>
   );
 }
