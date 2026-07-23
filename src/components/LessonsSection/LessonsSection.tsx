@@ -3,7 +3,7 @@ import css from "./LessonsSection.module.css";
 
 export default function LessonsSection() {
   return (
-    <section className={css.lessonsSection}>
+    <section className={css.lessonsSection} id="vocal">
       <div className="container">
         <div className={css.lesContentContainer}>
         <div>
@@ -80,7 +80,7 @@ export default function LessonsSection() {
                   <path
                     d="M0.500122 5L2.96422 9.5L11.5001 0.5"
                     stroke="black"
-                    stroke-linecap="round"
+                    strokeLinecap="round"
                   />
                 </svg>
                 <span>Individual program</span>
@@ -96,7 +96,7 @@ export default function LessonsSection() {
                   <path
                     d="M0.500122 5L2.96422 9.5L11.5001 0.5"
                     stroke="black"
-                    stroke-linecap="round"
+                    strokeLinecap="round"
                   />
                 </svg>
                 <span>Personal and technical development</span>
@@ -112,7 +112,7 @@ export default function LessonsSection() {
                   <path
                     d="M0.500122 5L2.96422 9.5L11.5001 0.5"
                     stroke="black"
-                    stroke-linecap="round"
+                    strokeLinecap="round"
                   />
                 </svg>
                 <span>Support and feedback</span>
@@ -160,7 +160,7 @@ export default function LessonsSection() {
                   <path
                     d="M0.500122 5L2.96422 9.5L11.5001 0.5"
                     stroke="black"
-                    stroke-linecap="round"
+                    strokeLinecap="round"
                   />
                 </svg>
                 <span>Professional equipment</span>
@@ -176,7 +176,7 @@ export default function LessonsSection() {
                   <path
                     d="M0.500122 5L2.96422 9.5L11.5001 0.5"
                     stroke="black"
-                    stroke-linecap="round"
+                    strokeLinecap="round"
                   />
                 </svg>
                 <span>Practice and stage experience</span>
@@ -192,7 +192,7 @@ export default function LessonsSection() {
                   <path
                     d="M0.500122 5L2.96422 9.5L11.5001 0.5"
                     stroke="black"
-                    stroke-linecap="round"
+                    strokeLinecap="round"
                   />
                 </svg>
                 <span>Preparation for perfomances</span>

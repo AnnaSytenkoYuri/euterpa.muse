@@ -2,7 +2,7 @@ import Image from "next/image";
 import css from "./ProjectsSection.module.css";
 export default function ProjectsSection() {
   return (
-    <section className={css.projectsSection}>
+    <section className={css.projectsSection} id="projects">
       <div className="container">
         <div className={css.projectsSectionContent}>
           <p className={css.projectUpTitle}>projects</p>
@@ -31,8 +31,8 @@ export default function ProjectsSection() {
                     <path
                       d="M7.1 9.5L11.5 5L7.1 0.5M11.5 5H0.5"
                       stroke="white"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                     />
                   </svg>
                 </button>
@@ -61,8 +61,8 @@ export default function ProjectsSection() {
                     <path
                       d="M7.1 9.5L11.5 5L7.1 0.5M11.5 5H0.5"
                       stroke="white"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                     />
                   </svg>
                 </button>
@@ -91,8 +91,8 @@ export default function ProjectsSection() {
                     <path
                       d="M7.1 9.5L11.5 5L7.1 0.5M11.5 5H0.5"
                       stroke="white"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                     />
                   </svg>
                 </button>

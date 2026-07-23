@@ -2,7 +2,7 @@ import css from "./EventsSection.module.css";
 
 export default function EventsSection() {
   return (
-    <section className={css.eventSection}>
+    <section className={css.eventSection} id="events">
       <div className="container">
         <div className={css.header}>
           <div>

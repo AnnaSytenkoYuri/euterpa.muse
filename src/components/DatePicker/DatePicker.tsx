@@ -1,9 +1,7 @@
 import { ControllerRenderProps } from "react-hook-form";
 import css from "./DatePicker.module.css";
 import { BookingFormValues } from "../BookingForm/validation";
-import { useEffect, useRef } from "react";
-
-import "air-datepicker/air-datepicker.css";
+import { useRef } from "react";
 
 interface DatePickerProps {
   label: string;

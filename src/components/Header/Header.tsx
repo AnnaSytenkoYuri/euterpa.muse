@@ -46,7 +46,7 @@ export default function Header() {
                 </li>
                 <li className={css.navItem}>
                   <Link
-                    href="/projects"
+                    href="/#projects"
                     className={css.navLink}
                     prefetch={false}
                   >
@@ -54,18 +54,18 @@ export default function Header() {
                   </Link>
                 </li>
                 <li className={css.navItem}>
-                  <Link href="/vocal" className={css.navLink} prefetch={false}>
+                  <Link href="/#vocal" className={css.navLink} prefetch={false}>
                     Vocal
                   </Link>
                 </li>
                 <li className={css.navItem}>
-                  <Link href="/events" className={css.navLink} prefetch={false}>
+                  <Link href="/#events" className={css.navLink} prefetch={false}>
                     Events
                   </Link>
                 </li>
                 <li className={css.navItem}>
                   <Link
-                    href="/contacts"
+                    href="/#contacts"
                     className={css.navLink}
                     prefetch={false}
                   >
@@ -94,20 +94,20 @@ export default function Header() {
               <path
                 d="M0.916748 0.916687H16.5001"
                 stroke="white"
-                stroke-width="1.83333"
-                stroke-linecap="round"
+                strokeWidth="1.83333"
+                strokeLinecap="round"
               />
               <path
                 d="M0.916748 6.41669H16.5001"
                 stroke="white"
-                stroke-width="1.83333"
-                stroke-linecap="round"
+                strokeWidth="1.83333"
+                strokeLinecap="round"
               />
               <path
                 d="M1.2085 11.9167H16.7918"
                 stroke="white"
-                stroke-width="1.83333"
-                stroke-linecap="round"
+                strokeWidth="1.83333"
+                strokeLinecap="round"
               />
             </svg>
           </button>
@@ -127,14 +127,14 @@ export default function Header() {
                   <path
                     d="M0.916748 0.916687L11.9358 11.9358"
                     stroke="white"
-                    stroke-width="1.83333"
-                    stroke-linecap="round"
+                    strokeWidth="1.83333"
+                    strokeLinecap="round"
                   />
                   <path
                     d="M1.12451 12.1442L12.1436 1.12515"
                     stroke="white"
-                    stroke-width="1.83333"
-                    stroke-linecap="round"
+                    strokeWidth="1.83333"
+                    strokeLinecap="round"
                   />
                 </svg>
               </button>
