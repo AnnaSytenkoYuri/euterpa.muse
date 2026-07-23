@@ -14,13 +14,29 @@ export default function Modal({ onClose, children }: ModalProps) {
   const [isClosing, setIsClosing] = useState(false);
   const timeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
+  // const handleClose = useCallback(() => {
+  //   if (timeoutRef.current) return;
+  //   setIsClosing(true);
+  //   timeoutRef.current = setTimeout(() => {
+  //     onClose();
+  //   }, ANIMATION_DURATION);
+  // }, [onClose]);
+
+
+
   const handleClose = useCallback(() => {
+    console.log("MODAL CLOSE");
+  
     if (timeoutRef.current) return;
+  
     setIsClosing(true);
+  
     timeoutRef.current = setTimeout(() => {
       onClose();
     }, ANIMATION_DURATION);
   }, [onClose]);
+
+
 
   useEffect(() => {
     document.body.style.overflow = "hidden";

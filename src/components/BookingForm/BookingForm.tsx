@@ -144,7 +144,7 @@ export default function BookingForm() {
               label="Your vocal level"
               placeholder="Select a level"
               options={levelOptions}
-              error={errors.lessonFormat?.message}
+              error={errors.vocalLevel?.message}
             />
           )}
         />
