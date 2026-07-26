@@ -1,5 +1,6 @@
 import Image from "next/image";
 import css from "./ProjectsSection.module.css";
+import Link from "next/link";
 export default function ProjectsSection() {
   return (
     <section className={css.projectsSection} id="projects">
@@ -19,7 +20,11 @@ export default function ProjectsSection() {
               <div className={css.overlay}>
                 <h3 className={css.cardTitle}>BAND AT WORK</h3>
                 <p className={css.cardCategory}>Alternative Pop | Indie</p>
-                <button className={css.learnBtn}>
+                <a 
+                href="https://band-at-work.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={css.learnBtn}>
                   <span>Learn More</span>
                   <svg
                     width="12"
@@ -35,7 +40,7 @@ export default function ProjectsSection() {
                       strokeLinejoin="round"
                     />
                   </svg>
-                </button>
+                </a>
               </div>
             </div>
             <div className={css.projectCard}>
@@ -49,8 +54,10 @@ export default function ProjectsSection() {
               <div className={css.overlay}>
                 <h3 className={css.cardTitle}>TatYANa</h3>
                 <p className={css.cardCategory}>Alternative Pop | Indie</p>
-                <button className={css.learnBtn}>
+               
+                  <Link href="/src/app/projects/tatyana" className={css.learnBtn}>
                   <span>Learn More</span>
+                 
                   <svg
                     width="12"
                     height="10"
@@ -65,7 +72,7 @@ export default function ProjectsSection() {
                       strokeLinejoin="round"
                     />
                   </svg>
-                </button>
+                  </Link>
               </div>
             </div>
             <div className={css.projectCard}>
@@ -79,7 +86,11 @@ export default function ProjectsSection() {
               <div className={css.overlay}>
                 <h3 className={css.cardTitle}>Hardy</h3>
                 <p className={css.cardCategory}>Alternative Pop | Indie</p>
-                <button className={css.learnBtn}>
+                <a 
+                href="ttps://hardy.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={css.learnBtn}>
                   <span>Learn More</span>
                   <svg
                     width="12"
@@ -95,7 +106,7 @@ export default function ProjectsSection() {
                       strokeLinejoin="round"
                     />
                   </svg>
-                </button>
+                </a>
               </div>
             </div>
           </div>
