@@ -2,9 +2,12 @@
 import Link from "next/link";
 import css from "./Header.module.css";
 import { useEffect, useState } from "react";
+import Modal from "../Modal/Modal";
+import BookingForm from "../BookingForm/BookingForm";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   useEffect(() => {
     if (isOpen) {
@@ -23,6 +26,7 @@ export default function Header() {
   };
 
   return (
+    <>
     <header className={css.header}>
       <div className="container">
         <div className={css.headerContainer}>
@@ -74,7 +78,7 @@ export default function Header() {
                 </li>
               </ul>
             </nav>
-            <button className={css.bookBtn}>book lesson</button>
+            <button className={css.bookBtn} onClick={() => setIsModalOpen(true)}>book lesson</button>
             <div className={css.languages}>
               <span>EN</span>
               <span>|</span>
@@ -207,7 +211,7 @@ export default function Header() {
                   </li>
                 </ul>
               </nav>
-              <button className={css.bookBtn}>book lesson</button>
+              <button className={css.bookBtn} onClick={() => setIsModalOpen(true)}>book lesson</button>
               <div className={css.languages}>
                 <span>EN</span>
                 <span>|</span>
@@ -218,5 +222,11 @@ export default function Header() {
         </div>
       </div>
     </header>
+       {isModalOpen && (
+            <Modal onClose={() => setIsModalOpen(false)}>
+              <BookingForm />
+            </Modal>
+          )}
+          </>
   );
 }

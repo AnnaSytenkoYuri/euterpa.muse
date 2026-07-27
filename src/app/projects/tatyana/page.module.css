@@ -1,0 +1,16 @@
+.heroWrapper{
+    background-image: url("/images/TatYANa1.png");
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+  }
+  
+  @media (min-width: 768px) {
+  }
+  
+  @media (min-width: 1440px){
+    .heroWrapper{
+      background-image: url("/images/hero-image 1.png");
+    }
+  }
+  

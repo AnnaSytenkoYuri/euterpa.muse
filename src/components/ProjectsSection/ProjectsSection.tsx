@@ -21,7 +21,7 @@ export default function ProjectsSection() {
                 <h3 className={css.cardTitle}>BAND AT WORK</h3>
                 <p className={css.cardCategory}>Alternative Pop | Indie</p>
                 <a 
-                href="https://band-at-work.com"
+                href="https://www.facebook.com/share/1GN3TKNs8Z/?mibextid=wwXIfr"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={css.learnBtn}>
@@ -55,7 +55,7 @@ export default function ProjectsSection() {
                 <h3 className={css.cardTitle}>TatYANa</h3>
                 <p className={css.cardCategory}>Alternative Pop | Indie</p>
                
-                  <Link href="/src/app/projects/tatyana" className={css.learnBtn}>
+                  <Link href="/projects/tatyana" className={css.learnBtn}>
                   <span>Learn More</span>
                  
                   <svg
@@ -87,7 +87,7 @@ export default function ProjectsSection() {
                 <h3 className={css.cardTitle}>Hardy</h3>
                 <p className={css.cardCategory}>Alternative Pop | Indie</p>
                 <a 
-                href="ttps://hardy.com"
+                href="https://www.instagram.com/hardy_orchestra_choir?igsh=c2QyZTUzMDI2NWFwç"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={css.learnBtn}>

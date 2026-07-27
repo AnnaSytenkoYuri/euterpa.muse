@@ -4,8 +4,11 @@ export default function AboutSection() {
   return (
     <section className={css.about}>
       <div className="container">
-
         <h2 className={css.title}>Acoustic Sounds</h2>
+
+        <div className={css.divider}>
+          <span></span>
+        </div>
 
         <p className={css.text}>
           TetJANa Acoustic Sounds is an acoustic duo that creates intimate
@@ -32,11 +35,13 @@ export default function AboutSection() {
         </p>
 
         <p className={css.text}>
-          Whether performing on a concert stage or during life&apos;s most meaningful
-          celebrations, the duo creates a warm and personal atmosphere that
-          stays with audiences long after the final note.
+          Whether performing on a concert stage or during life&apos;s most
+          meaningful celebrations, the duo creates a warm and personal
+          atmosphere that stays with audiences long after the final note.
         </p>
-
+        <div className={css.divider}>
+          <span></span>
+        </div>
       </div>
     </section>
   );

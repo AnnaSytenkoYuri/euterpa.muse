@@ -5,39 +5,22 @@
     margin-bottom: 41px;
   }
 
-.image {
-  border-radius: 10px;
-  object-fit: cover;
-  object-position: center;
-}
-.overlay {
-    position: absolute;
-    inset: 0;
-  
-    background: linear-gradient(
-      to top,
-      rgba(0, 0, 0, 0.65) 0%,
-      rgba(0, 0, 0, 0.35) 35%,
-      rgba(0, 0, 0, 0.05) 100%
-    );
-  }
-
   .content {
-    position: relative;
-    z-index: 2;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 36px;
   
-    height: 100%;
+    z-index: 2;
   
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
     align-items: center;
   }
 
 .title {
   font-weight: 400;
   font-size: 35px;
-  text-transform: uppercase;
   text-align: center;
   color: #fff;
   margin-bottom: 10px;

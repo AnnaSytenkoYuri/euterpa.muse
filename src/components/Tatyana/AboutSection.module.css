@@ -17,3 +17,10 @@
   line-height: 1.8;
   margin-bottom: 19px;
 }
+
+
+.divider {
+  height: 1px;
+  margin: 0 auto 24px;
+  background: rgba(24, 25, 27, 0.2);
+}
