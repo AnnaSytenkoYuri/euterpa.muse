@@ -13,15 +13,13 @@
 
 .modal {
   position: relative;
-  padding: 48px 64px;
+  padding: 32px 24px;
 
-  width: 717px;
+  width: 300px;
 
   background: white;
 
   border-radius: 15px;
-
-  /* padding: 53px 104px 40px; */
 
   overflow-y: auto;
 
@@ -49,4 +47,12 @@
   cursor: pointer;
 
   font-size: 30px;
+}
+
+
+@media (min-width: 768px){
+  .modal {
+    padding: 48px 64px;
+    width: 717px;
+  }
 }

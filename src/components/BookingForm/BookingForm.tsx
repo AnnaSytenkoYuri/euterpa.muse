@@ -53,7 +53,7 @@ export default function BookingForm() {
       phone: "",
       lessonFormat: "",
       vocalLevel: "",
-      date: "",
+      date: null,
       message: "",
     },
   });
