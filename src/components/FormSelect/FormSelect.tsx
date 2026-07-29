@@ -18,7 +18,7 @@ interface formSelectProps {
 
   field: ControllerRenderProps<
     BookingFormValues,
-    "lessonFormat" | "vocalLevel"
+    "lessonFormat" | "vocalLevel" | "lessonTime"
   >;
 }
 

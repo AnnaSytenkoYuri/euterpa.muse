@@ -3,7 +3,7 @@ import AboutTatSection from "@/components/Tatyana/AboutSection";
 import HeroTatyanaSection from "@/components/Tatyana/HeroSection";
 import PerfectForSection from "@/components/Tatyana/PerfectForSection";
 import css from "./page.module.css"
-import VideoSection from "@/components/VideoSection/VideoSection";
+import VideoSection from "@/components/Tatyana/VideoSection/VideoSection";
 
 export default function TatYanaPage(){
     return(
@@ -13,8 +13,10 @@ export default function TatYanaPage(){
         <HeroTatyanaSection/>
         </div>
         <AboutTatSection/>
+        <div className={css.contentContainer}>
         <VideoSection/>
         <PerfectForSection/>
+        </div>
         </>
     )
 }

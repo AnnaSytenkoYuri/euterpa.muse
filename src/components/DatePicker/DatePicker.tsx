@@ -5,6 +5,7 @@ import "react-datepicker/dist/react-datepicker.css";
 
 import type { ControllerRenderProps } from "react-hook-form";
 import type { BookingFormValues } from "../BookingForm/validation";
+import css from "./DatePicker.module.css"
 
 interface DatePickerProps {
   field: ControllerRenderProps<BookingFormValues, "date">;
@@ -17,13 +18,19 @@ export default function DatePicker({
   label,
   error,
 }: DatePickerProps) {
+
   return (
-    <div>
+    <div className={css.field}>
       <label>{label}</label>
+
 
       <ReactDatePicker
         selected={field.value}
         onChange={(date: Date| null) => field.onChange(date)}
+        dateFormat="dd.MM.yyyy"
+        minDate={new Date()}
+        placeholderText="Select date"
+        className={`${css.input} ${error ? css.inputError : ""}`}
       />
 
       {error && <p>{error}</p>}

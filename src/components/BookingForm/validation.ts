@@ -9,6 +9,7 @@ export const bookingSchema = z.object({
   lessonFormat: z.string().min(1, "Please select a lesson format"),
 
   vocalLevel: z.string().min(1, "Please select your vocal level"),
+  lessonTime: z.string().min(1, "Please select a lesson time"),
 
   date: z.date().nullable(),
   message: z.string().optional(),

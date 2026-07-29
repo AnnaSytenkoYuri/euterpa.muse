@@ -8,33 +8,9 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { bookingSchema, type BookingFormValues } from "./validation";
 import { useEffect } from "react";
 import DatePicker from "../DatePicker/DatePicker";
+import { lessonOptions, lessonTimeOptions, levelOptions } from "@/constants/formOptions";
 
 
-const lessonOptions = [
-  {
-    value: "online",
-    label: "Online lesson",
-  },
-  {
-    value: "offline",
-    label: "Offline lesson",
-  },
-];
-
-const levelOptions = [
-  {
-    value: "beginner",
-    label: "Beginner",
-  },
-  {
-    value: "intermediate",
-    label: "Intermediate",
-  },
-  {
-    value: "advanced",
-    label: "Advanced",
-  },
-];
 
 export default function BookingForm() {
   const {
@@ -42,7 +18,8 @@ export default function BookingForm() {
     setFocus,
     control,
     handleSubmit,
-    formState: { errors },
+    reset,
+    formState: { errors, isSubmitting },
   } = useForm<BookingFormValues>({
     resolver: zodResolver(bookingSchema),
     shouldFocusError: true,
@@ -54,12 +31,14 @@ export default function BookingForm() {
       lessonFormat: "",
       vocalLevel: "",
       date: null,
+      lessonTime: "",
       message: "",
     },
   });
 
   const onSubmit = (data: BookingFormValues) => {
     console.log(data);
+    reset();
   };
 
   useEffect(() => {
@@ -128,8 +107,23 @@ export default function BookingForm() {
           render={({ field }) => (
             <DatePicker
               field={field}
-              label="Date and time"
+              label="Date"
               error={errors.date?.message}
+            />
+          )}
+        />
+
+        <Controller
+          name="lessonTime"
+          control={control}
+          render={({ field }) => (
+            <FormSelect
+              field={field}
+              id="time"
+              label="Time"
+              placeholder="Select a time"
+              options={lessonTimeOptions}
+              error={errors.lessonTime?.message}
             />
           )}
         />
@@ -161,7 +155,9 @@ export default function BookingForm() {
           />
         </div>
 
-        <button className={css.bookBtn}>book now</button>
+        <button className={css.bookBtn} disabled={isSubmitting}>
+          {isSubmitting ? "Seding..." : "Book now"}
+        </button>
       </form>
       <p className={css.policy}>
         By clicking &quot;Book now&quot; you agree to our{" "}
