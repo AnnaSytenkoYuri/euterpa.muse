@@ -11,8 +11,16 @@ export const bookingSchema = z.object({
   vocalLevel: z.string().min(1, "Please select your vocal level"),
   lessonTime: z.string().min(1, "Please select a lesson time"),
 
-  date: z.date().nullable(),
-  message: z.string().optional(),
+  date: z
+    .date()
+    .nullable()
+    .refine((value) => value !== null, {
+      message: "Please select a lesson date",
+    }),
+  message: z.string().trim().max(500, "Message is too long").optional(),
 });
 
-export type BookingFormValues = z.infer<typeof bookingSchema>;
+// export type BookingFormValues = z.infer<typeof bookingSchema>;
+
+export type BookingFormInput = z.input<typeof bookingSchema>;
+export type BookingFormOutput = z.output<typeof bookingSchema>;

@@ -5,14 +5,22 @@ import FormSelect from "../FormSelect/FormSelect";
 import { Controller, useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 
-import { bookingSchema, type BookingFormValues } from "./validation";
-import { useEffect } from "react";
+import { BookingFormInput, bookingSchema} from "./validation";
+import { useEffect, useState } from "react";
 import DatePicker from "../DatePicker/DatePicker";
-import { lessonOptions, lessonTimeOptions, levelOptions } from "@/constants/formOptions";
+import {
+  lessonOptions,
+  lessonTimeOptions,
+  levelOptions,
+} from "@/constants/formOptions";
 
+interface BookingFormProps {
+  onClose: () => void;
+}
 
+export default function BookingForm({onClose}: BookingFormProps) {
+  const [isSuccess, setIsSuccess] = useState(false);
 
-export default function BookingForm() {
   const {
     register,
     setFocus,
@@ -20,7 +28,7 @@ export default function BookingForm() {
     handleSubmit,
     reset,
     formState: { errors, isSubmitting },
-  } = useForm<BookingFormValues>({
+  } = useForm<BookingFormInput>({
     resolver: zodResolver(bookingSchema),
     shouldFocusError: true,
 
@@ -36,9 +44,13 @@ export default function BookingForm() {
     },
   });
 
-  const onSubmit = (data: BookingFormValues) => {
+  const onSubmit = async (data: BookingFormInput) => {
     console.log(data);
+    await new Promise((resolve) => setTimeout(resolve, 3000));
+    setIsSuccess(true);
+    await new Promise((resolve) => setTimeout(resolve, 2000));
     reset();
+    onClose();
   };
 
   useEffect(() => {
@@ -55,6 +67,18 @@ export default function BookingForm() {
           Fill out the form, and I will contact you to confirm.
         </p>
       </header>
+
+      {isSuccess && (
+        <div className={css.success}>
+          <p className={css.successTitle}>
+            ✓ Booking request sent successfully!
+          </p>
+          <p className={css.successText}>
+            Thank you for your booking. I&apos;ll contact you as soon as
+            possible to confirm your lesson.
+          </p>
+        </div>
+      )}
 
       <form className={css.form} onSubmit={handleSubmit(onSubmit)}>
         <div className={css.inputGroup}>

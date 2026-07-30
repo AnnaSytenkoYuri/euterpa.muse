@@ -9,6 +9,8 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
+  const closeModal = () => setIsModalOpen(false);
+
   useEffect(() => {
     if (isOpen) {
       document.body.style.overflow = "hidden";
@@ -223,8 +225,8 @@ export default function Header() {
       </div>
     </header>
        {isModalOpen && (
-            <Modal onClose={() => setIsModalOpen(false)}>
-              <BookingForm />
+            <Modal onClose={closeModal}>
+              <BookingForm onClose={closeModal}/>
             </Modal>
           )}
           </>

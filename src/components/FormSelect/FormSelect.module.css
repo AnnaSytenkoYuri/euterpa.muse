@@ -21,8 +21,14 @@
   transition: border-color 0.25s ease;
 }
 
-.control:hover {
+/* .control:hover {
   border-color: rgba(0, 0, 0, 0.45);
+} */
+
+
+/* {не працює коли активна} */
+.controlFocused {
+  border-color: #18191b;;
 }
 
 .valueContainer {

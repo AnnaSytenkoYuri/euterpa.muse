@@ -8,6 +8,8 @@ import BookingForm from "../BookingForm/BookingForm";
 export default function HeroSection() {
   const [isOpen, setIsOpen] = useState(false);
 
+  const closeModal = () => setIsOpen(false);
+
   return (
     <>
       <section className={css.heroSection}>
@@ -54,8 +56,8 @@ export default function HeroSection() {
         </div>
       </section>
       {isOpen && (
-        <Modal onClose={() => setIsOpen(false)}>
-          <BookingForm />
+        <Modal onClose={closeModal}>
+          <BookingForm onClose={closeModal}/>
         </Modal>
       )}
     </>

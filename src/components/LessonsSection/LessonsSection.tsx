@@ -7,6 +7,8 @@ import BookingForm from "../BookingForm/BookingForm";
 
 export default function LessonsSection() {
   const [isOpen, setIsOpen] = useState(false);
+
+  const closeModal = () => setIsOpen(false);
   return (
     <>
       <section className={css.lessonsSection} id="vocal">
@@ -215,8 +217,8 @@ export default function LessonsSection() {
         </div>
       </section>
       {isOpen && (
-        <Modal onClose={() => setIsOpen(false)}>
-          <BookingForm />
+        <Modal onClose={closeModal}>
+          <BookingForm onClose={closeModal} />
         </Modal>
       )}
     </>

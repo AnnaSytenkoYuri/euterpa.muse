@@ -42,6 +42,10 @@
   color: rgba(0, 0, 0, 0.3);
   background: #fff;
 }
+.input:focus {
+  outline: none;
+  border-color: #18191b;;
+}
 
 .error {
   font-size: 12px;
@@ -90,6 +94,11 @@
   color: rgba(0, 0, 0, 0.3);
 }
 
+.textarea:focus {
+  outline: none;
+  border-color: #18191b;;
+}
+
 .bookBtn {
   border-radius: 10px;
   width: 100%;
@@ -102,10 +111,37 @@
   margin-bottom: 29px;
 }
 
+.bookBtn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
 .policy {
   font-weight: 400;
   font-size: 12px;
   color: rgba(0, 0, 0, 0.5);
+}
+
+
+.success {
+  margin-bottom: 20px;
+  padding: 14px 16px;
+  border-radius: 10px;
+  background-color: #eaf8ef;
+  border: 1px solid #9ed7af;
+}
+
+.successTitle {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1b7f3b;
+  margin-bottom: 6px;
+}
+
+.successText {
+  font-size: 13px;
+  line-height: 1.5;
+  color: #2f2f2f;
 }
 
 @media (min-width: 768px) {

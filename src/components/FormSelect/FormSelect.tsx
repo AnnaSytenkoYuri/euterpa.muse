@@ -2,7 +2,7 @@
 import Select from "react-select";
 import css from "./FormSelect.module.css";
 import type { ControllerRenderProps } from "react-hook-form";
-import type { BookingFormValues } from "../BookingForm/validation";
+import { BookingFormInput } from "../BookingForm/validation";
 
 interface Option {
   value: string;
@@ -17,7 +17,7 @@ interface formSelectProps {
   error: string | undefined;
 
   field: ControllerRenderProps<
-    BookingFormValues,
+    BookingFormInput,
     "lessonFormat" | "vocalLevel" | "lessonTime"
   >;
 }
@@ -48,7 +48,7 @@ export default function FormSelect({
         isSearchable={false}
         unstyled
         classNames={{
-          control: () => `${css.control} ${error ? css.inputError : "" }`,
+          control: ({isFocused}) => `${css.control} ${isFocused ? css.controlFocused : ""} ${error ? css.inputError : "" }`,
           valueContainer: () => css.valueContainer,
           placeholder: () => css.placeholder,
           singleValue: () => css.singleValue,
