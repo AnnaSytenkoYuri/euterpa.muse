@@ -2,8 +2,7 @@ import css from "./VideoSection.module.css";
 
 export default function VideoSection() {
   return (
-    <section>
-      <div className="container">
+        <div className={css.video}>
         <p className={css.upTitle}>LIVE PERFORMANCE</p>
         <h2 className={css.title}>
           Experience the atmosphere
@@ -40,7 +39,6 @@ export default function VideoSection() {
             />
           </svg>
         </a>
-      </div>
-    </section>
+        </div>
   );
 }

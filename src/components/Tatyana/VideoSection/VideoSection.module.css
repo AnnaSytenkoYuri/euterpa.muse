@@ -1,5 +1,5 @@
-.videoSection {
-  padding: 80px 0;
+.video {
+  padding: 0;
 }
 
 .upTitle {
@@ -63,4 +63,24 @@
 
 .link svg {
   transition: transform 0.35s ease;
+}
+
+@media(min-width: 768px){
+  .video {
+    padding: 0;
+  }
+}
+
+
+@media (min-width: 1440px) {
+  .video {
+    padding: 0;
+  }
+  .videoWrapper {
+    margin-bottom: 20px;
+  }
+
+  .link {
+    margin: 0;
+  }
 }

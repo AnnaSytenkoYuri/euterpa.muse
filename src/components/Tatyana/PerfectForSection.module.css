@@ -66,3 +66,17 @@
   text-align: center;
   color: rgba(0, 0, 0, 0.7);
 }
+
+@media (min-width: 768px){
+  .card {
+    max-width: 420px;
+    width: 100%;
+  }
+}
+
+@media (min-width: 1440px) {
+  .card {
+    max-width: 360px;
+    margin: 0 auto;
+  }
+}

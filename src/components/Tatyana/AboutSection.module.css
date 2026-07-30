@@ -18,9 +18,16 @@
   margin-bottom: 19px;
 }
 
-
 .divider {
   height: 1px;
   margin: 0 auto 24px;
   background: rgba(24, 25, 27, 0.2);
+}
+
+@media (min-width: 1440) {
+  .text {
+    max-width: 760px;
+    font-size: 18px;
+    line-height: 1.8;
+  }
 }

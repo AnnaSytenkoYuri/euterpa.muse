@@ -5,16 +5,46 @@
     background-repeat: no-repeat;
   }
   
-  @media (min-width: 768px) {
+  .contentContainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  @media(min-width: 768px){
+    .contentContainer {
+      gap: 56px;
+      max-width: 700px;
+      margin: 0 auto;
+      /* padding: 60px 24px; */
+    }
+  
+    .cardColumn {
+      display: flex;
+      justify-content: center;
+    }
   }
   
-  @media (min-width: 1440px){
-    .contentContainer{
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-     gap: 20px;
+  @media (min-width: 1440px) {
+    .contentContainer {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 48px;
+  
+      align-items: start;
+  
+      max-width: 1200px;
+      margin: 0 auto;
+  
+      /* padding: 80px 32px; */
+    }
+  
+    .videoColumn {
+      width: 100%;
+    }
+  
+    .cardColumn {
+      display: block;
     }
   }
 
