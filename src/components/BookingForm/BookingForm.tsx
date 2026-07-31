@@ -5,7 +5,7 @@ import FormSelect from "../FormSelect/FormSelect";
 import { Controller, useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 
-import { BookingFormInput, bookingSchema} from "./validation";
+import { BookingFormInput, bookingSchema } from "./validation";
 import { useEffect, useState } from "react";
 import DatePicker from "../DatePicker/DatePicker";
 import {
@@ -18,8 +18,9 @@ interface BookingFormProps {
   onClose: () => void;
 }
 
-export default function BookingForm({onClose}: BookingFormProps) {
+export default function BookingForm({ onClose }: BookingFormProps) {
   const [isSuccess, setIsSuccess] = useState(false);
+  // const [error, setError] = useState("");
 
   const {
     register,
@@ -45,8 +46,18 @@ export default function BookingForm({onClose}: BookingFormProps) {
   });
 
   const onSubmit = async (data: BookingFormInput) => {
-    console.log(data);
-    await new Promise((resolve) => setTimeout(resolve, 3000));
+    const response = await fetch("/api/booking", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+    });
+    const result = await response.json();
+    if (!response.ok) {
+      throw new Error(result.message);
+    }
+
     setIsSuccess(true);
     await new Promise((resolve) => setTimeout(resolve, 2000));
     reset();
