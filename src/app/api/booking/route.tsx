@@ -1,39 +1,34 @@
-import { bookingSchema } from "@/components/BookingForm/validation";
 import { NextResponse } from "next/server";
 import { ZodError } from "zod";
-import { Resend } from "resend";
-
-const resend = new Resend(process.env.RESEND_API_KEY);
+import { bookingApiSchema } from "@/validation/bookingApiSchema";
+import { resend } from "@/lib/resend";
+import { BookingEmail } from "@/emails/BookingEmail";
 
 export async function POST(request: Request) {
-  try {
-    const body = await request.json();
-    const booking = bookingSchema.parse(body);
+  
+  const body = await request.json();
+  const result = bookingApiSchema.safeParse(body);
 
-    
-    const {error} = await resend.emails.send({
-        from: "onboarding@resend.dev",
-        to: "anna_sytenko91@icloud.com",
-        subject: "New booking request",
-        text: `
-      Name: ${booking.name}
-      
-      Email: ${booking.email}
-      
-      Phone: ${booking.phone}
-      
-      Lesson format: ${booking.lessonFormat}
-      
-      Vocal level: ${booking.vocalLevel}
-      
-      Date: ${booking.date.toLocaleDateString()}
-      
-      Time: ${booking.lessonTime}
-      
-      Message:
-      ${booking.message ?? "-"}
-      `,
-      });
+if (!result.success) {
+  return NextResponse.json(
+    {
+      success: false,
+      message: "Invalid booking data.",
+    },
+    { status: 400 }
+  );
+}
+
+const booking = result.data;
+const email = <BookingEmail booking={booking} />;
+  
+  try {
+    const { error } = await resend.emails.send({
+      from: "onboarding@resend.dev",
+      to: "anna_sytenko91@icloud.com",
+      subject: `🎤 New booking from ${booking.name}`,
+      react: email,
+    });
 
       if (error) {
         console.error(error);

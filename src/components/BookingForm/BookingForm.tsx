@@ -5,7 +5,7 @@ import FormSelect from "../FormSelect/FormSelect";
 import { Controller, useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 
-import { BookingFormInput, bookingSchema } from "./validation";
+import { BookingFormInput, bookingSchema } from "../../validation/bookingFormSchema";
 import { useEffect, useState } from "react";
 import DatePicker from "../DatePicker/DatePicker";
 import {

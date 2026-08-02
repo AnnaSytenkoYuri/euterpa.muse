@@ -2,7 +2,7 @@
 import Select from "react-select";
 import css from "./FormSelect.module.css";
 import type { ControllerRenderProps } from "react-hook-form";
-import { BookingFormInput } from "../BookingForm/validation";
+import { BookingFormInput } from "../../validation/bookingFormSchema";
 
 interface Option {
   value: string;

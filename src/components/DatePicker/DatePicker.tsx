@@ -4,7 +4,7 @@ import ReactDatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 
 import type { ControllerRenderProps } from "react-hook-form";
-import type { BookingFormInput } from "../BookingForm/validation";
+import type { BookingFormInput } from "../../validation/bookingFormSchema";
 import css from "./DatePicker.module.css"
 
 interface DatePickerProps {
