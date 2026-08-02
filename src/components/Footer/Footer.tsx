@@ -1,5 +1,6 @@
 import Link from "next/link";
 import css from "./Footer.module.css";
+import SocialLinks from "../SocialLinks/SocialLinks";
 
 export default function Footer() {
   return (
@@ -32,12 +33,7 @@ export default function Footer() {
                   </a>
                 </li>
               </ul>
-              <ul className={css.mobSocialList}>
-                <li className={css.socialItem}>In</li>
-                <li className={css.socialsItem}>Fc</li>
-                <li className={css.socialsItem}>Sp</li>
-                <li className={css.socialsItem}>Yb</li>
-              </ul>
+              <SocialLinks/>
               <p className={css.policyText}>Privacy policy</p>
               <p className={css.rightsText}>
                 © 2026 Euterpa.muse. All Rights Reserved.
@@ -54,12 +50,7 @@ export default function Footer() {
                   <p className={css.footerText}>
                     Your voice - your opportunities
                   </p>
-                  <ul className={css.deskSocialList}>
-                    <li className={css.socialItem}>In</li>
-                    <li className={css.socialsItem}>Fc</li>
-                    <li className={css.socialsItem}>Sp</li>
-                    <li className={css.socialsItem}>Yb</li>
-                  </ul>
+               <SocialLinks/>
                 </div>
 
                 <div className={css.contentDeskWraper}>
