@@ -5,9 +5,9 @@ import css from "./SocialLinks.module.css";
 
 export default function SocialLinks() {
     return (
-        <ul className="{css.socialLinksList">
+        <ul className={css.socialLinksList}>
         {socialLinks.map((link) => (
-            <li key={link.name} className="{css.socialLinksItem">
+            <li key={link.name} className={css.socialLinksItem}>
                 <Link
             href={link.href}
             target="_blank"

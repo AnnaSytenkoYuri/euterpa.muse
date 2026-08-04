@@ -1,0 +1,57 @@
+.heroSection {
+    position: relative;
+    height: 370px;
+    overflow: hidden;
+    margin-bottom: 41px;
+  }
+
+  /* .content {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 36px;
+  
+    z-index: 2;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  } */
+
+.title {
+  font-weight: 400;
+  font-size: 35px;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 10px;
+}
+.text {
+  font-weight: 500;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.bookBtn{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 15px;
+    fill: #fdfdfd;
+    width: 207px;
+    height: 45px;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #1b1d20;
+}
+
+
+.bookBtn:hover,
+.bookBtn:focus {
+  color: #fff;
+  background-color: #1b1d20;
+  transition: 0.3s ease;
+}
