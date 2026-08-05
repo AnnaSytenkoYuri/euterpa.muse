@@ -1,0 +1,59 @@
+.section{
+    padding-top: 80px;
+}
+
+.title{
+    font-weight: 600;
+    font-size: 32px;
+    color: #000;
+    text-align: center;
+    margin-bottom: 17px;
+}
+
+.text{
+    font-weight: 500;
+    font-size: 12px;
+    text-align: center;
+    color: #000;
+    margin: 0 auto 24px;
+    line-height: 1.8;
+    margin-bottom: 19px;
+}
+
+.bookBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    background-color: #1b1d20;
+    width: 207px;
+    min-height: 45px;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #fdfdfd;
+    margin: 0 auto;
+  }
+  
+  .bookBtn:hover,
+  .bookBtn:focus {
+    color: #1b1d20;
+    background-color: #bebebe;;
+    transition: 0.3s ease;
+  }
+  @media (min-width: 768px) {
+    .section {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+  }
+  
+  @media (min-width: 1440px) {
+    .section {
+        padding-top: 120px;
+        padding-bottom: 90px;
+    }
+    /* .bookBtn{
+        margin: 0;
+    } */
+  }

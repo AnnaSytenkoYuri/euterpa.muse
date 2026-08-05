@@ -1,0 +1,49 @@
+.gallerySection {
+  padding-top: 80px;
+}
+.title {
+  font-weight: 600;
+  font-size: 32px;
+  color: #000;
+  text-align: center;
+  margin-bottom: 17px;
+}
+.text {
+  font-weight: 500;
+  font-size: 12px;
+  text-align: center;
+  color: #000;
+  margin: 0 auto 24px;
+  line-height: 1.8;
+  margin-bottom: 19px;
+}
+.galleryList {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+.calleryItem {
+  flex: 0 0 420px;
+  scroll-snap-align: start;
+}
+.galleryImage {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+  display: block;
+  margin: 0 auto;
+}
+
+@media (min-width: 1440px) {
+  .galleryItem {
+    margin: 10px;
+  }
+  .title {
+    text-align: left;
+  }
+  .text {
+    text-align: left;
+  }
+}

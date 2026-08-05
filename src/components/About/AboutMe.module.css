@@ -1,57 +1,92 @@
 .heroSection {
-    position: relative;
-    height: 370px;
-    overflow: hidden;
-    margin-bottom: 41px;
-  }
-
-  /* .content {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 36px;
-  
-    z-index: 2;
-  
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  } */
+  padding-top: 80px;
+  padding-bottom: 77px;
+}
 
 .title {
   font-weight: 400;
-  font-size: 35px;
+  font-size: clamp(28px, 5vw, 82px);
   text-align: center;
-  color: #fff;
-  margin-bottom: 10px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 7px;
+}
+.subText {
+  font-weight: 500;
+  font-size: clamp(14px, 2vw, 24px);
+  text-align: center;
+  text-transform: capitalize;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 31px;
 }
 .text {
   font-weight: 500;
+  font-size: clamp(12px, 1.4vw, 16px);
+  text-align: center;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 150px;
+}
+
+.bookBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  fill: #fdfdfd;
+  width: 207px;
+  height: 45px;
+  font-weight: 600;
   font-size: 14px;
   text-transform: uppercase;
-  text-align: center;
-  color: rgba(255, 255, 255, 0.7);
+  color: #1b1d20;
+  margin: 0 auto;
 }
-
-.bookBtn{
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    border-radius: 15px;
-    fill: #fdfdfd;
-    width: 207px;
-    height: 45px;
-    font-weight: 600;
-    font-size: 14px;
-    text-transform: uppercase;
-    color: #1b1d20;
-}
-
 
 .bookBtn:hover,
 .bookBtn:focus {
   color: #fff;
   background-color: #1b1d20;
   transition: 0.3s ease;
+}
+
+/* ???? */
+
+@media (min-width: 768px) {
+  .heroSection {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  .content {
+    min-width: 700px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .heroSection {
+    padding-top: 120px;
+    padding-bottom: 90px;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .title {
+    margin-bottom: 10px;
+    text-align: left;
+  }
+
+  .subText {
+    text-align: left;
+    margin-bottom: 15px;
+  }
+
+  .text {
+    margin-bottom: 25px;
+    text-align: left;
+  }
+  .bookBtn {
+    margin: 0;
+  }
 }

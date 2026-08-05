@@ -1,7 +1,6 @@
 import AboutCTA from "@/components/About/AboutCTA";
 import AboutHero from "@/components/About/AboutHero";
 import Biography from "@/components/About/Biography";
-import Experience from "@/components/About/Experience";
 import Gallery from "@/components/About/Gallery";
 import Philosophy from "@/components/About/Philosophy";
 import Header from "@/components/Header/Header";
@@ -15,9 +14,8 @@ export default function AboutPage() {
         <AboutHero />
       </div>
       <Biography />
-      <Experience />
-      <Philosophy />
       <Gallery />
+      <Philosophy />
       <AboutCTA />
     </main>
   );

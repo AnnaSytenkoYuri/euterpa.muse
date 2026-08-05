@@ -173,7 +173,7 @@ export default function Header() {
                   </li>
                   <li className={css.navItem}>
                     <Link
-                      href="/projects"
+                      href="/#projects"
                       className={css.navLink}
                       onClick={toggleMenu}
                       prefetch={false}
@@ -183,7 +183,7 @@ export default function Header() {
                   </li>
                   <li className={css.navItem}>
                     <Link
-                      href="/vocal"
+                      href="/#vocal"
                       className={css.navLink}
                       onClick={toggleMenu}
                       prefetch={false}
@@ -193,7 +193,7 @@ export default function Header() {
                   </li>
                   <li className={css.navItem}>
                     <Link
-                      href="/events"
+                      href="/#events"
                       className={css.navLink}
                       onClick={toggleMenu}
                       prefetch={false}
@@ -203,7 +203,7 @@ export default function Header() {
                   </li>
                   <li className={css.navItem}>
                     <Link
-                      href="/contacts"
+                      href="/#contacts"
                       className={css.navLink}
                       onClick={toggleMenu}
                       prefetch={false}
