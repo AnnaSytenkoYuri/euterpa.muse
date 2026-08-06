@@ -1,3 +1,4 @@
+import { lessonFormatLabels, vocalLevelLabels } from "@/constants/formOptionsLabel";
 import { BookingApi } from "@/validation/bookingApiSchema";
 import {
   Body,
@@ -25,8 +26,8 @@ export function BookingEmail({ booking }: BookingEmailProps) {
             <Text>Name: {booking.name}</Text>
             <Text>Email: {booking.email}</Text>
             <Text>Phone: {booking.phone}</Text>
-            <Text>Lesson format: {booking.lessonFormat}</Text>
-            <Text>Vocal level: {booking.vocalLevel}</Text>
+            <Text>Lesson format: {lessonFormatLabels[booking.lessonFormat]}</Text>
+            <Text>Vocal level: {vocalLevelLabels[booking.vocalLevel]}</Text>
 
             <Text>
               Date:{" "}

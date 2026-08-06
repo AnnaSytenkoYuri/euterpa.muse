@@ -1,3 +1,4 @@
+import { lessonFormatValues, vocalLevelValues } from "@/constants/formOptionsLabel";
 import { z } from "zod";
 
 export const bookingApiSchema = z.object({
@@ -7,9 +8,9 @@ export const bookingApiSchema = z.object({
 
   phone: z.string().trim().min(8),
 
-  lessonFormat: z.string(),
+  lessonFormat: z.enum(lessonFormatValues),
 
-  vocalLevel: z.string(),
+  vocalLevel: z.enum(vocalLevelValues),
 
   lessonTime: z.string(),
 

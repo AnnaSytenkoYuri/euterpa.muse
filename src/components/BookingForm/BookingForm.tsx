@@ -5,7 +5,10 @@ import FormSelect from "../FormSelect/FormSelect";
 import { Controller, useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 
-import { BookingFormInput, bookingSchema } from "../../validation/bookingFormSchema";
+import {
+  BookingFormInput,
+  bookingSchema,
+} from "../../validation/bookingFormSchema";
 import { useEffect, useState } from "react";
 import DatePicker from "../DatePicker/DatePicker";
 import {
@@ -78,19 +81,6 @@ export default function BookingForm({ onClose }: BookingFormProps) {
           Fill out the form, and I will contact you to confirm.
         </p>
       </header>
-
-      {isSuccess && (
-        <div className={css.success}>
-          <p className={css.successTitle}>
-            ✓ Booking request sent successfully!
-          </p>
-          <p className={css.successText}>
-            Thank you for your booking. I&apos;ll contact you as soon as
-            possible to confirm your lesson.
-          </p>
-        </div>
-      )}
-
       <form className={css.form} onSubmit={handleSubmit(onSubmit)}>
         <div className={css.inputGroup}>
           {/* <label htmlFor="name"></label> */}
@@ -190,13 +180,27 @@ export default function BookingForm({ onClose }: BookingFormProps) {
           />
         </div>
 
+        {isSuccess && (
+          <div className={css.success}>
+            <p className={css.successTitle}>
+              ✓ Booking request sent successfully!
+            </p>
+            <p className={css.successText}>
+              Thank you for your booking. I&apos;ll contact you as soon as
+              possible to confirm your lesson.
+            </p>
+          </div>
+        )}
         <button className={css.bookBtn} disabled={isSubmitting}>
           {isSubmitting ? "Seding..." : "Book now"}
         </button>
       </form>
       <p className={css.policy}>
         By clicking &quot;Book now&quot; you agree to our{" "}
-        <a href="/privacy-policy">Privacy Policy</a>.
+        <a href="/privacy-policy">
+          <strong>Privacy Policy</strong>
+        </a>
+        .
       </p>
     </div>
   );

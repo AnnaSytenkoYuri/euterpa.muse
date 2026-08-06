@@ -4,6 +4,7 @@ import { useState } from "react";
 import css from "./HeroSection.module.css";
 import Modal from "../Modal/Modal";
 import BookingForm from "../BookingForm/BookingForm";
+import Link from "next/link";
 
 export default function HeroSection() {
   const [isOpen, setIsOpen] = useState(false);
@@ -49,7 +50,9 @@ export default function HeroSection() {
                     />
                   </svg>
                 </button>
-                <button className={css.heroBtnSec}>learn more</button>
+                <Link href="/about" className={css.heroBtnSec}>
+                  learn more
+                </Link>
               </div>
             </div>
           </div>
@@ -57,7 +60,7 @@ export default function HeroSection() {
       </section>
       {isOpen && (
         <Modal onClose={closeModal}>
-          <BookingForm onClose={closeModal}/>
+          <BookingForm onClose={closeModal} />
         </Modal>
       )}
     </>

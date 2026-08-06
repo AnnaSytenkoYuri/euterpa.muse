@@ -1,11 +1,11 @@
 export const lessonOptions = [
   {
     value: "online",
-    label: "Online lesson",
+    label: "Online",
   },
   {
     value: "offline",
-    label: "Offline lesson",
+    label: "Offline",
   },
 ];
 
@@ -23,6 +23,7 @@ export const levelOptions = [
     label: "Advanced",
   },
 ];
+
 
 export const lessonTimeOptions = [
   { value: "09:00", label: "09:00" },
