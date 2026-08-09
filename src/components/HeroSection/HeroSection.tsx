@@ -5,9 +5,11 @@ import css from "./HeroSection.module.css";
 import Modal from "../Modal/Modal";
 import BookingForm from "../BookingForm/BookingForm";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 
 export default function HeroSection() {
   const [isOpen, setIsOpen] = useState(false);
+  const t = useTranslations("Hero");
 
   const closeModal = () => setIsOpen(false);
 
@@ -18,23 +20,22 @@ export default function HeroSection() {
           <div className={css.heroContent}>
             <div>
               <h1 className={css.heroTitle}>
-                <span className={css.titleSpan}>VOICE</span>
+                <span className={css.titleSpan}>{t('title')}</span>
                 <br />
-                That Impresses
+                {t("titleAccent")}
               </h1>
               <h3 className={css.heroSubTitle}>
-                Singer. Artist. Vocal Teacher
+                {t("subtitle")}
               </h3>
               <p className={css.heroText}>
-                Helps you discover your voice and confidence. <br /> Online and
-                offline lessons for any level.
+                {t("description")}
               </p>
               <div className={css.heroButtons}>
                 <button
                   className={css.heroBtnFrst}
                   onClick={() => setIsOpen(true)}
                 >
-                  <span>book lesson</span>
+                  <span>{t("bookLesson")}</span>
                   <svg
                     width="12"
                     height="10"
@@ -51,7 +52,7 @@ export default function HeroSection() {
                   </svg>
                 </button>
                 <Link href="/about" className={css.heroBtnSec}>
-                  learn more
+                  {t("learnMore")}
                 </Link>
               </div>
             </div>

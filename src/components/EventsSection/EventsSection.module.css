@@ -117,14 +117,14 @@
 .ticketBtn:hover,
 .ticketBtn:focus {
   color: #fff;
-  background-color: #82776d;
+  background-color: #bebebe;;
   transition: 0.3s ease;
 }
 
 .checkBtn:hover,
 .checkBtn:focus {
   color: #fff;
-  background-color: #82776d;
+  background-color: #bebebe;;
   transition: 0.3s ease;
 }
 

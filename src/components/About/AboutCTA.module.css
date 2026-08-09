@@ -38,7 +38,7 @@
   .bookBtn:hover,
   .bookBtn:focus {
     color: #1b1d20;
-    background-color: #bebebe;;
+    background-color: #bebebe;
     transition: 0.3s ease;
   }
   @media (min-width: 768px) {
