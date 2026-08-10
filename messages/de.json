@@ -3,8 +3,117 @@
     "title": "STIMME",
     "titleAccent": "Die beeindruckt",
     "subtitle": "Sängerin. Künstlerin. Gesangslehrerin",
-    "description": "Hilft dir, deine Stimme zu entdecken und Selbstvertrauen zu entwickeln. Online- und Präsenzunterricht für jedes Niveau",
+    "description": "Hilft dir, deine Stimme zu entdecken und Selbstvertrauen zu entwickeln.",
+    "descriptionAccent": "Online- und Präsenzunterricht für jedes Niveau",
     "learnMore": "Mehr erfahren",
+    "bookLesson": "Unterricht buchen"
+  },
+
+  "Header": {
+    "home": "Startseite",
+    "about": "Über mich",
+    "projects": "Projekte",
+    "vocal": "Gesang",
+    "events": "Events",
+    "contacts": "Kontakt",
+    "bookLesson": "Unterricht buchen",
+    "menu": "Menü"
+  },
+
+  "Lessons": {
+    "upTitle": "Gesang",
+    "title": "Unterricht für deine Entwicklung",
+    "bookNow": "Jetzt buchen",
+    "online": {
+      "title": "Online-Unterricht",
+      "description": "Bequemer Unterricht von überall auf der Welt zu einer passenden Zeit",
+      "item1": "Individuelles Programm",
+      "item2": "Persönliche und technische Entwicklung",
+      "item3": "Unterstützung und Feedback"
+    },
+    "offline": {
+      "title": "Präsenzunterricht",
+      "description": "Live-Unterricht in einer angenehmen Atmosphäre. Persönliche Betreuung.",
+      "item1": "Professionelle Ausstattung",
+      "item2": "Praxis und Bühnenerfahrung",
+      "item3": "Vorbereitung auf Auftritte"
+    }
+  },
+  "Projects": {
+    "upTitle": "Projekte",
+    "title": "Meine Projekte",
+    "category": "Alternative Pop | Indie",
+    "learnMore": "Mehr erfahren"
+  },
+  "Events": {
+    "upTitle": "Konzerte",
+    "title": "Kommende Veranstaltungen",
+    "checkAll": "Alle anzeigen",
+    "months": "Sep",
+    "startAt": "Beginn um",
+    "tickets": "Tickets"
+  },
+
+  "Footer": {
+    "tagline": "Deine Stimme - deine Möglichkeiten",
+    "menu": "Menü",
+    "about": "Über mich",
+    "projects": "Projekte",
+    "vocal": "Gesang",
+    "concerts": "Konzerte",
+    "services": "Leistungen",
+    "onlineLessons": "Online-Unterricht",
+    "offlineLessons": "Präsenzunterricht",
+    "performancePreparation": "Vorbereitung auf Auftritte",
+    "voiceDevelopment": "Stimmentwicklung",
+    "contacts": "Kontakt",
+    "privacyPolicy": "Datenschutz",
+    "rights": "© 2026 Euterpa.muse. Alle Rechte vorbehalten."
+  },
+  "TatyanaAbout": {
+    "title": "Acoustic Sounds",
+    "paragraph1": "TetJANa Acoustic Sounds ist ein Akustik-Duo, das mit ausdrucksstarkem Gesang und meisterhaftem Gitarrenspiel intime musikalische Erlebnisse schafft.",
+    "paragraph2": "Das Duo vereint <tetiana>Tetiana Makarova</tetiana> (Gesang & Percussion), ursprünglich aus der Ukraine, und <jan>Jan Gnyp</jan> (Gitarre) aus Oberschlesien, Deutschland.",
+    "paragraph3": "Ihr Repertoire verbindet internationale Musik mit eigenen Kompositionen und bewegt sich mühelos zwischen Folk, Jazz, emotionalen Balladen und lebendigen akustischen Arrangements.",
+    "paragraph4": "Inspiriert vom Reichtum slawischer Musiktraditionen verbindet TetJANa Acoustic Sounds gefühlvolle Melancholie mit Wärme, Hoffnung und Lebensfreude.",
+    "paragraph5": "Ob auf der Konzertbühne oder bei besonderen Momenten im Leben – das Duo schafft eine warme und persönliche Atmosphäre, die dem Publikum noch lange nach dem letzten Ton in Erinnerung bleibt."
+  },
+  "TatyanaHero": {
+    "subtitleLine1": "AUTHENTISCHE AKUSTISCHE MUSIK",
+    "subtitleLine2": "FÜR UNVERGESSLICHE MOMENTE"
+  },
+  "TatyanaPerfectFor": {
+    "title": "Perfekt für",
+    "concerts": "Konzerte & kulturelle Veranstaltungen",
+    "weddings": "Hochzeiten",
+    "churchServices": "Kirchliche Veranstaltungen",
+    "privateEvents": "Private Veranstaltungen",
+    "requestAvailability": "Jetzt buchen",
+    "description": "Jeder Auftritt ist einzigartig, persönlich und entsteht aus echter Leidenschaft für Live-Musik."
+  },
+  "AboutHero": {
+    "title": "Über mich",
+    "subtitle": "Gesangscoach & Performerin",
+    "descriptionLine1": "Entdecke deine authentische Stimme",
+    "descriptionLine2": "durch Technik, Emotion und Selbstvertrauen.",
+    "bookLesson": "Unterricht buchen"
+  },
+  "Biography": {
+    "upTitle": "Meine Geschichte",
+    "title": "Mein Weg",
+    "paragraph1": "Musik war für mich schon immer mehr als nur ein Beruf – sie ist eine Möglichkeit, Menschen zu verbinden, Emotionen auszudrücken und andere zu inspirieren. Als Gesangscoach und Performerin glaube ich, dass jede Stimme einzigartig ist und es verdient, selbstbewusst gehört zu werden. Mein Unterricht hilft meinen Schülerinnen und Schülern dabei, eine gesunde Gesangstechnik zu entwickeln, ihre Musikalität zu stärken und das Selbstvertrauen aufzubauen, um auf der Bühne aufzutreten oder einfach das Singen im Alltag zu genießen. Egal, ob du gerade erst anfängst oder bereits Erfahrung hast – ich schaffe eine unterstützende Atmosphäre, in der Lernen inspirierend ist und Freude macht.",
+    "paragraph2": "Im Laufe der Jahre habe ich mit Menschen unterschiedlichen Alters und verschiedener Erfahrungsstufen gearbeitet und ihnen geholfen, ihren eigenen authentischen Klang zu entdecken und persönliche Ziele zu erreichen. Mein Unterricht verbindet technisches Training, Kreativität und individuelle Betreuung, sodass sich jeder in seinem eigenen Tempo entwickeln kann. Für mich bedeutet Unterrichten nicht nur, gesangliche Fähigkeiten zu verbessern – es geht auch darum, Selbstausdruck zu fördern, Selbstvertrauen aufzubauen und die Freude an der Musik zu teilen. Ich freue mich darauf, dich auf deinem musikalischen Weg zu begleiten."
+  },
+  "Philosophy": {
+    "upTitle": "Philosophie",
+    "title": "Meine Philosophie",
+    "paragraph1": "Ich glaube, dass jede Sängerin und jeder Sänger eine einzigartige Stimme und eine eigene Geschichte hat. Mein Ansatz im Vocal Coaching besteht darin, Menschen dabei zu unterstützen, ihre authentische Stimme zu entdecken und gleichzeitig die technischen Fähigkeiten zu entwickeln, die sie benötigen, um selbstbewusst und ausdrucksstark zu singen.",
+    "paragraph2": "Durch individuelles Coaching helfe ich Sängerinnen und Sängern, ihren Stimmumfang zu entdecken, ihre Atemtechnik zu verbessern und ihren eigenen Stil sowie ihre persönliche Interpretation von Songs zu entwickeln. Dabei lege ich auch großen Wert auf Bühnenpräsenz und Performance-Techniken, damit sie eine echte Verbindung zum Publikum aufbauen und unvergessliche Auftritte gestalten können.",
+    "paragraph3": "Egal, ob du gerade erst mit dem Singen beginnst oder bereits Bühnenerfahrung hast – mein Ziel ist es, dir dabei zu helfen, dein volles Potenzial als Sängerin oder Sänger zu entfalten und dich durch Musik auszudrücken."
+  },
+  "AboutCTA": {
+    "title": "Bereit, deine Stimme zu entdecken?",
+    "text": "Buche deine erste Gesangsstunde",
     "bookLesson": "Unterricht buchen"
   }
 }

@@ -4,9 +4,11 @@ import css from "./LessonsSection.module.css";
 import { useState } from "react";
 import Modal from "../Modal/Modal";
 import BookingForm from "../BookingForm/BookingForm";
+import { useTranslations } from "next-intl";
 
 export default function LessonsSection() {
   const [isOpen, setIsOpen] = useState(false);
+  const t = useTranslations("Lessons");
 
   const closeModal = () => setIsOpen(false);
   return (
@@ -15,8 +17,8 @@ export default function LessonsSection() {
         <div className="container">
           <div className={css.lesContentContainer}>
             <div>
-              <p className={css.lesTextTitle}>vocal</p>
-              <h2 className={css.lesTitle}>Lessons for your development </h2>
+              <p className={css.lesTextTitle}>{t("upTitle")}</p>
+              <h2 className={css.lesTitle}>{t("title")}</h2>
               <Image
                 src="/images/lessons-image.png"
                 alt="Lessons"
@@ -69,12 +71,11 @@ export default function LessonsSection() {
                       strokeLinecap="round"
                     />
                   </svg>
-                  <h3 className={css.lesSubTitle}>ONLINE LESSONS</h3>
+                  <h3 className={css.lesSubTitle}>{t("online.title")}</h3>
                 </div>
 
                 <p className={css.lesText}>
-                  Comfortable lessons from anywhere in the world at a convenient
-                  time
+                {t("online.description")}
                 </p>
                 <ul className={css.lesList}>
                   <li className={css.lesItem}>
@@ -91,7 +92,7 @@ export default function LessonsSection() {
                         strokeLinecap="round"
                       />
                     </svg>
-                    <span>Individual program</span>
+                    <span>{t("online.item1")}</span>
                   </li>
                   <li className={css.lesItem}>
                     <svg
@@ -107,7 +108,7 @@ export default function LessonsSection() {
                         strokeLinecap="round"
                       />
                     </svg>
-                    <span>Personal and technical development</span>
+                    <span>{t("online.item2")}</span>
                   </li>
                   <li className={css.lesItem}>
                     <svg
@@ -123,11 +124,11 @@ export default function LessonsSection() {
                         strokeLinecap="round"
                       />
                     </svg>
-                    <span>Support and feedback</span>
+                    <span>{t("online.item3")}</span>
                   </li>
                 </ul>
                 <button className={css.lesBtn} onClick={() => setIsOpen(true)}>
-                  book now
+                {t("bookNow")}
                 </button>
               </div>
               <div className={css.lesItemContainer}>
@@ -152,11 +153,11 @@ export default function LessonsSection() {
                       strokeWidth="2"
                     />
                   </svg>
-                  <h3 className={css.lesSubTitle}>OFFLINE LESSONS</h3>
+                  <h3 className={css.lesSubTitle}>{t("offline.title")}</h3>
                 </div>
 
                 <p className={css.lesText}>
-                  Live lessons in a comfortable atmosphere. Personal guidance.
+                {t("offline.description")}
                 </p>
                 <ul className={css.lesList}>
                   <li className={css.lesItem}>
@@ -173,7 +174,7 @@ export default function LessonsSection() {
                         strokeLinecap="round"
                       />
                     </svg>
-                    <span>Professional equipment</span>
+                    <span>{t("offline.item1")}</span>
                   </li>
                   <li className={css.lesItem}>
                     <svg
@@ -189,7 +190,7 @@ export default function LessonsSection() {
                         strokeLinecap="round"
                       />
                     </svg>
-                    <span>Practice and stage experience</span>
+                    <span>{t("offline.item2")}</span>
                   </li>
                   <li className={css.lesItem}>
                     <svg
@@ -205,11 +206,11 @@ export default function LessonsSection() {
                         strokeLinecap="round"
                       />
                     </svg>
-                    <span>Preparation for perfomances</span>
+                    <span>{t("offline.item3")}</span>
                   </li>
                 </ul>
                 <button className={css.lesBtn} onClick={() => setIsOpen(true)}>
-                  book now
+                {t("bookNow")}
                 </button>
               </div>
             </div>

@@ -1,11 +1,14 @@
+import { useTranslations } from "next-intl";
 import css from "./PerfectForSection.module.css";
 
 export default function PerfectForSection() {
+
+  const t = useTranslations("TatyanaPerfectFor");
   return (
     <div className={css.card}>
       <div className={css.header}>
         <span className={css.icon}>✓</span>
-        <h2 className={css.title}>Perfect For</h2>
+        <h2 className={css.title}>{t("title")}</h2>
       </div>
 
       <ul className={css.list}>
@@ -22,7 +25,7 @@ export default function PerfectForSection() {
               stroke="black"
             />
           </svg>
-          <span>Concerts & Cultural Events</span>
+          <span>{t("concerts")}</span>
         </li>
 
         <li className={css.item}>
@@ -42,7 +45,7 @@ export default function PerfectForSection() {
               stroke="black"
             />
           </svg>
-          <span>Weddings</span>
+          <span>{t("weddings")}</span>
         </li>
 
         <li className={css.item}>
@@ -58,7 +61,7 @@ export default function PerfectForSection() {
               fill="black"
             />
           </svg>
-          <span>Church Services</span>
+          <span>{t("churchServices")}</span>
         </li>
 
         <li className={css.item}>
@@ -113,15 +116,14 @@ export default function PerfectForSection() {
               </clipPath>
             </defs>
           </svg>
-          <span>Private Events</span>
+          <span>{t("privateEvents")}</span>
         </li>
       </ul>
 
-      <button className={css.bookBtn}>Request Availability</button>
+      <button className={css.bookBtn}>{t("requestAvailability")}</button>
 
       <p className={css.text}>
-        Every performance is unique, personal, and created with genuine passion
-        for live music.
+      {t("description")}
       </p>
     </div>
   );

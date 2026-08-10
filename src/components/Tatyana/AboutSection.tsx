@@ -1,43 +1,38 @@
+import { useTranslations } from "next-intl";
 import css from "./AboutSection.module.css";
 
 export default function AboutSection() {
+  const t = useTranslations("TatyanaAbout");
   return (
     <section className={css.about}>
       <div className="container">
-        <h2 className={css.title}>Acoustic Sounds</h2>
+        <h2 className={css.title}>{t("title")}</h2>
 
         <div className={css.divider}>
           <span></span>
         </div>
 
         <p className={css.text}>
-          TetJANa Acoustic Sounds is an acoustic duo that creates intimate
-          musical experiences through expressive vocals and masterful guitar
-          performance.
+        {t("paragraph1")}
         </p>
 
         <p className={css.text}>
-          The duo brings together <strong>Tetiana Makarova</strong> (vocals &
-          percussion), originally from Ukraine, and <strong>Jan Gnyp</strong>{" "}
-          (guitar), from Upper Silesia, Germany.
+        {t.rich("paragraph2", {
+            tetiana: (chunks) => <strong>{chunks}</strong>,
+            jan: (chunks) => <strong>{chunks}</strong>,
+          })}
         </p>
 
         <p className={css.text}>
-          Their repertoire blends international music with original
-          compositions, moving effortlessly between folk, jazz, emotional
-          ballads, and vibrant acoustic arrangements.
+        {t("paragraph3")}
         </p>
 
         <p className={css.text}>
-          Inspired by the richness of Slavic musical traditions, TetJANa
-          Acoustic Sounds combines heartfelt melancholy with warmth, hope, and
-          joy.
+        {t("paragraph4")}
         </p>
 
         <p className={css.text}>
-          Whether performing on a concert stage or during life&apos;s most
-          meaningful celebrations, the duo creates a warm and personal
-          atmosphere that stays with audiences long after the final note.
+        {t("paragraph5")}
         </p>
         <div className={css.divider}>
           <span></span>

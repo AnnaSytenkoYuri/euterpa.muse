@@ -1,13 +1,18 @@
 import Image from "next/image";
 import css from "./ProjectsSection.module.css";
-import Link from "next/link";
+// import Link from "next/link";
+import { Link } from "../../../i18n/navigation";
+import { useTranslations } from "next-intl";
+
 export default function ProjectsSection() {
+  const t = useTranslations("Projects");
+
   return (
     <section className={css.projectsSection} id="projects">
       <div className="container">
         <div className={css.projectsSectionContent}>
-          <p className={css.projectUpTitle}>projects</p>
-          <h2 className={css.projectTitle}>My projects</h2>
+          <p className={css.projectUpTitle}>{t("upTitle")}</p>
+          <h2 className={css.projectTitle}>{t("title")}</h2>
           <div className={css.projectsCardsContainer}>
             <div className={css.projectCard}>
               <Image
@@ -19,13 +24,13 @@ export default function ProjectsSection() {
               />
               <div className={css.overlay}>
                 <h3 className={css.cardTitle}>BAND AT WORK</h3>
-                <p className={css.cardCategory}>Alternative Pop | Indie</p>
+                <p className={css.cardCategory}>{t("category")}</p>
                 <a 
                 href="https://www.facebook.com/share/1GN3TKNs8Z/?mibextid=wwXIfr"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={css.learnBtn}>
-                  <span>Learn More</span>
+                  <span>{t("learnMore")}</span>
                   <svg
                     width="12"
                     height="10"
@@ -53,10 +58,10 @@ export default function ProjectsSection() {
               />
               <div className={css.overlay}>
                 <h3 className={css.cardTitle}>TatYANa</h3>
-                <p className={css.cardCategory}>Alternative Pop | Indie</p>
+                <p className={css.cardCategory}>{t("category")}</p>
                
                   <Link href="/projects/tatyana" className={css.learnBtn}>
-                  <span>Learn More</span>
+                  <span>{t("learnMore")}</span>
                  
                   <svg
                     width="12"
@@ -85,13 +90,13 @@ export default function ProjectsSection() {
               />
               <div className={css.overlay}>
                 <h3 className={css.cardTitle}>Hardy</h3>
-                <p className={css.cardCategory}>Alternative Pop | Indie</p>
+                <p className={css.cardCategory}>{t("category")}</p>
                 <a 
                 href="https://www.instagram.com/hardy_orchestra_choir?igsh=c2QyZTUzMDI2NWFwç"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={css.learnBtn}>
-                  <span>Learn More</span>
+                  <span>{t("learnMore")}</span>
                   <svg
                     width="12"
                     height="10"

@@ -1,13 +1,17 @@
 "use client";
-import Link from "next/link";
+import { Link } from "../../../i18n/navigation";
 import css from "./Header.module.css";
 import { useEffect, useState } from "react";
 import Modal from "../Modal/Modal";
 import BookingForm from "../BookingForm/BookingForm";
+import LanguageSwitcher from "../LanguageSwitcher/LanguageSwitcher";
+import { useTranslations } from "next-intl";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const t = useTranslations("Header");
 
   const closeModal = () => setIsModalOpen(false);
 
@@ -42,12 +46,12 @@ export default function Header() {
               <ul className={css.navList}>
                 <li className={css.navItem}>
                   <Link href="/" className={css.navLink} prefetch={false}>
-                    home
+                  {t("home")}
                   </Link>
                 </li>
                 <li className={css.navItem}>
                   <Link href="/about" className={css.navLink} prefetch={false}>
-                    About Me
+                  {t("about")}
                   </Link>
                 </li>
                 <li className={css.navItem}>
@@ -56,17 +60,17 @@ export default function Header() {
                     className={css.navLink}
                     prefetch={false}
                   >
-                    Projects
+                   {t("projects")}
                   </Link>
                 </li>
                 <li className={css.navItem}>
                   <Link href="/#vocal" className={css.navLink} prefetch={false}>
-                    Vocal
+                   {t("vocal")}
                   </Link>
                 </li>
                 <li className={css.navItem}>
                   <Link href="/#events" className={css.navLink} prefetch={false}>
-                    Events
+                  {t("events")}
                   </Link>
                 </li>
                 <li className={css.navItem}>
@@ -75,16 +79,14 @@ export default function Header() {
                     className={css.navLink}
                     prefetch={false}
                   >
-                    Contacts
+                    {t("contacts")}
                   </Link>
                 </li>
               </ul>
             </nav>
-            <button className={css.bookBtn} onClick={() => setIsModalOpen(true)}>book lesson</button>
+            <button className={css.bookBtn} onClick={() => setIsModalOpen(true)}>{t("bookLesson")}</button>
             <div className={css.languages}>
-              <span>EN</span>
-              <span>|</span>
-              <span>DE</span>
+            <LanguageSwitcher />
             </div>
           </div>
 
@@ -146,7 +148,7 @@ export default function Header() {
               </button>
 
               <div className={css.menuHeader}>
-                <h2 className={css.menuTitle}>Menu</h2>
+                <h2 className={css.menuTitle}>{t("menu")}</h2>
               </div>
 
               <nav>
@@ -158,7 +160,7 @@ export default function Header() {
                       onClick={toggleMenu}
                       prefetch={false}
                     >
-                      home
+                      {t("home")}
                     </Link>
                   </li>
                   <li className={css.navItem}>
@@ -168,7 +170,7 @@ export default function Header() {
                       onClick={toggleMenu}
                       prefetch={false}
                     >
-                      About Me
+                      {t("about")}
                     </Link>
                   </li>
                   <li className={css.navItem}>
@@ -178,7 +180,7 @@ export default function Header() {
                       onClick={toggleMenu}
                       prefetch={false}
                     >
-                      Projects
+                      {t("projects")}
                     </Link>
                   </li>
                   <li className={css.navItem}>
@@ -188,7 +190,7 @@ export default function Header() {
                       onClick={toggleMenu}
                       prefetch={false}
                     >
-                      Vocal
+                      {t("vocal")}
                     </Link>
                   </li>
                   <li className={css.navItem}>
@@ -198,7 +200,7 @@ export default function Header() {
                       onClick={toggleMenu}
                       prefetch={false}
                     >
-                      Events
+                      {t("events")}
                     </Link>
                   </li>
                   <li className={css.navItem}>
@@ -208,16 +210,14 @@ export default function Header() {
                       onClick={toggleMenu}
                       prefetch={false}
                     >
-                      Contacts
+                      {t("contacts")}
                     </Link>
                   </li>
                 </ul>
               </nav>
-              <button className={css.bookBtn} onClick={() => setIsModalOpen(true)}>book lesson</button>
+              <button className={css.bookBtn} onClick={() => {setIsModalOpen(true); setIsOpen(false)}}>{t("bookLesson")}</button>
               <div className={css.languages}>
-                <span>EN</span>
-                <span>|</span>
-                <span>DE</span>
+              <LanguageSwitcher />
               </div>
             </div>
           )}

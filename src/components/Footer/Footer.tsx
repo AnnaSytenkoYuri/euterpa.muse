@@ -1,8 +1,12 @@
-import Link from "next/link";
+import { Link } from "../../../i18n/navigation";
 import css from "./Footer.module.css";
 import SocialLinks from "../SocialLinks/SocialLinks";
+import { useTranslations } from "next-intl";
 
 export default function Footer() {
+
+  const t = useTranslations("Footer");
+
   return (
     <footer className={css.footer} id="contacts">
       <div className={css.footerBackground}>
@@ -13,9 +17,9 @@ export default function Footer() {
               <Link href="/" className={css.logo}>
                 <p className={css.logoText}>euterpa.muse</p>
               </Link>
-              <p className={css.footerText}>Your voice - your opportunities</p>
+              <p className={css.footerText}>{t("tagline")}</p>
 
-              <h3 className={css.mobContsctsTitle}>contacts</h3>
+              <h3 className={css.mobContsctsTitle}>{t("contacts")}</h3>
               <ul className={css.mobContactsList}>
                 <li className={css.contactsItem}>
                   <a href="mailto:email@email.com">email@email.com</a>
@@ -34,9 +38,9 @@ export default function Footer() {
                 </li>
               </ul>
               <SocialLinks/>
-              <p className={css.policyText}>Privacy policy</p>
+              <p className={css.policyText}>{t("privacyPolicy")}</p>
               <p className={css.rightsText}>
-                © 2026 Euterpa.muse. All Rights Reserved.
+              {t("rights")}
               </p>
             </div>
 
@@ -48,52 +52,52 @@ export default function Footer() {
                     <p className={css.logoText}>euterpa.muse</p>
                   </Link>
                   <p className={css.footerText}>
-                    Your voice - your opportunities
+                  {t("tagline")}
                   </p>
                <SocialLinks/>
                 </div>
 
                 <div className={css.contentDeskWraper}>
                   <div>
-                    <h3 className={css.deskContsctsTitle}>menu</h3>
+                    <h3 className={css.deskContsctsTitle}> {t("menu")}</h3>
                     <ul className={css.menuList}>
                       <li className={css.listItem}>
                         <Link href="/about" prefetch={false}>
-                          About
+                        {t("about")}
                         </Link>
                       </li>
                       <li className={css.listItem}>
-                        <Link href="/projects">Projects</Link>
+                        <Link href="/#projects">{t("projects")}</Link>
                       </li>
                       <li className={css.listItem}>
-                        <Link href="/vocal">Vocal</Link>
+                        <Link href="/#vocal">{t("vocal")}</Link>
                       </li>
                       <li className={css.listItem}>
-                        <Link href="/concerts">Concerts</Link>
+                        <Link href="/#events">{t("concerts")}</Link>
                       </li>
                     </ul>
                   </div>
 
                   <div>
-                    <h3 className={css.deskContsctsTitle}>services</h3>
+                    <h3 className={css.deskContsctsTitle}>{t("services")}</h3>
                     <ul className={css.menuList}>
                       <li className={css.listItem}>
-                        <Link href="/">Online lessons</Link>
+                        <Link href="/#vocal">{t("onlineLessons")}</Link>
                       </li>
                       <li className={css.listItem}>
-                        <Link href="/">Offline lessons</Link>
+                        <Link href="/#vocal">{t("offlineLessons")}</Link>
                       </li>
                       <li className={css.listItem}>
-                        <Link href="/">Preparation for performances</Link>
+                        <Link href="/#vocal">{t("performancePreparation")}</Link>
                       </li>
                       <li className={css.listItem}>
-                        <Link href="/">Voice development</Link>
+                        <Link href="/#vocal">{t("voiceDevelopment")}</Link>
                       </li>
                     </ul>
                   </div>
 
                   <div>
-                    <h3 className={css.deskContsctsTitle}>contacts</h3>
+                    <h3 className={css.deskContsctsTitle}>{t("contacts")}</h3>
                     <ul className={css.menuList}>
                       <li className={css.contactsItem}>
                         <a href="mailto:email@email.com">email@email.com</a>
@@ -116,9 +120,9 @@ export default function Footer() {
               </div>
               <div className={css.footerBottom}>
                 <p className={css.rightsText}>
-                  © 2026 Euterpa.muse. All Rights Reserved.
+                {t("rights")}
                 </p>
-                <p className={css.policyText}>Privacy policy</p>
+                <p className={css.policyText}>{t("privacyPolicy")}</p>
               </div>
             </div>
           </div>

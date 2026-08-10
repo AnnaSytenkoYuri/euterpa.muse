@@ -1,10 +1,120 @@
 {
-    "Hero": {
-      "title": "VOICE",
-      "titleAccent": "That Impresses",
-      "subtitle": "Singer. Artist. Vocal Teacher",
-      "description": " Helps you discover your voice and confidence. Online and offline lessons for any level",
-      "learnMore": "Learn more",
-      "bookLesson": "Book a lesson"
+  "Hero": {
+    "title": "VOICE",
+    "titleAccent": "That Impresses",
+    "subtitle": "Singer. Artist. Vocal Teacher",
+    "description": " Helps you discover your voice and confidence.",
+    "descriptionAccent": "Online and offline lessons for any level",
+    "learnMore": "Learn more",
+    "bookLesson": "Book a lesson"
+  },
+
+  "Header": {
+    "home": "Home",
+    "about": "About Me",
+    "projects": "Projects",
+    "vocal": "Vocal",
+    "events": "Events",
+    "contacts": "Contacts",
+    "bookLesson": "Book lesson",
+    "menu": "Menu"
+  },
+
+  "Lessons": {
+    "upTitle": "Vocal",
+    "title": "Lessons for your development",
+    "bookNow": "Book now",
+    "online": {
+      "title": "Online lessons",
+      "description": "Comfortable lessons from anywhere in the world at a convenient time",
+      "item1": "Individual program",
+      "item2": "Personal and technical development",
+      "item3": "Support and feedback"
+    },
+    "offline": {
+      "title": "Offline lessons",
+      "description": "Live lessons in a comfortable atmosphere. Personal guidance.",
+      "item1": "Professional equipment",
+      "item2": "Practice and stage experience",
+      "item3": "Preparation for performances"
     }
+  },
+  "Projects": {
+    "upTitle": "Projects",
+    "title": "My projects",
+    "category": "Alternative Pop | Indie",
+    "learnMore": "Learn More"
+  },
+  "Events": {
+    "upTitle": "Concerts",
+    "title": "Upcoming events",
+    "checkAll": "Check all",
+    "months": "Sep",
+    "startAt": "Start at",
+    "tickets": "Tickets"
+  },
+
+  "Footer": {
+    "tagline": "Your voice - your opportunities",
+    "menu": "Menu",
+    "about": "About",
+    "projects": "Projects",
+    "vocal": "Vocal",
+    "concerts": "Concerts",
+    "services": "Services",
+    "onlineLessons": "Online lessons",
+    "offlineLessons": "Offline lessons",
+    "performancePreparation": "Preparation for performances",
+    "voiceDevelopment": "Voice development",
+    "contacts": "Contacts",
+    "privacyPolicy": "Privacy policy",
+    "rights": "© 2026 Euterpa.muse. All Rights Reserved."
+  },
+  "TatyanaAbout": {
+    "title": "Acoustic Sounds",
+    "paragraph1": "TetJANa Acoustic Sounds is an acoustic duo that creates intimate musical experiences through expressive vocals and masterful guitar performance.",
+    "paragraph2": "The duo brings together <tetiana>Tetiana Makarova</tetiana> (vocals & percussion), originally from Ukraine, and <jan>Jan Gnyp</jan> (guitar), from Upper Silesia, Germany.",
+    "paragraph3": "Their repertoire blends international music with original compositions, moving effortlessly between folk, jazz, emotional ballads, and vibrant acoustic arrangements.",
+    "paragraph4": "Inspired by the richness of Slavic musical traditions, TetJANa Acoustic Sounds combines heartfelt melancholy with warmth, hope, and joy.",
+    "paragraph5": "Whether performing on a concert stage or during life’s most meaningful celebrations, the duo creates a warm and personal atmosphere that stays with audiences long after the final note."
+  },
+  "TatyanaHero": {
+    "subtitleLine1": "AUTHENTIC ACOUSTIC MUSIC",
+    "subtitleLine2": "FOR UNFORGETTABLE MOMENTS"
+  },
+  "TatyanaPerfectFor": {
+    "title": "Perfect For",
+    "concerts": "Concerts & Cultural Events",
+    "weddings": "Weddings",
+    "churchServices": "Church Services",
+    "privateEvents": "Private Events",
+    "requestAvailability": "Book now",
+    "description": "Every performance is unique, personal, and created with genuine passion for live music."
+  },
+
+  "AboutHero": {
+    "title": "About Me",
+    "subtitle": "Vocal coach & performer",
+    "descriptionLine1": "Discover your authentic voice",
+    "descriptionLine2": "through technique, emotion and confidence.",
+    "bookLesson": "Book a lesson"
+  },
+  "Biography": {
+    "upTitle": "Story",
+    "title": "My Story",
+    "paragraph1": "Music has always been more than a profession to me—it is a way to connect, express emotions, and inspire others. As a vocal coach and performer, I believe that every voice is unique and deserves to be heard with confidence. My lessons are designed to help students develop healthy vocal technique, strengthen their musicality, and build the confidence to perform on stage or simply enjoy singing in everyday life. Whether you are a complete beginner or an experienced singer, I create a supportive environment where learning feels inspiring and enjoyable.",
+    "paragraph2": "Over the years, I have worked with students of different ages and skill levels, helping them discover their authentic sound and achieve their personal goals. My teaching approach combines technical training, creativity, and individual attention, allowing each student to progress at their own pace. For me, teaching is not only about improving vocal skills—it is about encouraging self-expression, building confidence, and sharing the joy of music. I look forward to being part of your musical journey."
+  },
+  "Philosophy": {
+    "upTitle": "Story",
+    "title": "My Philosophy",
+    "paragraph1": "I believe that every singer has a unique voice and story to tell. My approach to vocal coaching is centered around helping singers find their authentic voice, while also developing the technical skills necessary to perform with confidence and emotion.",
+    "paragraph2": "Through personalized coaching, I help singers explore their vocal range, improve their breath control, and develop their own style and interpretation of songs. I also emphasize the importance of stage presence and performance techniques, so that singers can connect with their audience and deliver a memorable performance.",
+    "paragraph3": "Whether you're a beginner or an experienced performer, my goal is to help you unlock your full potential as a singer and express yourself through music."
+  },
+  "AboutCTA": {
+    "title": "Ready to discover your voice?",
+    "text": "Book your first lesson",
+    "bookLesson": "Book lesson"
   }
+}

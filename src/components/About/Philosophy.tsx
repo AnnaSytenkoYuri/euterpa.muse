@@ -1,33 +1,27 @@
 import Image from "next/image";
 import css from "./Philosophy.module.css";
+import { useTranslations } from "next-intl";
 
 export default function Philosophy() {
+
+  const t = useTranslations("Philosophy");
   return (
     <section className={css.section}>
       <div className="container">
         <div className={css.contentContainer}>
           <div className={css.phylosophyCard}>
-            <h3 className={css.upTitle}>story</h3>
-            <h1 className={css.title}>My Philosophy</h1>
+            <h3 className={css.upTitle}>{t("upTitle")}</h3>
+            <h1 className={css.title}>{t("title")}</h1>
             <p className={css.text}>
-              I believe that every singer has a unique voice and story to tell.
-              My approach to vocal coaching is centered around helping singers
-              find their authentic voice, while also developing the technical
-              skills necessary to perform with confidence and emotion.
+            {t("paragraph1")}
             </p>
 
             <p className={css.text}>
-              Through personalized coaching, I help singers explore their vocal
-              range, improve their breath control, and develop their own style
-              and interpretation of songs. I also emphasize the importance of
-              stage presence and performance techniques, so that singers can
-              connect with their audience and deliver a memorable performance.
+            {t("paragraph2")}
             </p>
 
             <p className={css.text}>
-              Whether you&apos;re a beginner or an experienced performer, my
-              goal is to help you unlock your full potential as a singer and
-              express yourself through music.
+            {t("paragraph3")}
             </p>
           </div>
 

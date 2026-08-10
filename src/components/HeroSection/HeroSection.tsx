@@ -28,7 +28,7 @@ export default function HeroSection() {
                 {t("subtitle")}
               </h3>
               <p className={css.heroText}>
-                {t("description")}
+                {t("description")} <br />{t("descriptionAccent")}
               </p>
               <div className={css.heroButtons}>
                 <button

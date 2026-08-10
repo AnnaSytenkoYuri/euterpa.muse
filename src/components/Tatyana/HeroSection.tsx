@@ -1,6 +1,8 @@
+import { useTranslations } from "next-intl";
 import css from "./HeroSection.module.css";
 
 export default function HeroTatyanaSection() {
+  const t = useTranslations("TatyanaHero");
   return (
     <section className={css.heroTatSection}>
       <div className="container">
@@ -8,9 +10,9 @@ export default function HeroTatyanaSection() {
           <h1 className={css.title}>TatYANa</h1>
 
           <p className={css.text}>
-            AUTHENTIC ACOUSTIC MUSIC
+          {t("subtitleLine1")}
             <br />
-            FOR UNFORGETTABLE MOMENTS
+            {t("subtitleLine2")}
           </p>
         </div>
       </div>

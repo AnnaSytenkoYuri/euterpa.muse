@@ -3,27 +3,30 @@ import { useState } from "react";
 import css from "./AboutMe.module.css";
 import Modal from "../Modal/Modal";
 import BookingForm from "../BookingForm/BookingForm";
+import { useTranslations } from "next-intl";
 
 export default function AboutHero() {
   const [isOpen, setIsOpen] = useState(false);
 
   const closeModal = () => setIsOpen(false);
+
+  const t = useTranslations("AboutHero");
   return (
     <>
       <section className={css.heroSection}>
         <div className="container">
           <div className={css.content}>
-            <h1 className={css.title}>About Me</h1>
+            <h1 className={css.title}>{t("title")}</h1>
 
-            <p className={css.subText}>Vocal coach & performer</p>
+            <p className={css.subText}>{t("subtitle")}</p>
 
             <p className={css.text}>
-              Discover your authentic voice <br />
-              through technique, emotion and confidence.
+            {t("descriptionLine1")} <br />
+            {t("descriptionLine2")}
             </p>
 
             <button className={css.bookBtn} onClick={() => setIsOpen(true)}>
-              Book a lesson
+            {t("bookLesson")}
             </button>
           </div>
         </div>
