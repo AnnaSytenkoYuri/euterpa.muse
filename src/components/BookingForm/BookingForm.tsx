@@ -16,6 +16,8 @@ import {
   lessonTimeOptions,
   levelOptions,
 } from "@/constants/formOptions";
+import { Link } from "../../../i18n/navigation";
+import { useTranslations } from "next-intl";
 
 interface BookingFormProps {
   onClose: () => void;
@@ -23,7 +25,17 @@ interface BookingFormProps {
 
 export default function BookingForm({ onClose }: BookingFormProps) {
   const [isSuccess, setIsSuccess] = useState(false);
-  // const [error, setError] = useState("");
+  const t = useTranslations("BookingForm");
+  
+  const translatedLessonOptions = lessonOptions.map((option) => ({
+    value: option.value,
+    label: t(`lessonOptions.${option.value}`),
+  }));
+  
+  const translatedLevelOptions = levelOptions.map((option) => ({
+    value: option.value,
+    label: t(`levelOptions.${option.value}`),
+  }));
 
   const {
     register,
@@ -75,11 +87,9 @@ export default function BookingForm({ onClose }: BookingFormProps) {
     <div className={css.bookingForm}>
       <header className={css.header}>
         <h2 id="booking-modal-title" className={css.title}>
-          Book a lesson
+          {t("title")}
         </h2>
-        <p className={css.description}>
-          Fill out the form, and I will contact you to confirm.
-        </p>
+        <p className={css.description}>{t("subtitle")}</p>
       </header>
       <form className={css.form} onSubmit={handleSubmit(onSubmit)}>
         <div className={css.inputGroup}>
@@ -88,28 +98,40 @@ export default function BookingForm({ onClose }: BookingFormProps) {
             // id="name"
             {...register("name")}
             type="text"
-            placeholder="Your name"
+            placeholder={t("namePlaceholder")}
             className={`${css.input} ${errors.name ? css.inputError : ""}`}
           />
-          {errors.name && <p className={css.error}>{errors.name.message}</p>}
+          {errors.name?.message && (
+            <p className={css.error}>
+              {t(`validation.${errors.name.message}`)}
+            </p>
+          )}
           {/* <label htmlFor="email"></label> */}
           <input
             // id="email"
             {...register("email")}
             type="email"
-            placeholder="Email"
+            placeholder={t("emailPlaceholder")}
             className={`${css.input} ${errors.email ? css.inputError : ""}`}
           />
-          {errors.email && <p className={css.error}>{errors.email.message}</p>}
+          {errors.email?.message && (
+            <p className={css.error}>
+              {t(`validation.${errors.email.message}`)}
+            </p>
+          )}
           {/* <label htmlFor="tel"></label> */}
           <input
             // id="tel"
             {...register("phone")}
             type="tel"
-            placeholder="Phone"
+            placeholder={t("phonePlaceholder")}
             className={`${css.input} ${errors.phone ? css.inputError : ""}`}
           />
-          {errors.phone && <p className={css.error}>{errors.phone.message}</p>}
+          {errors.phone?.message && (
+            <p className={css.error}>
+              {t(`validation.${errors.phone.message}`)}
+            </p>
+          )}
         </div>
         <Controller
           name="lessonFormat"
@@ -118,10 +140,12 @@ export default function BookingForm({ onClose }: BookingFormProps) {
             <FormSelect
               field={field}
               id="lessonFormat"
-              label="Lesson format"
-              placeholder="Select a format"
-              options={lessonOptions}
-              error={errors.lessonFormat?.message}
+              label={t("lessonFormatLabel")}
+              placeholder={t("lessonFormatPlaceholder")}
+              options={translatedLessonOptions}
+              error={ errors.lessonFormat?.message
+                ? t(`validation.${errors.lessonFormat.message}`)
+                : undefined}
             />
           )}
         />
@@ -132,8 +156,11 @@ export default function BookingForm({ onClose }: BookingFormProps) {
           render={({ field }) => (
             <DatePicker
               field={field}
-              label="Date"
-              error={errors.date?.message}
+              label={t("dateLabel")}
+              placeholder={t("datePlaceholder")}
+              error={ errors.date?.message
+                ? t(`validation.${errors.date.message}`)
+                : undefined}
             />
           )}
         />
@@ -145,10 +172,12 @@ export default function BookingForm({ onClose }: BookingFormProps) {
             <FormSelect
               field={field}
               id="time"
-              label="Time"
-              placeholder="Select a time"
+              label={t("timeLabel")}
+              placeholder={t("timePlaceholder")}
               options={lessonTimeOptions}
-              error={errors.lessonTime?.message}
+              error={ errors.lessonTime?.message
+                ? t(`validation.${errors.lessonTime.message}`)
+                : undefined}
             />
           )}
         />
@@ -160,46 +189,44 @@ export default function BookingForm({ onClose }: BookingFormProps) {
             <FormSelect
               field={field}
               id="level"
-              label="Your vocal level"
-              placeholder="Select a level"
-              options={levelOptions}
-              error={errors.vocalLevel?.message}
+              label={t("levelLabel")}
+              placeholder={t("levelPlaceholder")}
+              options={translatedLevelOptions}
+              error={ errors.vocalLevel?.message
+                ? t(`validation.${errors.vocalLevel.message}`)
+                : undefined}
             />
           )}
         />
 
         <div className={css.field}>
           <label className={css.label} htmlFor="message">
-            Leave your message <span className={css.optional}>(optional)</span>
+            {t("messageLabel")}{" "}
+            <span className={css.optional}>({t("optional")})</span>
           </label>
           <textarea
             {...register("message")}
             id="message"
             className={css.textarea}
-            placeholder="You can write a message or share your wishes, if you'd like."
+            placeholder={t("messagePlaceholder")}
           />
         </div>
 
         {isSuccess && (
           <div className={css.success}>
-            <p className={css.successTitle}>
-              ✓ Booking request sent successfully!
-            </p>
-            <p className={css.successText}>
-              Thank you for your booking. I&apos;ll contact you as soon as
-              possible to confirm your lesson.
-            </p>
+            <p className={css.successTitle}>✓ {t("successTitle")}</p>
+            <p className={css.successText}>{t("successText")}</p>
           </div>
         )}
         <button className={css.bookBtn} disabled={isSubmitting}>
-          {isSubmitting ? "Seding..." : "Book now"}
+          {isSubmitting ? t("sending") : t("bookNow")}
         </button>
       </form>
       <p className={css.policy}>
-        By clicking &quot;Book now&quot; you agree to our{" "}
-        <a href="/privacy-policy">
-          <strong>Privacy Policy</strong>
-        </a>
+        {t("policyBefore")}{" "}
+        <Link href="/privacy-policy">
+          <strong>{t("privacyPolicy")}</strong>
+        </Link>
         .
       </p>
     </div>

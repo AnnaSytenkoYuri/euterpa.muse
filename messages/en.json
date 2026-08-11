@@ -116,5 +116,62 @@
     "title": "Ready to discover your voice?",
     "text": "Book your first lesson",
     "bookLesson": "Book lesson"
+  },
+  "VideoSection": {
+    "upTitle": "LIVE PERFORMANCE",
+    "titleLine1": "Experience the atmosphere",
+    "titleLine2": "of our live acoustic concerts.",
+    "watchMore": "Watch more"
+  },
+  "BookingForm": {
+    "title": "Book a lesson",
+    "subtitle": "Fill out the form, and I will contact you to confirm.",
+    "namePlaceholder": "Your name",
+    "emailPlaceholder": "Email",
+    "phonePlaceholder": "Phone",
+
+    "lessonFormatLabel": "Lesson format",
+    "lessonFormatPlaceholder": "Select a format",
+
+    "dateLabel": "Date",
+    "datePlaceholder": "Select date",
+
+    "timeLabel": "Time",
+    "timePlaceholder": "Select a time",
+
+    "levelLabel": "Your vocal level",
+    "levelPlaceholder": "Select a level",
+
+    "messageLabel": "Leave your message",
+    "optional": "optional",
+    "messagePlaceholder": "You can write a message or share your wishes, if you'd like.",
+
+    "successTitle": "Booking request sent successfully!",
+    "successText": "Thank you for your booking. I'll contact you as soon as possible to confirm your lesson.",
+
+    "sending": "Sending...",
+    "bookNow": "Book now",
+
+    "policyBefore": "By clicking \"Book now\" you agree to our",
+    "privacyPolicy": "Privacy Policy",
+    "lessonOptions": {
+      "online": "Online",
+      "offline": "Offline"
+    },
+    "levelOptions": {
+      "beginner": "Beginner",
+      "intermediate": "Intermediate",
+      "advanced": "Advanced"
+    },
+    "validation": {
+      "nameMin": "Name must contain at least 2 characters",
+      "emailInvalid": "Please enter a valid email",
+      "phoneInvalid": "Please enter a valid phone number",
+      "lessonFormatRequired": "Please select a lesson format",
+      "vocalLevelRequired": "Please select your vocal level",
+      "lessonTimeRequired": "Please select a lesson time",
+      "dateRequired": "Please select a lesson date",
+      "messageTooLong": "Message is too long"
+    }
   }
 }

@@ -115,5 +115,62 @@
     "title": "Bereit, deine Stimme zu entdecken?",
     "text": "Buche deine erste Gesangsstunde",
     "bookLesson": "Unterricht buchen"
+  },
+  "VideoSection": {
+    "upTitle": "LIVE-AUFTRITT",
+    "titleLine1": "Erlebe die Atmosphäre",
+    "titleLine2": "unserer akustischen Live-Konzerte.",
+    "watchMore": "Mehr ansehen"
+  },
+  "BookingForm": {
+    "title": "Unterricht buchen",
+    "subtitle": "Fülle das Formular aus und ich melde mich bei dir, um den Termin zu bestätigen.",
+    "namePlaceholder": "Dein Name",
+    "emailPlaceholder": "E-Mail",
+    "phonePlaceholder": "Telefon",
+
+    "lessonFormatLabel": "Unterrichtsformat",
+    "lessonFormatPlaceholder": "Format auswählen",
+
+    "dateLabel": "Datum",
+    "datePlaceholder": "Datum auswählen",
+
+    "timeLabel": "Uhrzeit",
+    "timePlaceholder": "Uhrzeit auswählen",
+
+    "levelLabel": "Dein Gesangsniveau",
+    "levelPlaceholder": "Niveau auswählen",
+
+    "messageLabel": "Deine Nachricht",
+    "optional": "optional",
+    "messagePlaceholder": "Du kannst eine Nachricht schreiben oder deine Wünsche mitteilen.",
+
+    "successTitle": "Deine Buchungsanfrage wurde erfolgreich gesendet!",
+    "successText": "Vielen Dank für deine Buchung. Ich melde mich so schnell wie möglich bei dir, um deinen Unterricht zu bestätigen.",
+
+    "sending": "Wird gesendet...",
+    "bookNow": "Jetzt buchen",
+
+    "policyBefore": "Mit einem Klick auf \"Jetzt buchen\" stimmst du unserer",
+    "privacyPolicy": "Datenschutzerklärung",
+    "lessonOptions": {
+      "online": "Online",
+      "offline": "Vor Ort"
+    },
+    "levelOptions": {
+      "beginner": "Anfänger",
+      "intermediate": "Fortgeschritten",
+      "advanced": "Sehr fortgeschritten"
+    },
+    "validation": {
+      "nameMin": "Der Name muss mindestens 2 Zeichen enthalten",
+      "emailInvalid": "Bitte gib eine gültige E-Mail-Adresse ein",
+      "phoneInvalid": "Bitte gib eine gültige Telefonnummer ein",
+      "lessonFormatRequired": "Bitte wähle ein Unterrichtsformat",
+      "vocalLevelRequired": "Bitte wähle dein Gesangsniveau",
+      "lessonTimeRequired": "Bitte wähle eine Unterrichtszeit",
+      "dateRequired": "Bitte wähle ein Unterrichtsdatum",
+      "messageTooLong": "Die Nachricht ist zu lang"
+    }
   }
 }

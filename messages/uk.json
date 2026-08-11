@@ -116,5 +116,63 @@
     "title": "Готова відкрити свій голос?",
     "text": "Забронюй своє перше заняття",
     "bookLesson": "Забронювати заняття"
+  },
+  "VideoSection": {
+    "upTitle": "ЖИВИЙ ВИСТУП",
+    "titleLine1": "Відчуй атмосферу",
+    "titleLine2": "наших живих акустичних концертів.",
+    "watchMore": "Дивитися більше"
+  },
+  "BookingForm": {
+    "title": "Забронювати заняття",
+    "subtitle": "Заповни форму, і я зв’яжуся з тобою для підтвердження.",
+
+    "namePlaceholder": "Твоє ім’я",
+    "emailPlaceholder": "Email",
+    "phonePlaceholder": "Телефон",
+
+    "lessonFormatLabel": "Формат заняття",
+    "lessonFormatPlaceholder": "Обери формат",
+
+    "dateLabel": "Дата",
+    "datePlaceholder": "Обери дату",
+
+    "timeLabel": "Час",
+    "timePlaceholder": "Обери час",
+
+    "levelLabel": "Твій рівень вокалу",
+    "levelPlaceholder": "Обери рівень",
+
+    "messageLabel": "Залиш повідомлення",
+    "optional": "необов’язково",
+    "messagePlaceholder": "Можеш написати повідомлення або розповісти про свої побажання.",
+
+    "successTitle": "Запит на бронювання успішно надіслано!",
+    "successText": "Дякую за бронювання. Я зв’яжуся з тобою найближчим часом, щоб підтвердити заняття.",
+
+    "sending": "Надсилання...",
+    "bookNow": "Забронювати",
+
+    "policyBefore": "Натискаючи \"Забронювати\", ти погоджуєшся з нашою",
+    "privacyPolicy": "Політикою конфіденційності",
+    "lessonOptions": {
+      "online": "Онлайн",
+      "offline": "Офлайн"
+    },
+    "levelOptions": {
+      "beginner": "Початковий",
+      "intermediate": "Середній",
+      "advanced": "Просунутий"
+    },
+    "validation": {
+      "nameMin": "Ім’я має містити щонайменше 2 символи",
+      "emailInvalid": "Введи коректну електронну адресу",
+      "phoneInvalid": "Введи коректний номер телефону",
+      "lessonFormatRequired": "Обери формат заняття",
+      "vocalLevelRequired": "Обери свій рівень вокалу",
+      "lessonTimeRequired": "Обери час заняття",
+      "dateRequired": "Обери дату заняття",
+      "messageTooLong": "Повідомлення занадто довге"
+    }
   }
 }

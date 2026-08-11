@@ -10,12 +10,14 @@ import css from "./DatePicker.module.css"
 interface DatePickerProps {
   field: ControllerRenderProps<BookingFormInput, "date">;
   label: string;
+  placeholder: string;
   error?: string;
 }
 
 export default function DatePicker({
   field,
   label,
+  placeholder,
   error,
 }: DatePickerProps) {
 
@@ -29,7 +31,7 @@ export default function DatePicker({
         onChange={(date: Date| null) => field.onChange(date)}
         dateFormat="dd.MM.yyyy"
         minDate={new Date()}
-        placeholderText="Select date"
+        placeholderText={placeholder}
         className={`${css.input} ${error ? css.inputError : ""}`}
       />
 

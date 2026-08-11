@@ -1,13 +1,16 @@
+import { useTranslations } from "next-intl";
 import css from "./VideoSection.module.css";
 
 export default function VideoSection() {
+  const t = useTranslations("VideoSection");
+
   return (
         <div className={css.video}>
-        <p className={css.upTitle}>LIVE PERFORMANCE</p>
+        <p className={css.upTitle}>{t("upTitle")}</p>
         <h2 className={css.title}>
-          Experience the atmosphere
+        {t("titleLine1")}
           <br />
-          of our live acoustic concerts.
+          {t("titleLine2")}
         </h2>
         <div className={css.videoWrapper}>
           <iframe
@@ -23,7 +26,7 @@ export default function VideoSection() {
           rel="noopener noreferrer"
           className={css.link}
         >
-          <span>Watch more</span>
+          <span>{t("watchMore")}</span>
           <svg
             width="12"
             height="10"
