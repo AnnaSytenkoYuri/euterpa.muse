@@ -23,7 +23,7 @@
 }
 
 .heroSubTitle {
-  font-weight: 500;
+  font-weight: 00;
   font-size: clamp(14px, 2vw, 24px);
   text-align: center;
   text-transform: capitalize;
@@ -137,10 +137,13 @@
   }
 
   .heroTitle {
+    font-size: 64px;
     margin-bottom: 10px;
     text-align: left;
+    white-space: nowrap;
   }
   .titleSpan {
+    font-size: 64px;
     text-align: left;
   }
 
@@ -149,7 +152,7 @@
     text-align: left;
   }
   .heroText {
-    margin-bottom: 25px;
+    margin-bottom: 65px;
     text-align: left;
   }
   .heroButtons {

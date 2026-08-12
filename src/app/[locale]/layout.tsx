@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Instrument_Sans } from "next/font/google";
 import { NextIntlClientProvider } from "next-intl";
 
 import "../globals.css";
@@ -8,21 +8,45 @@ import Footer from "@/components/Footer/Footer";
 import ScrollToTop from "@/components/ScrollToTop/ScrollToTop";
 
 import { routing } from "../../../i18n/routing";
+import { getTranslations } from "next-intl/server";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const instrumentSans = Instrument_Sans({
   subsets: ["latin"],
+  variable: "--font-instrument-sans",
+  display: "swap",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
 
-export const metadata: Metadata = {
-  title: "Euterpa",
-  description: "Singer & Vocal Coach",
-};
+  const t = await getTranslations({
+    locale,
+    namespace: "Metadata",
+  });
+
+  return {
+    title: t("title"),
+    description: t("description"),
+    
+    openGraph: {
+      title: t("title"),
+      description: t("description"),
+      type: "website",
+      siteName: "Euterpa.muse",
+      locale,
+    },
+  
+    twitter: {
+      card: "summary_large_image",
+      title: t("title"),
+      description: t("description"),
+    },
+  };
+}
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -39,8 +63,8 @@ export default async function LocaleLayout({
 
   return (
     <html
-      lang={locale}
-      className={`${geistSans.variable} ${geistMono.variable}`}
+    lang={locale}
+    className={instrumentSans.variable}
     >
       <body>
         <NextIntlClientProvider>

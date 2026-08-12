@@ -173,5 +173,9 @@
       "dateRequired": "Please select a lesson date",
       "messageTooLong": "Message is too long"
     }
-  }
+  },
+  "Metadata": {
+  "title": "Euterpa — Singer & Vocal Coach",
+  "description": "Singer, performer and vocal coach. Online and offline vocal lessons for all levels."
+}
 }

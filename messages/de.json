@@ -172,5 +172,9 @@
       "dateRequired": "Bitte wähle ein Unterrichtsdatum",
       "messageTooLong": "Die Nachricht ist zu lang"
     }
-  }
+  },
+  "Metadata": {
+  "title": "Euterpa — Sängerin & Gesangscoach",
+  "description": "Sängerin, Performerin und Gesangscoach. Online- und Präsenzunterricht für jedes Niveau."
+}
 }
