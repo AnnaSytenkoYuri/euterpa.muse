@@ -26,7 +26,7 @@ export default function Philosophy() {
           </div>
 
           <Image
-            src="/images/ hero-mob-image2.png"
+            src="/images/hero-mob-image2.png"
             alt="Biography"
             width={400}
             height={600}

@@ -22,7 +22,7 @@ export async function POST(request: Request) {
 
   try {
     const { data, error } = await resend.emails.send({
-      from: "onboarding@resend.dev",
+      from: "Euterpa <onboarding@resend.dev>",
       to: "anna_sytenko91@icloud.com",
       subject: `🎤 New booking from ${booking.name}`,
       react: email,

@@ -174,7 +174,15 @@
     }
   },
   "Metadata": {
-  "title": "Euterpa — Sängerin & Gesangscoach",
-  "description": "Sängerin, Performerin und Gesangscoach. Online- und Präsenzunterricht für jedes Niveau."
-}
+    "title": "Euterpa — Sängerin & Gesangscoach",
+    "description": "Sängerin, Performerin und Gesangscoach. Online- und Präsenzunterricht für jedes Niveau."
+  },
+  "AboutMetadata": {
+    "title": "Über mich | Euterpa.muse",
+    "description": "Lerne Euterpa.muse kennen – Sängerin, Performerin und Vocal Coach, die Sänger dabei unterstützt, ihre authentische Stimme, ihr Selbstvertrauen und ihren musikalischen Ausdruck zu entwickeln."
+  },
+  "TatyanaMetadata": {
+    "title": "TatYANa Acoustic Sounds | Euterpa.muse",
+    "description": "Entdecke TatYANa Acoustic Sounds – ein Akustik-Duo mit gefühlvoller Live-Musik für Konzerte, Hochzeiten, kulturelle Veranstaltungen und private Feiern."
+  }
 }

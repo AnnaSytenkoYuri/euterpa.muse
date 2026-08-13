@@ -10,7 +10,7 @@ export default function Biography() {
       <div className="container">
         <div className={css.contentContainer}>
           <Image
-            src="/images/ hero-mob-image2.png"
+            src="/images/hero-mob-image2.png"
             alt="Biography"
             width={400}
             height={600}

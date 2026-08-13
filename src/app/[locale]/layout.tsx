@@ -40,11 +40,21 @@ export async function generateMetadata({
     title: t("title"),
     description: t("description"),
 
-       openGraph: {
+    alternates: {
+      canonical: `/${locale}`,
+      languages: {
+        en: "/en",
+        de: "/de",
+        uk: "/uk",
+      },
+    },
+    openGraph: {
       title: t("title"),
       description: t("description"),
       type: "website",
       siteName: "Euterpa.muse",
+      locale,
+      url: `/${locale}`,
       images: [
         {
           url: "/images/og-image.jpg",
@@ -54,7 +64,7 @@ export async function generateMetadata({
         },
       ],
     },
-
+  
     twitter: {
       card: "summary_large_image",
       title: t("title"),

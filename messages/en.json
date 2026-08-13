@@ -175,7 +175,15 @@
     }
   },
   "Metadata": {
-  "title": "Euterpa — Singer & Vocal Coach",
-  "description": "Singer, performer and vocal coach. Online and offline vocal lessons for all levels."
-}
+    "title": "Euterpa — Singer & Vocal Coach",
+    "description": "Singer, performer and vocal coach. Online and offline vocal lessons for all levels."
+  },
+  "AboutMetadata": {
+    "title": "About Me | Euterpa.muse",
+    "description": "Meet Euterpa.muse — singer, performer and vocal coach helping singers discover their authentic voice, confidence and musical expression."
+  },
+  "TatyanaMetadata": {
+    "title": "TatYANa Acoustic Sounds | Euterpa.muse",
+    "description": "Discover TatYANa Acoustic Sounds — an acoustic duo creating intimate live music for concerts, weddings, cultural events and private celebrations."
+  }
 }
