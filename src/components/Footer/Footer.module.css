@@ -1,5 +1,6 @@
 .footer {
   padding-top: 80px;
+  background-color: var(--background);
 }
 .footerBackground {
   background: #161619;
@@ -44,49 +45,16 @@
   margin: 0 0 33px 0;
 }
 
-/* .contactItem {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-  } */
-/* 
-.mobSocialList {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 17px;
-  margin: 0 0 45px 0;
-  padding: 0;
-  color: #fff;
-} */
-/*   
-  .socialList a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  
-    width: 48px;
-    height: 48px;
-  
-    color: #fff;
-  
-    transition: transform .3s ease,
-                color .3s ease,
-                opacity .3s ease;
-  }
-  
-  .socialList a:hover,
-  .socialList a:focus-visible {
-    transform: translateY(-3px);
-    opacity: .8;
-  } */
-
 .policyText {
   font-weight: 400;
   font-size: 8px;
   color: rgba(255, 255, 255, 0.6);
   text-align: center;
   margin-bottom: 12px;
+}
+
+.policyText:hover {
+  color: #fff;
 }
 
 .rightsText {
@@ -109,9 +77,8 @@
     padding-top: 120px;
   }
 
-  .footerTop{
+  .footerTop {
     display: flex;
-    /* justify-content: space-between; */
     align-items: flex-start;
     gap: 300px;
   }
@@ -133,17 +100,6 @@
     display: none;
   }
 
-  /* .deskSocialList {
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    gap: 17px;
-    margin: 0 0 45px 0;
-    padding: 0;
-    color: #fff;
-    width: fit-content;
-  } */
-
   .desckFooter {
     display: block;
   }
@@ -162,9 +118,10 @@
     font-weight: 400;
     font-size: 11px;
     color: rgba(255, 255, 255, 0.7);
-    font-weight: 400;
-    font-size: 11px;
-    color: rgba(255, 255, 255, 0.7);
+  }
+
+  .listItem:hover {
+    color: #fff;
   }
 
   .deskContsctsTitle {
@@ -174,11 +131,10 @@
     color: rgba(255, 255, 255, 0.8);
     margin-bottom: 10px;
   }
-.footerBottom{
+  .footerBottom {
     display: flex;
     justify-content: space-between;
     padding: 36px 0 0 0;
     border-top: 1px solid rgba(226, 226, 226, 0.21);
-}
-
+  }
 }

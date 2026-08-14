@@ -17,8 +17,9 @@
 
   width: 300px;
 
-  background: white;
-
+  background: var(--card);
+  color: var(--text-primary);
+  border: 0.5px solid var(--border);
   border-radius: 15px;
 
   overflow-y: auto;
@@ -41,6 +42,7 @@
   right: 24px;
 
   border: none;
+  color: var(--text-primary);
 
   background: transparent;
 

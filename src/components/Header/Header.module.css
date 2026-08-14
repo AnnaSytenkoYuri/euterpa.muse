@@ -65,16 +65,6 @@
   font-size: 28px;
 }
 
-/* .menuHeader{
-  height:120px;
-
-  display:flex;
-  justify-content:center;
-  align-items:center;
-
-  border-top:1px solid rgba(255,255,255,.15);
-  border-bottom:1px solid rgba(255,255,255,.15);
-} */
 
 .menuTitle {
   margin-bottom: 58px;
@@ -91,7 +81,6 @@
   text-align: center;
   color: white;
   margin-bottom: 50px;
-  /* border-top: 1px solid rgba(255,255,255,.15); */
 }
 
 .navItem {
@@ -109,17 +98,17 @@
   font-weight: 600;
   font-size: 14px;
   text-transform: uppercase;
-  color: #1b1d20;
+  background-color: var(--hero-button-bg);
+  color: var(--hero-button-text);
   text-align: center;
   border-radius: 15px;
-  background-color: #fdfdfd;
   margin-bottom: 57px;
 }
 
 .bookBtn:hover,
 .bookBtn:focus {
-  color: #fff;
-  background-color: #1b1d20;
+  color: var(--hero-button-hover-text);
+  background-color: var(--hero-button-hover-bg);
   transition: 0.3s ease;
 }
 
@@ -135,10 +124,9 @@
 }
 .navLink:hover,
 .navLink:focus {
-  font-weight: 600px;
-  font-size: 14px;
   color: #fff;
 }
+
 
 @media (min-width: 768px) {
   .mobileNavList {

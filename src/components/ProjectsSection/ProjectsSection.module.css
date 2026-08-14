@@ -1,19 +1,20 @@
 .projectsSection {
   padding-top: 80px;
+  background-color: var(--background);
 }
 
 .projectUpTitle {
   font-weight: 500;
   font-size: 14px;
   text-transform: uppercase;
-  color: #000;
+  color: var(--text-secondary);
   text-align: center;
   margin-bottom: 17px;
 }
 .projectTitle {
   font-weight: 600;
   font-size: 32px;
-  color: #000;
+  color: var(--text-primary);
   text-align: center;
   margin-bottom: 17px;
 }
@@ -34,7 +35,7 @@
   width: 100%;
   height: auto;
 
-  transition:transform .6s ease;
+  transition: transform 0.6s ease;
 }
 
 .overlay {
@@ -57,7 +58,7 @@
     transparent 70%
   );
 
-  transition:background .35s ease;
+  transition: background 0.35s ease;
 }
 .cardTitle {
   max-width: 269px;
@@ -97,49 +98,42 @@
 }
 
 .learnBtn:hover,
-.learnBtn:focus
-{
+.learnBtn:focus {
   color: rgba(255, 255, 255, 1);
 }
 
-.learnBtn svg{
-  transition:transform .35s ease;
+.learnBtn svg {
+  transition: transform 0.35s ease;
 }
 
-@media (hover: hover){
-
-  .projectCard:hover .projectImage{
-    transform:scale(1.05);
+@media (hover: hover) {
+  .projectCard:hover.projectImage {
+    transform: scale(1.05);
   }
-  
-  .projectCard:hover .overlay{
-  
-    background:linear-gradient(
-        to top,
-        rgba(0,0,0,.82),
-        rgba(0,0,0,.45),
-        transparent
+
+  .projectCard:hover.overlay {
+    background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.82),
+      rgba(0, 0, 0, 0.45),
+      transparent
     );
-  
   }
-  
-  .projectCard:hover .learnBtn svg{
-    transform:translateX(6px);
+
+  .projectCard:hover.learnBtn svg {
+    transform: translateX(6px);
   }
 }
 
-
-
-@media (min-width: 768px){
-
+@media (min-width: 768px) {
   .projectsCardsContainer {
     display: flex;
     flex-direction: row;
-  
+
     overflow-x: auto;
     scroll-snap-type: x mandatory;
   }
-  
+
   .projectCard {
     flex: 0 0 420px;
     scroll-snap-align: start;
@@ -149,18 +143,16 @@
   .projectTitle,
   .cardTitle,
   .cardCategory,
-  .learnBtn
-   {
-    text-align: left; 
+  .learnBtn {
+    text-align: left;
   }
 
   .overlay {
     align-items: flex-start;
   }
-
 }
 
-@media (min-width: 1440px){
+@media (min-width: 1440px) {
   .projectsSection {
     padding-top: 120px;
   }
@@ -168,9 +160,8 @@
   .projectTitle,
   .cardTitle,
   .cardCategory,
-  .learnBtn
-   {
-    text-align: left; 
+  .learnBtn {
+    text-align: left;
   }
   .projectsCardsContainer {
     flex-direction: row;

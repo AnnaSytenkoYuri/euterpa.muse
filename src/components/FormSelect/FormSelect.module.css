@@ -11,7 +11,8 @@
 .control {
   height: 47px;
 
-  border: 1px solid rgba(0, 0, 0, 0.22);
+  border: 1px solid var(--border);
+  background: var(--input-bg);
   border-radius: 10px;
 
   padding: 0 14px;
@@ -21,14 +22,8 @@
   transition: border-color 0.25s ease;
 }
 
-/* .control:hover {
-  border-color: rgba(0, 0, 0, 0.45);
-} */
-
-
-/* {не працює коли активна} */
 .controlFocused {
-  border-color: #18191b;;
+  border-color: var(--input-focus);
 }
 
 .valueContainer {
@@ -36,12 +31,12 @@
 }
 
 .placeholder {
-  color: rgba(0, 0, 0, 0.3);
+  color: var(--input-placeholder);
   font-size: 14px;
 }
 
 .singleValue {
-  color: #000;
+  color: var(--text-primary);
   font-size: 11px;
 }
 
@@ -53,10 +48,10 @@
 .menu{
     margin-top: 6px;
 
-    border: 1px solid rgba(0,0,0,.12);
+    border: 1px solid var(--border);
     border-radius: 10px;
   
-    background: white;
+    background: var(--input-bg);
   
     overflow: hidden;
   
@@ -64,6 +59,7 @@
   
     z-index: 20;
     font-size: 14px;
+    color: var(--text-primary);
 
 }
 
@@ -73,20 +69,23 @@
   }
 
   .optionFocused {
-    background: #f5f5f5;
+    background: var(--option-hover);
   }
 
   .optionSelected {
-    background: #18191b;
-    color: white;
+    background: var(--option-selected-bg);
+  color: var(--option-selected-text);
   }
 
+  .dropdownIndicator {
+    color: var(--text-primary);
+  }
 .error{ 
   font-size: 12px;
-  color: #d93025;
+  color: var(--error);
   margin-top: 3px;
 }
 
 .inputError {
-  border-color: #d93025;
+  border-color: var(--error);
 }

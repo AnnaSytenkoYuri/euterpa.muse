@@ -88,7 +88,7 @@ export default function LessonsSection() {
                     >
                       <path
                         d="M0.500122 5L2.96422 9.5L11.5001 0.5"
-                        stroke="black"
+                        stroke="currentColor"
                         strokeLinecap="round"
                       />
                     </svg>
@@ -104,7 +104,7 @@ export default function LessonsSection() {
                     >
                       <path
                         d="M0.500122 5L2.96422 9.5L11.5001 0.5"
-                        stroke="black"
+                        stroke="currentColor"
                         strokeLinecap="round"
                       />
                     </svg>
@@ -120,7 +120,7 @@ export default function LessonsSection() {
                     >
                       <path
                         d="M0.500122 5L2.96422 9.5L11.5001 0.5"
-                        stroke="black"
+                        stroke="currentColor"
                         strokeLinecap="round"
                       />
                     </svg>
@@ -144,7 +144,7 @@ export default function LessonsSection() {
                       cx="10.4999"
                       cy="10.08"
                       r="3.62"
-                      stroke="black"
+                      stroke="currentColor"
                       strokeWidth="2"
                     />
                     <path
@@ -170,7 +170,7 @@ export default function LessonsSection() {
                     >
                       <path
                         d="M0.500122 5L2.96422 9.5L11.5001 0.5"
-                        stroke="black"
+                        stroke="currentColor"
                         strokeLinecap="round"
                       />
                     </svg>
@@ -186,7 +186,7 @@ export default function LessonsSection() {
                     >
                       <path
                         d="M0.500122 5L2.96422 9.5L11.5001 0.5"
-                        stroke="black"
+                        stroke="currentColor"
                         strokeLinecap="round"
                       />
                     </svg>
@@ -202,7 +202,7 @@ export default function LessonsSection() {
                     >
                       <path
                         d="M0.500122 5L2.96422 9.5L11.5001 0.5"
-                        stroke="black"
+                        stroke="currentColor"
                         strokeLinecap="round"
                       />
                     </svg>
