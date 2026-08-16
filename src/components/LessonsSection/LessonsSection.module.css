@@ -96,6 +96,7 @@
 .lesBtn:hover,
 .lesBtn:focus {
   background-color: var(--button-hover);
+  color: var(--button-hover-text);
   transition: 0.3s ease;
 }
 

@@ -32,20 +32,20 @@
   align-items: center;
   justify-content: center;
   border-radius: 15px;
-  fill: #fdfdfd;
+  background-color: var(--hero-button-bg);
+  color: var(--hero-button-text);
   width: 207px;
   height: 45px;
   font-weight: 600;
   font-size: 14px;
   text-transform: uppercase;
-  color: #1b1d20;
   margin: 0 auto;
 }
 
 .bookBtn:hover,
 .bookBtn:focus {
-  color: #fff;
-  background-color: #1b1d20;
+  background-color: var(--hero-button-hover-bg);
+  color: var(--hero-button-hover-text);
   transition: 0.3s ease;
 }
 

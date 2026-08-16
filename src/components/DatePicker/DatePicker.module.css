@@ -8,30 +8,35 @@
     font-weight: 500;
     font-size: 12px;
     margin-bottom: 3px;
+    color: var(--text-primary);
   }
   .input {
-    border: 1px solid rgba(0, 0, 0, 0.22);
+    border: 1px solid var(--border);
     border-radius: 10px;
     width: 100%;
     min-height: 47px;
     padding: 0 14px;
     font-weight: 400;
     font-size: 14px;
-    color: rgba(0, 0, 0, 0.3);
-    background: #fff;
+    color: var(--text-primary);
+    background: var(--input-bg);
+  }
+
+  .input::placeholder {
+    color: var(--input-placeholder);
   }
 
   
   .input:focus {
     outline: none;
-    border-color: #18191b;;
+    border-color: var(--input-focus);
   }
   .error{ 
     font-size: 12px;
-    color: #d93025;
+    color: var(--error);
     margin-top: 3px;
   }
   
   .inputError {
-    border-color: #d93025; 
+    border-color: var(--error); 
 }

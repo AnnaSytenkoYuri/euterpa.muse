@@ -6,7 +6,7 @@
   font-weight: 500;
   font-size: 14px;
   text-transform: uppercase;
-  color: #000;
+  color: var(--text-secondary);
   text-align: center;
   margin-bottom: 17px;
 }
@@ -14,7 +14,7 @@
 .title {
   font-weight: 600;
   font-size: 18px;
-  color: #000;
+  color: var(--text-primary);
   text-align: center;
   margin-bottom: 17px;
 }
@@ -46,19 +46,18 @@
     background: transparent;
     border: none;
   
-    color: rgb(62, 62, 62);
+    color: var(--text-secondary);
     cursor: pointer;
   
     font-weight: 600;
     font-size: 14px;
     text-transform: uppercase;
-    color: rgba(0, 0, 0, 0.8);
     margin: 0 auto 32px;
 }
 
 .link:hover,
 .link:focus {
-  color: rgb(0, 0, 0);
+  color: var(--text-primary);
 }
 
 .link svg {

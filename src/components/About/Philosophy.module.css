@@ -1,100 +1,98 @@
 .section {
-    padding-top: 80px;
-  }
-  .contentContainer{
-      position: relative;
-  }
-  .upTitle {
-    font-weight: 500;
-    font-size: 14px;
-    text-transform: uppercase;
-    color: #000;
-    text-align: center;
-    margin-bottom: 17px;
-  }
-  
-  .title {
-    font-weight: 600;
-    font-size: 32px;
-    color: #000;
-    text-align: center;
-    margin-bottom: 17px;
-  }
+  padding-top: 80px;
+  background-color: var(--background);
+}
+.contentContainer {
+  position: relative;
+}
+.upTitle {
+  font-weight: 500;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+  text-align: center;
+  margin-bottom: 17px;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 32px;
+  color: var(--text-primary);
+  text-align: center;
+  margin-bottom: 17px;
+}
+.image {
+  position: relative;
+  width: 100%;
+  z-index: 1;
+  margin-top: 0;
+  object-fit: cover;
+  border-radius: 15px;
+  display: block;
+  margin: 0 auto 30px;
+}
+
+.phylosophyCard {
+  position: relative;
+  width: 100%;
+  margin: auto 0;
+  margin-bottom: -200px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 32px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.12);
+  z-index: 2;
+}
+
+.text {
+  font-weight: 500;
+  font-size: 12px;
+  text-align: center;
+  color: var(--text-secondary);
+  margin: 0 auto 19px;
+  line-height: 1.8;
+}
+
+@media (min-width: 768px) {
   .image {
-      position: relative;
-      width: 100%;
-    z-index: 1;
-    margin-top: 0;
+    max-width: 700px;
+    margin: 0 auto 40px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .section {
+    padding-top: 120px;
+  }
+
+  .upTitle {
+    text-align: left;
+  }
+  .title {
+    text-align: left;
+    max-width: 288px;
+  }
+
+  .phylosophyCard {
+    margin: auto 0;
+  }
+
+  .contentContainer {
+    display: flex;
+    gap: 20px;
+  }
+
+  .image {
+    width: 500px;
+    height: 500px;
+    flex-shrink: 0;
     object-fit: cover;
-    border-radius: 15px;
-    display: block;
-    margin: 0 auto 30px;
+    margin: 0;
   }
-  
-  .phylosophyCard{
-      position: relative;
-      width: 100%;
-      margin: auto 0;  
-      margin-bottom: -200px;
-      /* background: rgba(255,255,255,.95); */
-      background: #fff;
-      border-radius: 20px;
-      padding: 32px;
-      box-shadow: 0 20px 60px rgba(0,0,0,.12);
-      z-index: 2;
-  }
-  
   .text {
-    font-weight: 500;
-    font-size: 12px;
-    text-align: center;
-    color: #000;
-    margin: 0 auto 24px;
+    font-size: 18px;
     line-height: 1.8;
-    margin-bottom: 19px;
+    text-align: left;
   }
-  
-  @media (min-width: 768px) {
-    .image {
-      max-width: 700px;
-      margin: 0 auto 40px;
-    }
-  }
-  
-  @media (min-width: 1440px) {
-    .section {
-      padding-top: 120px;
-    }
-  
-    .upTitle {
-      text-align: left;
-    }
-    .title {
-      text-align: left;
-      max-width: 288px;
-    }
-  
-  
-    .phylosophyCard{
-      margin: auto 0;
-  }
-  
-    .contentContainer {
-      display: flex;
-      gap: 20px;
-    }
-  
-    .image {
-      width: 500px;
-      height: 500px;
-      flex-shrink: 0;
-      object-fit: cover;
-      margin: 0;
-    }
-    .text {
-      font-size: 18px;
-      line-height: 1.8;
-      text-align: left;
-    }
-  }
-  
+}

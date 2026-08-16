@@ -5,6 +5,19 @@
     margin-bottom: 41px;
   }
 
+  .heroTatSection::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.45),
+      rgba(0, 0, 0, 0.08) 60%,
+      transparent
+    );
+    z-index: 1;
+  }
+
   .content {
     position: absolute;
     left: 0;

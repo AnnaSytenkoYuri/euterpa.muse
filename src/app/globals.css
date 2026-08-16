@@ -4,7 +4,7 @@
   --background: #F5F4F4;
   --foreground: #1b1d20;
 
-  --surface: #f5f5f5;
+  --surface: #fafafa;
   --card: #ffffff;
 
   --text-primary: #1b1d20;
@@ -35,6 +35,11 @@
   --success-border: #9ed7af;
   --success-title: #1b7f3b;
   --success-text: #2f2f2f;
+
+  --scroll-btn-bg: #bebebe;
+  --scroll-btn-text: #ffffff;
+  --scroll-btn-hover-bg: #1b1d20;
+  --scroll-btn-hover-text: #ffffff;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -73,6 +78,11 @@
     --success-border: #356b46;
     --success-title: #75d695;
     --success-text: #d8e5dc;
+
+    --scroll-btn-bg: #3a3a3d;
+    --scroll-btn-text: #ffffff;
+    --scroll-btn-hover-bg: #bebebe;
+    --scroll-btn-hover-text: #1b1d20;
   }
 }
 
