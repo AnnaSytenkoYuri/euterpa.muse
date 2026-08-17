@@ -35,7 +35,7 @@
   margin: -200px auto 0;
 
   background: var(--card);
-  border: 1px solid var(--border);
+  /* border: 1px solid var(--border); */
   border-radius: 20px;
   padding: 32px;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.12);
