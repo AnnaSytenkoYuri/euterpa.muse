@@ -185,5 +185,69 @@
   "TatyanaMetadata": {
     "title": "TatYANa Acoustic Sounds | Euterpa.muse",
     "description": "Discover TatYANa Acoustic Sounds — an acoustic duo creating intimate live music for concerts, weddings, cultural events and private celebrations."
+  },
+
+  "PrivacyPolicy": {
+    "title": "Privacy Policy",
+    "intro": "This Privacy Policy explains how personal data is collected and processed when you use this website or submit a booking request.",
+
+    "controller": {
+      "title": "1. Data Controller",
+      "description": "The person responsible for processing personal data on this website is:"
+    },
+
+    "data": {
+      "title": "2. Data We Collect",
+      "description": "When you submit a booking request through the website, the following information may be collected:",
+      "name": "Name",
+      "email": "Email address",
+      "phone": "Phone number",
+      "lessonFormat": "Lesson format",
+      "vocalLevel": "Vocal level",
+      "dateTime": "Preferred lesson date and time",
+      "message": "Message or additional information you choose to provide"
+    },
+
+    "purpose": {
+      "title": "3. Purpose of Processing",
+      "text": "This information is processed in order to receive and respond to your booking request, communicate with you regarding your lesson, and arrange the requested service."
+    },
+
+    "resend": {
+      "title": "4. Email Delivery – Resend",
+      "text": "This website uses Resend to deliver booking requests by email. Information submitted through the booking form may therefore be processed by Resend for the purpose of delivering the message."
+    },
+
+    "vercel": {
+      "title": "5. Hosting – Vercel",
+      "text": "This website is hosted using Vercel. When you access the website, technical information such as your IP address, browser information, device information, request data and timestamps may be processed as necessary to provide, secure and operate the website."
+    },
+
+    "youtube": {
+      "title": "6. Embedded Content – YouTube",
+      "text": "This website may contain embedded videos provided by YouTube. When you interact with embedded content, information may be transmitted to YouTube and its associated services."
+    },
+
+    "retention": {
+      "title": "7. Data Retention",
+      "text": "Personal data submitted through the booking form is retained only for as long as necessary to process your request, communicate with you and fulfil any applicable legal obligations."
+    },
+
+    "rights": {
+      "title": "8. Your Rights",
+      "text": "Under applicable data protection law, including the GDPR, you may have the right to request access to your personal data, rectification or deletion of your data, restriction of processing, data portability, or to object to certain processing. You may also have the right to lodge a complaint with a competent data protection supervisory authority."
+    },
+
+    "contact": {
+      "title": "9. Contact",
+      "text": "If you have questions about this Privacy Policy or the processing of your personal data, please contact:"
+    },
+
+    "updated": "Last updated: August 2026",
+
+    "meta": {
+      "title": "Privacy Policy | Euterpa.muse",
+      "description": "Learn how Euterpa.muse collects, uses and protects personal data when you use the website or submit a booking request."
+    }
   }
 }

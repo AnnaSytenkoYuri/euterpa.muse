@@ -4,7 +4,6 @@ import SocialLinks from "../SocialLinks/SocialLinks";
 import { useTranslations } from "next-intl";
 
 export default function Footer() {
-
   const t = useTranslations("Footer");
 
   return (
@@ -37,11 +36,9 @@ export default function Footer() {
                   </a>
                 </li>
               </ul>
-              <SocialLinks/>
+              <SocialLinks />
               <p className={css.policyText}>{t("privacyPolicy")}</p>
-              <p className={css.rightsText}>
-              {t("rights")}
-              </p>
+              <p className={css.rightsText}>{t("rights")}</p>
             </div>
 
             {/* Desktop footer */}
@@ -51,10 +48,8 @@ export default function Footer() {
                   <Link href="/" className={css.logo}>
                     <p className={css.logoText}>euterpa.muse</p>
                   </Link>
-                  <p className={css.footerText}>
-                  {t("tagline")}
-                  </p>
-               <SocialLinks/>
+                  <p className={css.footerText}>{t("tagline")}</p>
+                  <SocialLinks />
                 </div>
 
                 <div className={css.contentDeskWraper}>
@@ -63,7 +58,7 @@ export default function Footer() {
                     <ul className={css.menuList}>
                       <li className={css.listItem}>
                         <Link href="/about" prefetch={false}>
-                        {t("about")}
+                          {t("about")}
                         </Link>
                       </li>
                       <li className={css.listItem}>
@@ -88,7 +83,9 @@ export default function Footer() {
                         <Link href="/#vocal">{t("offlineLessons")}</Link>
                       </li>
                       <li className={css.listItem}>
-                        <Link href="/#vocal">{t("performancePreparation")}</Link>
+                        <Link href="/#vocal">
+                          {t("performancePreparation")}
+                        </Link>
                       </li>
                       <li className={css.listItem}>
                         <Link href="/#vocal">{t("voiceDevelopment")}</Link>
@@ -119,10 +116,14 @@ export default function Footer() {
                 </div>
               </div>
               <div className={css.footerBottom}>
-                <p className={css.rightsText}>
-                {t("rights")}
+                <p className={css.rightsText}>{t("rights")}</p>
+
+                <p className={css.policyText}>
+                  <Link href="/privacy">
+                    <strong>{t("privacyPolicy")}</strong>
+                  </Link>
+                  .
                 </p>
-                <p className={css.policyText}>{t("privacyPolicy")}</p>
               </div>
             </div>
           </div>

@@ -184,5 +184,67 @@
   "TatyanaMetadata": {
     "title": "TatYANa Acoustic Sounds | Euterpa.muse",
     "description": "Entdecke TatYANa Acoustic Sounds – ein Akustik-Duo mit gefühlvoller Live-Musik für Konzerte, Hochzeiten, kulturelle Veranstaltungen und private Feiern."
+  },
+  "PrivacyPolicy": {
+    "title": "Datenschutzerklärung",
+    "intro": "Diese Datenschutzerklärung erläutert, wie personenbezogene Daten erhoben und verarbeitet werden, wenn du diese Website nutzt oder eine Buchungsanfrage sendest.",
+
+    "controller": {
+      "title": "1. Verantwortliche Person",
+      "description": "Verantwortlich für die Verarbeitung personenbezogener Daten auf dieser Website ist:"
+    },
+
+    "data": {
+      "title": "2. Welche Daten wir erheben",
+      "description": "Wenn du über die Website eine Buchungsanfrage sendest, können folgende Informationen erhoben werden:",
+      "name": "Name",
+      "email": "E-Mail-Adresse",
+      "phone": "Telefonnummer",
+      "lessonFormat": "Unterrichtsformat",
+      "vocalLevel": "Gesangsniveau",
+      "dateTime": "Gewünschtes Unterrichtsdatum und gewünschte Uhrzeit",
+      "message": "Nachricht oder zusätzliche Informationen, die du freiwillig angibst"
+    },
+
+    "purpose": {
+      "title": "3. Zweck der Verarbeitung",
+      "text": "Diese Informationen werden verarbeitet, um deine Buchungsanfrage zu erhalten und zu beantworten, mit dir bezüglich des Unterrichts zu kommunizieren und die gewünschte Leistung zu organisieren."
+    },
+
+    "resend": {
+      "title": "4. E-Mail-Versand – Resend",
+      "text": "Diese Website verwendet Resend für den Versand von Buchungsanfragen per E-Mail. Die über das Buchungsformular übermittelten Informationen können daher von Resend verarbeitet werden, um die Nachricht zuzustellen."
+    },
+
+    "vercel": {
+      "title": "5. Hosting – Vercel",
+      "text": "Diese Website wird über Vercel gehostet. Beim Zugriff auf die Website können technische Informationen wie IP-Adresse, Browserinformationen, Geräteinformationen, Anfragedaten und Zeitstempel verarbeitet werden, soweit dies für die Bereitstellung, Sicherheit und den Betrieb der Website erforderlich ist."
+    },
+
+    "youtube": {
+      "title": "6. Eingebettete Inhalte – YouTube",
+      "text": "Diese Website kann eingebettete Videos von YouTube enthalten. Wenn du mit eingebetteten Inhalten interagierst, können Informationen an YouTube und verbundene Dienste übertragen werden."
+    },
+
+    "retention": {
+      "title": "7. Speicherdauer",
+      "text": "Personenbezogene Daten aus dem Buchungsformular werden nur so lange gespeichert, wie dies zur Bearbeitung deiner Anfrage, zur Kommunikation mit dir und zur Erfüllung gesetzlicher Verpflichtungen erforderlich ist."
+    },
+
+    "rights": {
+      "title": "8. Deine Rechte",
+      "text": "Nach geltendem Datenschutzrecht, einschließlich der DSGVO, kannst du unter anderem das Recht auf Auskunft, Berichtigung oder Löschung deiner personenbezogenen Daten, Einschränkung der Verarbeitung, Datenübertragbarkeit sowie Widerspruch gegen bestimmte Verarbeitungen haben. Außerdem kannst du dich bei einer zuständigen Datenschutzaufsichtsbehörde beschweren."
+    },
+
+    "contact": {
+      "title": "9. Kontakt",
+      "text": "Wenn du Fragen zu dieser Datenschutzerklärung oder zur Verarbeitung deiner personenbezogenen Daten hast, kontaktiere:"
+    },
+
+    "updated": "Zuletzt aktualisiert: August 2026",
+    "meta": {
+      "title": "Datenschutzerklärung | Euterpa.muse",
+      "description": "Erfahre, wie Euterpa.muse personenbezogene Daten bei der Nutzung der Website und bei Buchungsanfragen verarbeitet und schützt."
+    }
   }
 }

@@ -224,7 +224,7 @@ export default function BookingForm({ onClose }: BookingFormProps) {
       </form>
       <p className={css.policy}>
         {t("policyBefore")}{" "}
-        <Link href="/privacy-policy">
+        <Link href="/privacy">
           <strong>{t("privacyPolicy")}</strong>
         </Link>
         .
