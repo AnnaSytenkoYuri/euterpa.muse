@@ -37,7 +37,13 @@ export default function Footer() {
                 </li>
               </ul>
               <SocialLinks />
-              <p className={css.policyText}>{t("privacyPolicy")}</p>
+
+              <p className={css.policyText}>
+                <Link href="/privacy">
+                  <strong>{t("privacyPolicy")}</strong>
+                </Link>
+                .
+              </p>
               <p className={css.rightsText}>{t("rights")}</p>
             </div>
 

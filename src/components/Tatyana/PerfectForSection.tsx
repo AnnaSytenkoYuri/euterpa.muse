@@ -1,7 +1,15 @@
+"use client";
 import { useTranslations } from "next-intl";
 import css from "./PerfectForSection.module.css";
+import { useState } from "react";
+import Modal from "../Modal/Modal";
+import ContactManagerForm from "../ContactManagerForm/ContactManagerForm";
 
 export default function PerfectForSection() {
+
+  const [isOpen, setIsOpen] = useState(false);
+
+  const closeModal = () => setIsOpen(false);
 
   const t = useTranslations("TatyanaPerfectFor");
   return (
@@ -120,11 +128,17 @@ export default function PerfectForSection() {
         </li>
       </ul>
 
-      <button className={css.bookBtn}>{t("requestAvailability")}</button>
+      <button onClick={() => setIsOpen(true)} className={css.bookBtn}>{t("requestAvailability")}</button>
 
       <p className={css.text}>
       {t("description")}
       </p>
+   
+      {isOpen && (
+        <Modal onClose={closeModal}>
+          <ContactManagerForm onClose={closeModal} />
+        </Modal>
+      )}
     </div>
   );
 }

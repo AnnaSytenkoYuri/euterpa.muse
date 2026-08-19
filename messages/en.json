@@ -88,7 +88,7 @@
     "weddings": "Weddings",
     "churchServices": "Church Services",
     "privateEvents": "Private Events",
-    "requestAvailability": "Book now",
+    "requestAvailability": "Send request",
     "description": "Every performance is unique, personal, and created with genuine passion for live music."
   },
 
@@ -248,6 +248,21 @@
     "meta": {
       "title": "Privacy Policy | Euterpa.muse",
       "description": "Learn how Euterpa.muse collects, uses and protects personal data when you use the website or submit a booking request."
-    }
+    },
+    "backHome": "Back to home"
+  },
+  "PerformanceRequestForm": {
+  "title": "Contact our manager",
+  "description": "Leave your contact details and our manager will get in touch with you to discuss your event.",
+  "name": "Your name",
+  "email": "Email",
+  "phone": "Phone",
+  "message": "Tell us briefly about your event",
+  "submit": "Send request",
+  "sending": "Sending...",
+  "errors": {
+    "name": "Please enter your name",
+    "email": "Please enter your email"
   }
+}
 }

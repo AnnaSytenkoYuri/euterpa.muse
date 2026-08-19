@@ -12,6 +12,40 @@
     max-width: 820px;
     margin: 0 auto;
   }
+
+  .backLink {
+    width: fit-content;
+  
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+  
+    margin-bottom: 40px;
+  
+    font-size: 14px;
+    font-weight: 500;
+  
+    color: var(--text-secondary);
+  
+    transition:
+      color 0.3s ease,
+      transform 0.3s ease;
+  }
+  
+  .backLink span {
+    font-size: 20px;
+    transition: transform 0.3s ease;
+  }
+  
+  .backLink:hover,
+  .backLink:focus {
+    color: var(--text-primary);
+  }
+  
+  .backLink:hover span,
+  .backLink:focus span {
+    transform: translateX(-4px);
+  }
   
   .title {
     font-weight: 600;

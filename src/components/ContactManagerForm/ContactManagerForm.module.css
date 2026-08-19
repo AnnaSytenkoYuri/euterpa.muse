@@ -1,0 +1,143 @@
+.formWrapper {
+  width: 100%;
+}
+
+.title {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1.2;
+  color: var(--text-primary);
+  margin-bottom: 12px;
+}
+
+.description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--text-secondary);
+  margin-bottom: 30px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.field {
+  margin-bottom: 17px;
+}
+
+.input,
+.textarea {
+  width: 100%;
+
+  border: 1px solid var(--border);
+  border-radius: 10px;
+
+  background-color: var(--card);
+  color: var(--text-primary);
+
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 14px;
+
+  transition:
+    border-color 0.25s ease,
+    background-color 0.25s ease;
+}
+
+.input {
+  min-height: 47px;
+  padding: 0 14px;
+}
+
+.textarea {
+  min-height: 110px;
+  padding: 14px;
+
+  resize: vertical;
+}
+
+.input::placeholder,
+.textarea::placeholder {
+  color: var(--text-secondary);
+  opacity: 0.6;
+}
+
+.input:focus,
+.textarea:focus {
+  outline: none;
+  border-color: var(--text-primary);
+}
+
+.inputError {
+  border-color: #d93025;
+}
+
+.error {
+  margin-top: 4px;
+
+  font-size: 12px;
+  line-height: 1.3;
+
+  color: #d93025;
+}
+
+.submitBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  min-height: 47px;
+
+  margin-top: 20px;
+
+  border: none;
+  border-radius: 10px;
+
+  background-color: var(--button-bg);
+  color: var(--button-text);
+
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+
+  cursor: pointer;
+
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.submitBtn:hover,
+.submitBtn:focus {
+  background-color: var(--button-hover-bg);
+  color: var(--button-hover-text);
+}
+
+.submitBtn:active {
+  transform: scale(0.98);
+}
+
+.submitBtn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+@media (min-width: 768px) {
+  .title {
+    font-size: 32px;
+  }
+
+  .description {
+    max-width: 500px;
+    margin-bottom: 36px;
+  }
+
+  .textarea {
+    min-height: 130px;
+  }
+}

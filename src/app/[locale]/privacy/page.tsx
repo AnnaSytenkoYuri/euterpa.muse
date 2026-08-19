@@ -1,6 +1,7 @@
 import { getTranslations } from "next-intl/server";
 import css from "./Privacy.module.css";
 import { Metadata } from "next";
+import { Link } from "../../../../i18n/navigation";
 
 
 export async function generateMetadata({
@@ -18,6 +19,11 @@ export async function generateMetadata({
     return {
       title: t("title"),
       description: t("description"),
+
+      robots: {
+        index: true,
+        follow: true,
+      },
     };
   }
 
@@ -28,6 +34,11 @@ export default async function PrivacyPage() {
       <section className={css.section}>
         <div className="container">
           <div className={css.content}>
+
+            <Link href="/" className={css.backLink}>
+            <span  aria-hidden="true">←</span>
+            {t('backHome')}
+            </Link>
             <h1 className={css.title}>{t("title")}</h1>
 
             <p className={css.intro}>{t("intro")}</p>

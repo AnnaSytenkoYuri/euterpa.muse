@@ -5,6 +5,7 @@ import css from "./ScrollToTop.module.css";
 
 export default function ScrollToTop() {
   const [isVisible, setIsVisible] = useState(false);
+  // const [isNearFooter, setIsNearFooter] = useState(false);
 
   useEffect(() => {
     const toggleVisibility = () => {
@@ -16,6 +17,28 @@ export default function ScrollToTop() {
     return () =>
       window.removeEventListener("scroll", toggleVisibility);
   }, []);
+
+
+  // useEffect(() => {
+  //   const footer = document.querySelector("footer");
+  
+  //   if (!footer) return;
+  
+  //   const observer = new IntersectionObserver(
+  //     ([entry]) => {
+  //       setIsNearFooter(entry.isIntersecting);
+  //     },
+  //     {
+  //       threshold: 0.1,
+  //     }
+  //   );
+  
+  //   observer.observe(footer);
+  
+  //   return () => {
+  //     observer.disconnect();
+  //   };
+  // }, []);
 
   const scrollToTop = () => {
     window.scrollTo({

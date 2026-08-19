@@ -88,7 +88,7 @@
     "weddings": "Hochzeiten",
     "churchServices": "Kirchliche Veranstaltungen",
     "privateEvents": "Private Veranstaltungen",
-    "requestAvailability": "Jetzt buchen",
+    "requestAvailability": "Anfrage senden",
     "description": "Jeder Auftritt ist einzigartig, persönlich und entsteht aus echter Leidenschaft für Live-Musik."
   },
   "AboutHero": {
@@ -245,6 +245,21 @@
     "meta": {
       "title": "Datenschutzerklärung | Euterpa.muse",
       "description": "Erfahre, wie Euterpa.muse personenbezogene Daten bei der Nutzung der Website und bei Buchungsanfragen verarbeitet und schützt."
-    }
+    },
+    "backHome": "Zurück zur Startseite"
+  },
+  "PerformanceRequestForm": {
+  "title": "Kontaktiere unser Management",
+  "description": "Hinterlasse deine Kontaktdaten und unser Management wird sich mit dir in Verbindung setzen, um die Details deiner Veranstaltung zu besprechen.",
+  "name": "Dein Name",
+  "email": "E-Mail",
+  "phone": "Telefon",
+  "message": "Erzähle uns kurz etwas über deine Veranstaltung",
+  "submit": "Anfrage senden",
+  "sending": "Wird gesendet...",
+  "errors": {
+    "name": "Bitte gib deinen Namen ein",
+    "email": "Bitte gib deine E-Mail-Adresse ein"
   }
+}
 }
