@@ -252,17 +252,21 @@
     "backHome": "Back to home"
   },
   "PerformanceRequestForm": {
-  "title": "Contact our manager",
-  "description": "Leave your contact details and our manager will get in touch with you to discuss your event.",
-  "name": "Your name",
-  "email": "Email",
-  "phone": "Phone",
-  "message": "Tell us briefly about your event",
-  "submit": "Send request",
-  "sending": "Sending...",
-  "errors": {
-    "name": "Please enter your name",
-    "email": "Please enter your email"
+    "title": "Contact us",
+    "description": "Leave your contact details and our manager will get in touch with you to discuss your event.",
+    "name": "Your name",
+    "email": "Email",
+    "phone": "Phone",
+    "message": "Tell us briefly about your event",
+    "submit": "Send request",
+    "sending": "Sending...",
+    "errors": {
+      "name": "Please enter your name",
+      "email": "Please enter your email"
+    },
+    "policyBefore": "By clicking “Send request”, you agree to our",
+    "privacyPolicy": "Privacy Policy",
+    "successTitle": "Request sent successfully!",
+    "successText": "Thank you for contacting us. Our manager will get in touch with you shortly to discuss the details."
   }
-}
 }

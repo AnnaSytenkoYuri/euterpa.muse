@@ -249,17 +249,21 @@
     "backHome": "Zurück zur Startseite"
   },
   "PerformanceRequestForm": {
-  "title": "Kontaktiere unser Management",
-  "description": "Hinterlasse deine Kontaktdaten und unser Management wird sich mit dir in Verbindung setzen, um die Details deiner Veranstaltung zu besprechen.",
-  "name": "Dein Name",
-  "email": "E-Mail",
-  "phone": "Telefon",
-  "message": "Erzähle uns kurz etwas über deine Veranstaltung",
-  "submit": "Anfrage senden",
-  "sending": "Wird gesendet...",
-  "errors": {
-    "name": "Bitte gib deinen Namen ein",
-    "email": "Bitte gib deine E-Mail-Adresse ein"
+    "title": "Kontaktieren Sie uns",
+    "description": "Hinterlasse deine Kontaktdaten und unser Management wird sich mit dir in Verbindung setzen, um die Details deiner Veranstaltung zu besprechen.",
+    "name": "Dein Name",
+    "email": "E-Mail",
+    "phone": "Telefon",
+    "message": "Erzähle uns kurz etwas über deine Veranstaltung",
+    "submit": "Anfrage senden",
+    "sending": "Wird gesendet...",
+    "errors": {
+      "name": "Bitte gib deinen Namen ein",
+      "email": "Bitte gib deine E-Mail-Adresse ein"
+    },
+    "policyBefore": "Mit dem Klick auf „Anfrage senden“ stimmst du unserer",
+    "privacyPolicy": "Datenschutzerklärung",
+    "successTitle": "Anfrage erfolgreich gesendet!",
+    "successText": "Vielen Dank für deine Anfrage. Unser Management wird sich in Kürze bei dir melden, um die Details zu besprechen."
   }
-}
 }

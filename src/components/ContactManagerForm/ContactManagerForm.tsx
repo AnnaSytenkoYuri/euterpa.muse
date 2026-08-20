@@ -8,17 +8,23 @@ import {
   PerformanceRequestInput,
   performanceRequestSchema,
 } from "@/validation/performanceRequestSchema";
+import Link from "next/link";
+import { useEffect, useState } from "react";
 
 interface ContactManagerFormProps {
   onClose: () => void;
 }
 
 export default function ContactManagerForm({
-//   onClose,
+  onClose,
 }: ContactManagerFormProps) {
+  const [isSuccess, setIsSuccess] = useState(false);
+
   const {
     register,
+    setFocus,
     handleSubmit,
+    reset,
     formState: { errors, isSubmitting },
   } = useForm<PerformanceRequestInput>({
     resolver: zodResolver(performanceRequestSchema),
@@ -34,8 +40,35 @@ export default function ContactManagerForm({
   const t = useTranslations("PerformanceRequestForm");
 
   const onSubmit = async (data: PerformanceRequestInput) => {
-    console.log(data);
+    try {
+      const response = await fetch("/api/performance-request", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
+
+      const result = await response.json();
+
+      if (!response.ok) {
+        throw new Error(result.message || "Failed to send request.");
+      }
+
+      console.log("Success:", result);
+
+      setIsSuccess(true);
+      await new Promise((resolve) => setTimeout(resolve, 2000));
+      reset();
+
+      onClose();
+    } catch (error) {
+      console.error("Submit error:", error);
+    }
   };
+  useEffect(() => {
+    setFocus("name");
+  }, [setFocus]);
 
   return (
     <div className={css.formWrapper}>
@@ -80,9 +113,23 @@ export default function ContactManagerForm({
           />
         </div>
 
+        {isSuccess && (
+          <div className={css.success}>
+            <p className={css.successTitle}>✓ {t("successTitle")}</p>
+            <p className={css.successText}>{t("successText")}</p>
+          </div>
+        )}
+
         <button type="submit" className={css.submitBtn} disabled={isSubmitting}>
           {isSubmitting ? t("sending") : t("submit")}
         </button>
+        <p className={css.policy}>
+          {t("policyBefore")}{" "}
+          <Link href="/privacy">
+            <strong>{t("privacyPolicy")}</strong>
+          </Link>
+          .
+        </p>
       </form>
     </div>
   );
