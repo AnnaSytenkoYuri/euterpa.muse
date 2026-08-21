@@ -86,6 +86,9 @@
 }
 
 .ticketBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 6px;
   width: 83px;
   height: 23px;
