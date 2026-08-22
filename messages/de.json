@@ -42,8 +42,8 @@
   "Projects": {
     "upTitle": "Projekte",
     "title": "Meine Projekte",
-    "category": "Alternative Pop | Indie",
-    "learnMore": "Mehr erfahren"
+    "category": "Authentische akustische Musik",
+    "learnMore": "Mehr"
   },
   "Events": {
     "upTitle": "Konzerte",
@@ -88,7 +88,7 @@
     "weddings": "Hochzeiten",
     "churchServices": "Kirchliche Veranstaltungen",
     "privateEvents": "Private Veranstaltungen",
-    "requestAvailability": "Anfrage senden",
+    "requestAvailability": "Senden",
     "description": "Jeder Auftritt ist einzigartig, persönlich und entsteht aus echter Leidenschaft für Live-Musik."
   },
   "AboutHero": {
@@ -114,7 +114,7 @@
   "AboutCTA": {
     "title": "Bereit, deine Stimme zu entdecken?",
     "text": "Buche deine erste Gesangsstunde",
-    "bookLesson": "Unterricht buchen"
+    "bookLesson": " Buchen"
   },
   "VideoSection": {
     "upTitle": "LIVE-AUFTRITT",
@@ -265,5 +265,32 @@
     "privacyPolicy": "Datenschutzerklärung",
     "successTitle": "Anfrage erfolgreich gesendet!",
     "successText": "Vielen Dank für deine Anfrage. Unser Management wird sich in Kürze bei dir melden, um die Details zu besprechen."
+  },
+  "LessonPricing": {
+  "upTitle": "Gesangsunterricht",
+  "title": "Finde die Option, die zu dir passt",
+  "bookTrial": "Probestunde buchen",
+  "plans": {
+    "single": {
+      "title": "Einzelstunde",
+      "subtitle": "45 Min."
+    },
+    "four": {
+      "title": "4 Stunden / Monat",
+      "subtitle": "je 45 Min.",
+      "details": "25 € / Stunde · ca. 17 % sparen"
+    },
+    "eight": {
+      "title": "8 Stunden / Monat",
+      "subtitle": "je 45 Min.",
+      "details": "20 € / Stunde · ca. 33 % sparen"
+    },
+    "first": {
+      "title": "Erste Stunde",
+      "subtitle": "45 Min.",
+      "price": "Kostenlos",
+      "details": "Lerne das Unterrichtsformat kennen"
+    }
   }
+}
 }

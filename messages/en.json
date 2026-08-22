@@ -42,7 +42,7 @@
   "Projects": {
     "upTitle": "Projects",
     "title": "My projects",
-    "category": "Alternative Pop | Indie",
+    "category": "Authentic acoustic music",
     "learnMore": "Learn More"
   },
   "Events": {
@@ -268,5 +268,32 @@
     "privacyPolicy": "Privacy Policy",
     "successTitle": "Request sent successfully!",
     "successText": "Thank you for contacting us. Our manager will get in touch with you shortly to discuss the details."
+  },
+  "LessonPricing": {
+  "upTitle": "Vocal lessons",
+  "title": "Find the option that works for you",
+  "bookTrial": "Book a trial lesson",
+  "plans": {
+    "single": {
+      "title": "Single lesson",
+      "subtitle": "45 min"
+    },
+    "four": {
+      "title": "4 lessons / month",
+      "subtitle": "45 min each ",
+      "details": "25 € / lesson · save ~17%"
+    },
+    "eight": {
+      "title": "8 lessons / month",
+      "subtitle": "45 min each",
+      "details": "20 € / lesson · save ~33%"
+    },
+    "first": {
+      "title": "First lesson",
+      "subtitle": "45 min",
+      "price": "Free",
+      "details": "Get to know the format"
+    }
   }
+}
 }

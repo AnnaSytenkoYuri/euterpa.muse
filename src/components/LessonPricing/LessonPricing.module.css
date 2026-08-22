@@ -1,0 +1,204 @@
+.planSection {
+  padding-top: 80px;
+  background-color: var(--background);
+}
+
+.upTitle {
+  margin-bottom: 17px;
+
+  font-weight: 500;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-align: center;
+
+  color: var(--text-secondary);
+}
+
+.sectionTitle {
+  margin-bottom: 32px;
+
+  font-weight: 600;
+  font-size: 32px;
+  text-align: center;
+
+  color: var(--text-primary);
+}
+
+.pricingGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  margin-bottom: 40px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 100%;
+  min-height: 190px;
+
+  padding: 30px 24px;
+
+  background-color: var(--card);
+  border-radius: 15px;
+
+  text-align: center;
+}
+
+.title {
+  font-weight: 500;
+  font-size: 18px;
+  text-transform: capitalize;
+  text-align: center;
+
+  color: var(--text-primary);
+
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  font-weight: 400;
+  font-size: 12px;
+
+  color: var(--text-secondary);
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+
+  margin: 24px 0;
+
+  background-color: var(--border);
+}
+
+.price {
+  font-weight: 600;
+  font-size: 32px;
+
+  color: var(--text-primary);
+
+  margin-bottom: 10px;
+}
+
+.details {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.5;
+
+  text-align: center;
+
+  color: var(--text-secondary);
+}
+
+/* виділена картка */
+
+.featured {
+  border: 1px solid var(--border);
+}
+
+.bookBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 207px;
+  min-height: 45px;
+
+  margin: 32px auto 0;
+
+  border: none;
+  border-radius: 15px;
+
+  background-color: var(--button-bg);
+  color: var(--button-text);
+
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+
+  cursor: pointer;
+
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+.bookBtn:hover,
+.bookBtn:focus {
+  background-color: var(--button-hover);
+  color: var(--button-hover-text);
+}
+
+@media (min-width: 768px) {
+  .pricingGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+
+    margin-bottom: 50px;
+  }
+
+  .card {
+    min-height: 200px;
+    padding: 30px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .planSection {
+    padding-top: 120px;
+  }
+  .pricingGrid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+
+    margin-bottom: 60px;
+  }
+
+  .card {
+    align-items: flex-start;
+
+    min-height: 210px;
+
+    padding: 30px 34px;
+
+    text-align: left;
+  }
+
+  .title {
+    text-align: left;
+  }
+
+  .subtitle {
+    text-align: left;
+  }
+
+  .price {
+    text-align: left;
+  }
+
+  .details {
+    text-align: left;
+  }
+
+  .upTitle,
+  .sectionTitle {
+    text-align: left;
+  }
+
+  .sectionTitle {
+    margin-bottom: 40px;
+  }
+
+  /* .bookBtn {
+    margin: 40px 0 0 auto;
+  } */
+
+  .bookBtn {
+    margin-top: 40px;
+  }
+}

@@ -59,7 +59,7 @@ export default function EventsSection() {
 
                     <p className={css.cardText}>{event.address}</p>
 
-                    <span className={css.cardDetails}>{event.time}</span>
+                    <span className={css.cardDetails}>{t("startAt")} - {event.time}</span>
                   </div>
 
                   <a

@@ -4,14 +4,16 @@ import HeroSection from "@/components/HeroSection/HeroSection";
 import LessonsSection from "@/components/LessonsSection/LessonsSection";
 import ProjectsSection from "@/components/ProjectsSection/ProjectsSection";
 import css from "./page.module.css";
+import LessonPricing from "@/components/LessonPricing/LessonPricing";
 
 export default function Home() {
   return (
     <>
-    <div className={css.heroWrapper}>
-      <Header />
-      <HeroSection />
-    </div>
+      <div className={css.heroWrapper}>
+        <Header />
+        <HeroSection />
+      </div>
+      <LessonPricing />
       <LessonsSection />
       <ProjectsSection />
       <EventsSection />

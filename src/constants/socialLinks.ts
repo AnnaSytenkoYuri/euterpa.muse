@@ -8,12 +8,12 @@ import {
 export const socialLinks = [
     {
       name: "Instagram",
-      href: "hhttps://www.instagram.com/euterpa.muse?igsh=eWNsNnVvbDAyYW4z",
+      href: "https://www.instagram.com/euterpa.muse?igsh=eWNsNnVvbDAyYW4z",
       icon: FaInstagram,
     },
     {
       name: "Facebook",
-      href: "hhttps://www.facebook.com/share/1DZcMBnuzo/?mibextid=wwXIfr",
+      href: "https://www.facebook.com/share/1DZcMBnuzo/?mibextid=wwXIfr",
       icon: FaFacebook,
     },
     {
